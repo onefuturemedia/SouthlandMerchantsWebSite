@@ -16,7 +16,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
-            React Landing Page
+            Southland Merchants
           </a>{' '}
         </div>
 
@@ -25,17 +25,17 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
-            <li>
+            {/* <li>
               <a href='#features' className='page-scroll'>
                 Features
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#about' className='page-scroll'>
-                About
+                About Us
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#services' className='page-scroll'>
                 Services
               </a>
@@ -44,20 +44,20 @@ export const Navigation = (props) => {
               <a href='#portfolio' className='page-scroll'>
                 Gallery
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href='#testimonials' className='page-scroll'>
-                Testimonials
+              <a href='#growers' className='page-scroll'>
+                Growers
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#team' className='page-scroll'>
                 Team
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#contact' className='page-scroll'>
-                Contact
+                Contact Us
               </a>
             </li>
           </ul>
