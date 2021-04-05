@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react'
 import { Navigation } from './components/navigation'
 import { Header } from './components/header'
-import { Features } from './components/features'
+import { Partners } from './components/partners'
 import { About } from './components/about'
-import { Services } from './components/services'
-import { Gallery } from './components/gallery'
-import { Testimonials } from './components/testimonials'
 import { Growers } from './components/growers'
-import { Team } from './components/Team'
+import { BlogHeader } from './components/blogheader'
 import { Contact } from './components/contact'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
@@ -28,13 +25,15 @@ const App = () => {
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
-      {/* <Features data={landingPageData.Features} /> */}
       {/* <Services data={landingPageData.Services} /> */}
       {/* usar o abaixo pra fazer um link pro blog? */}
       {/* <Gallery />  */}
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       <Growers data={landingPageData.Growers} />
+      {/* <Features data={landingPageData.Features} /> */}
+      <Partners data={landingPageData.Features} />
       {/* <Team data={landingPageData.Team} /> */}
+      <BlogHeader /> 
       <Contact data={landingPageData.Contact} />
     </div>
   )

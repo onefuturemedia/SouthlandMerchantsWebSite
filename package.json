@@ -1,6 +1,8 @@
 {
   "name": "southland-merchants",
   "private": true,
+  "version": "0.0.1",
+  "author": "Matheus Bitarães",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
