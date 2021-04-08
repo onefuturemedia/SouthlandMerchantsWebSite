@@ -1,6 +1,7 @@
-# Southland Merchant Website
+#TODOs
 
-
-### <a href="https://react-landing-page-template.herokuapp.com">BASED ON THIS TEMPLATE</a> 
-
-##### On Future Media
+- Improve SEO element
+- Modificar a Logo
+- colocar os key partners corretamente
+- Adequação do banner
+-
