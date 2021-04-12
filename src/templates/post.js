@@ -1,9 +1,13 @@
 import React from "react";
-import { graphql } from "gatsby";
 
-const MySinglePostPage = ({ data: { post }, ...props }) => (
-  <h3>{post.title}</h3>
-);
+const MySinglePostPage = ({ data: { post }, ...props }) => {
+  return (
+    <div>
+      <h3>{post.title}</h3>
+      <div dangerouslySetInnerHTML={{ __html: post.content.encoded }}></div>
+    </div>
+  );
+};
 
 export const query = graphql`
   query($id: String!) {

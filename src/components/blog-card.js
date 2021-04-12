@@ -11,10 +11,10 @@ const BlogCard = (props) => {
       </Box>
       <Box sx={styles.content}>
         <Heading as="h3">
-          <Link path={`/${slugify(props.title, "_")}`}>{props.title}</Link>
+          <Link path={`/${slugify(props.title, "-")}`}>{props.title}</Link>
         </Heading>
         <Text as="p">
-          <Link path={`/${slugify(props.title, "_")}`}>{props.title}</Link>
+          <Link path={`/${slugify(props.title, "-")}`}>{props.title}</Link>
           {/* <Image src={CommentIcon} alt="" /> */}
           {/* {props.contentSnipped} */}
         </Text>

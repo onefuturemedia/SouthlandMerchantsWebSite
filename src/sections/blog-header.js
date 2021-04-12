@@ -16,6 +16,7 @@ const BlogHeader = () => {
           id
           content {
             encodedSnippet
+            encoded
           }
         }
       }
@@ -73,6 +74,16 @@ const BlogHeader = () => {
     },
   };
 
+  const extractImageUrlFromPost = (content) => {
+    const imgPattern = /<img([\w\W]+?)\/>/g;
+    const srcPattern = /src=\"([\w\W]+?)\"/g;
+    const img = content.match(imgPattern);
+    const src =
+      img && img[0].match(srcPattern)[0].replace('src="', "").replace('"', "");
+
+    return src || "";
+  };
+
   return (
     <Box sx={styles.features} id="blog">
       <Container>
@@ -86,7 +97,7 @@ const BlogHeader = () => {
           {allFeedMediumData.nodes.map((data, index) => (
             <div className="swiper-slider" key={`feature-card-key${index}`}>
               <BlogCard
-                image={data.image}
+                image={extractImageUrlFromPost(data.content.encoded)}
                 title={data.title}
                 contentSnippet={data.content.encodedSnippet}
               />

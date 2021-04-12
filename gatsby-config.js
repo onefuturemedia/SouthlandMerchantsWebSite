@@ -25,13 +25,22 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `./src/assets/icons/user_icon.png`, // This path is relative to the root of the site.
+        icon: `./src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: [`DM Sans\:400,500,700`, `Playfair Display\:400,500,700`],
+        fonts: [
+          {
+            family: `DM Sans`,
+            variants: [`400`, `500`, `700`],
+          },
+          {
+            family: `Playfair Display`,
+            variants: [`400`, `500`, `700`],
+          },
+        ],
       },
     },
     {
@@ -78,7 +87,7 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `https://medium.com/feed/@rprishi08`, // change this Medium to get the website medium
+        url: `https://medium.com/feed/@Starbucks`, // change this Medium to get the website medium
         name: `MediumData`,
       },
     },

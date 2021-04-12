@@ -34,14 +34,12 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  // console.log(result.data.allFeedMediumData.nodes);
-
   result.data.allFeedMediumData.nodes.forEach((post) => {
     createPage({
-      path: slugify(post.title, "_"),
+      path: slugify(post.title, "-"),
       component: blogPostTemplate,
       context: {
-        slug: slugify(post.title, "_"),
+        slug: slugify(post.title, "-"),
         id: post.id,
       },
     });
