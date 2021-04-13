@@ -12,10 +12,12 @@ import {
 import { useStaticQuery, graphql } from "gatsby";
 
 import Image from "components/image";
+import VideoBanner from "components/video-banner";
 
 import img1 from "assets/partner-1-1.png";
 import img2 from "assets/partner-1-2.png";
 import img3 from "assets/partner-1-3.png";
+import video from "assets/videos/video.mp4";
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -31,10 +33,11 @@ const Banner = () => {
   `);
 
   return (
-    <Box sx={styles.banner} id="banner">
-      <Container sx={styles.container}>
-        <Grid sx={styles.grid}>
-          <Box sx={styles.content}>
+    <Box as="section" sx={styles.banner} id="banner">
+      <VideoBanner src={video} />
+      <Container id="container" sx={styles.container}>
+        <Grid id="grid" sx={styles.grid}>
+          <Box id="box" sx={styles.content}>
             <Heading as="h3">
               Connecting coffee growers with coffee lovers
             </Heading>
@@ -56,7 +59,7 @@ const Banner = () => {
                 Subscribe
               </Button>
             </Box> */}
-            <Box sx={styles.partner}>
+            {/* <Box sx={styles.partner}>
               <Text as="span">Key Partners:</Text>
               <Box as="div">
                 <Img src={img1} alt="" />
@@ -67,11 +70,11 @@ const Banner = () => {
               <Box as="div">
                 <Img src={img3} alt="" />
               </Box>
-            </Box>
+            </Box> */}
           </Box>
-          <Box sx={styles.image}>
+          {/* <Box sx={styles.image}>
             <Image src={data.placeholderImage.childImageSharp.fluid} alt="" />
-          </Box>
+          </Box> */}
         </Grid>
       </Container>
     </Box>
@@ -84,27 +87,33 @@ const styles = {
   banner: {
     pt: ["110px", null, null, null, "150px", "200px"],
     pb: ["50px", null, null, null, "60px", null, "0"],
+    height: "800px",
     backgroundColor: "#F6F8FB",
     overflow: "hidden",
   },
   container: {
     width: [null, null, null, null, null, null, "1390px"],
+    zIndex: "2",
+    position: "relative",
+    ml: [null, null, null, "10%", "10%", "10%", "10%"],
+    mt: ["50%", null, "0", "0", "0", "0", "0"],
   },
   grid: {
     display: "grid",
-    gridTemplateColumns: ["1fr", null, null, "1fr 1fr"],
+    gridTemplateColumns: ["1fr", null, "1fr 1fr", "1fr 1fr"],
     gridGap: "0",
   },
   content: {
     h3: {
-      color: "black",
+      color: "white",
       fontWeight: "bold",
       lineHeight: [1.39],
       letterSpacing: ["-.7px", "-1.5px"],
       mb: ["15px", null, null, null, "20px"],
       width: ["100%"],
-      maxWidth: ["100%", null, null, "90%", "100%", "540px"],
+      maxWidth: ["100%", null, null, "90%", "100%", "100%"],
       fontSize: [6, null, null, "36px", null, "55px", 9],
+      marginTop: "30%",
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],

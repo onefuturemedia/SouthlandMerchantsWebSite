@@ -8,7 +8,7 @@ import image1 from "assets/boost-1-1.png";
 
 const AboutUs = () => {
   return (
-    <Box sx={styles.aboutUs} id="about-us">
+    <Box as="section" sx={styles.aboutUs} id="about-us">
       <Container>
         <Box sx={styles.row}>
           <Flex sx={styles.col}>
@@ -49,7 +49,8 @@ export default AboutUs;
 
 const styles = {
   aboutUs: {
-    pt: ["70px", null, null, "80px", "120px", null, "130px"],
+    // pt: ["70px", null, null, "80px", "120px", "130px", "130px"],
+    pt: "130px",
   },
   row: {
     display: "flex",

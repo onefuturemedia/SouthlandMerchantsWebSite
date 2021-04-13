@@ -85,7 +85,7 @@ const BlogHeader = () => {
   };
 
   return (
-    <Box sx={styles.features} id="blog">
+    <Box as="section" sx={styles.features} id="blog">
       <Container>
         <BlockTitle
           // slogan="blog"
