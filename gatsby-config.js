@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`DM Sans\:400,500,700`, `Playfair Display\:400,500,700`],
+        fonts: [`Avenir Next\:400,500,700`, `Roboto\:400,500,700`],
       },
     },
     {

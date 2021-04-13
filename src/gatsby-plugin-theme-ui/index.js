@@ -25,12 +25,12 @@ export default {
     accent: "#609", // a contrast color for emphasizing UI
   },
   fonts: {
-    body: "DM Sans",
+    body: "Avenir Next",
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    // heading: "DM Sans",
-    special: "Playfair Display",
-    heading: "Bree Serif",
+    // heading: "Avenir Next",
+    special: "Roboto",
+    heading: "Avenir Next",
     monospace: "Menlo, monospace",
   },
   fontSizes: [15, 15, 16, 18, 20, 21, 30, 36, 48, 64],
@@ -103,7 +103,7 @@ export default {
     },
     lead: {
       fontSize: 40,
-      fontFamily: "DM Sans",
+      fontFamily: "Avenir Next",
       fontWeight: "500",
       lineHeight: "60px",
       letterSpacing: "-1.5px",
