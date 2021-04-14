@@ -3,34 +3,34 @@ import {
   Box,
   Container,
   Grid,
-  Button,
-  Input,
+  // Button,
+  // Input,
   Heading,
-  Text,
-  Image as Img,
+  // Text,
+  // Image as Img,
 } from "theme-ui";
-import { useStaticQuery, graphql } from "gatsby";
+// import { useStaticQuery, graphql } from "gatsby";
 
-import Image from "components/image";
+// import Image from "components/image";
 import VideoBanner from "components/video-banner";
 
-import img1 from "assets/partner-1-1.png";
-import img2 from "assets/partner-1-2.png";
-import img3 from "assets/partner-1-3.png";
+// import img1 from "assets/partner-1-1.png";
+// import img2 from "assets/partner-1-2.png";
+// import img3 from "assets/partner-1-3.png";
 import video from "assets/videos/video.mp4";
 
 const Banner = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "banner-image-1-1.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 958) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     placeholderImage: file(relativePath: { eq: "banner-image-1-1.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 958) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
     <Box as="section" sx={styles.banner} id="banner">
@@ -85,9 +85,9 @@ export default Banner;
 
 const styles = {
   banner: {
-    pt: ["110px", null, null, null, "150px", "200px"],
-    pb: ["50px", null, null, null, "60px", null, "0"],
-    height: "800px",
+    // pt: ["110px", null, null, null, "150px", "200px"],
+    // pb: ["50px", null, null, null, "60px", null, "0"],
+    height: "100%", //"800px",
     backgroundColor: "#F6F8FB",
     overflow: "hidden",
   },

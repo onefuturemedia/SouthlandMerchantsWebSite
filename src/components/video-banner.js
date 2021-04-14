@@ -1,6 +1,6 @@
 import React from "react";
 import { withPrefix } from "gatsby";
-import { Heading } from "theme-ui";
+// import { Heading } from "theme-ui";
 
 export default function VideoBanner({ src }) {
   return (

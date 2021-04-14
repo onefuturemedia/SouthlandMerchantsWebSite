@@ -9,7 +9,8 @@ import Layout from "components/layout";
 
 import Banner from "sections/banner";
 // import Services from "sections/services";
-// import Testimonials from "sections/testimonials";
+import ClientTestimonials from "sections/client-testimonials";
+import ProductorTestimonials from "sections/productor-testimonials";
 // import CustomerSupport from "sections/customer-support";
 // import VideoOne from "sections/video-one";
 // import CallToAction from "sections/call-to-action";
@@ -28,7 +29,8 @@ export default function IndexPage() {
         <AboutUs />
         {/* <BoostAgencies /> */}
         {/* <VideoOne /> */}
-        {/* <Testimonials /> */}
+        <ClientTestimonials />
+        <ProductorTestimonials />
         {/* <CustomerSupport /> */}
         <Growers />
         {/* <Feature /> */}

@@ -2,27 +2,27 @@ export default {
   // example colors with dark mode
 
   // paleta pesquisada
-  // marrom escuro  #5f3d31
-  // marrom claro #c59a77
-  // verde escuro #2d4643
-  // verde claro #c1cfb8
-  // branco #e3e8eb
+  // marrom escuro  #4e3d2f
+  // marrom claro #ede0d6
+  // verde escuro #
+  // verde claro #
+  // branco #
 
   breakpoints: ["376px", "576px", "768px", "992px", "1200px", "1600px"],
   colors: {
-    text: "#343D48", // body color and primary color
-    text_secondary: "#02073E", // secondary body color
-    heading: "#02073E", // primary heading color
-    heading_secondary: "#343D48", // heading color
-    background: "#FFFFFF", // body background color
-    background_secondary: "#F9FBFD", // secondary background color
-    border_color: "#E9EDF5", // border color
-    primary: "#8D448B", // primary button and link color
-    secondary: "#793677", // secondary color - can be used for hover states
-    black: "#0F2137", // black color
+    text: "#271e17", // body color and primary color
+    text_secondary: "#130f0b", // secondary body color
+    heading: "#271e17", // primary heading color
+    heading_secondary: "#130f0b", // heading color
+    background: "#ede0d6", // body background color
+    background_secondary: "#ede0d6", // secondary background color
+    border_color: "#ede0d6", // border color
+    primary: "#4e3d2f", // primary button and link color
+    secondary: "#3b2e23", // secondary color - can be used for hover states
+    black: "#130f0b", // black color
     gray: "#F8FAFC",
     muted: "#7B8188", // muted color
-    accent: "#609", // a contrast color for emphasizing UI
+    accent: "#4ca64c", // a contrast color for emphasizing UI
   },
   fonts: {
     body: "Avenir Next",
@@ -58,7 +58,7 @@ export default {
       px: ["15px", null, null, "30px"],
     },
     header: {
-      color: "#02073E",
+      color: "#130f0b",
       fontWeight: "normal",
       py: 3,
     },

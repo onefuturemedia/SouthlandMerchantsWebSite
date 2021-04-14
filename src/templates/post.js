@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 
 const MySinglePostPage = ({ data: { post }, ...props }) => {
   return (

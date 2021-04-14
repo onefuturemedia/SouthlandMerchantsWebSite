@@ -5,7 +5,7 @@ import Swiper from "react-id-swiper";
 
 import BlogCard from "components/blog-card";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 
 const BlogHeader = () => {
   const { allFeedMediumData } = useStaticQuery(graphql`
@@ -76,7 +76,7 @@ const BlogHeader = () => {
 
   const extractImageUrlFromPost = (content) => {
     const imgPattern = /<img([\w\W]+?)\/>/g;
-    const srcPattern = /src=\"([\w\W]+?)\"/g;
+    const srcPattern = /src="([\w\W]+?)"/g;
     const img = content.match(imgPattern);
     const src =
       img && img[0].match(srcPattern)[0].replace('src="', "").replace('"', "");
