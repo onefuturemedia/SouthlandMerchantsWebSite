@@ -3,7 +3,7 @@ import { Box, Container, Grid, Heading, Text, Image } from "theme-ui";
 import { FaAngleRight } from "react-icons/fa";
 import { Link } from "components/link";
 
-import img1 from "assets/cta-2-1.png";
+import img1 from "assets/growers-home.png";
 
 const Growers = () => {
   return (
@@ -13,19 +13,31 @@ const Growers = () => {
           <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">Meet Our Growers!</Heading>
-              <Text as="p">
+              {/* <Text as="p">
                 We offer a risk-free trial period of up to two weeks. You will
                 only have to pay if you are happy with the developer and wish to
                 continue. If you are unsatisfied, we’ll refund payment or fix
                 issues on our dime period customers.
-              </Text>
+              </Text> */}
               <Text as="p" sx={styles.specialText}>
-                If you are happy with the developer and wish to continue. If you
-                are unsatisfied, we’ll refund payment or fix issues.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt.
               </Text>
-              <Link path="/" sx={styles.link}>
-                Learn more <FaAngleRight />
-              </Link>
+              {/* <Link path="/" sx={styles.link}>
+                Know more <FaAngleRight />
+              </Link> */}
+              <Link
+                path="/growers"
+                ml={2}
+                label="Know More"
+                sx={styles.link}
+                variant="buttons.primary"
+              />
             </Box>
           </Box>
           <Box sx={styles.col}>
@@ -52,14 +64,14 @@ const styles = {
   },
   col: {
     img: {
-      maxWidth: ["100%", null, null, "60%", "100%", "none"],
+      maxWidth: ["100%", null, null, "60%", "80%", "80%"],
       mx: [null, null, null, "auto", "0"],
       display: [null, null, null, "block"],
-      mt: [null, null, null, null, "40px", "0"],
+      mt: [null, null, null, null, "40px", "40px"],
     },
   },
   content: {
-    pt: [0, null, null, null, "160px", "210px"],
+    pt: [0, null, null, null, "100px", "100px"],
     mb: [null, null, null, "-40px", "0"],
     position: "relative",
     zIndex: 10,
@@ -94,15 +106,31 @@ const styles = {
     opacity: 0.6,
   },
   link: {
-    color: "primary",
-    fontSize: [1, null, 2],
-    display: "inline-block",
-    verticalAlign: "middle",
+    // color: "primary",
+    // fontSize: [1, null, 2],
+    // display: "inline-block",
+    // verticalAlign: "middle",
+    // fontWeight: "bold",
+    // mt: ["10px", null, null, null, "10px"],
+    // svg: {
+    //   position: "relative",
+    //   top: "3px",
+    // },
+    backgroundColor: "rgba(0,0,0,0)",
+    fontSize: "16px",
     fontWeight: "bold",
-    mt: ["10px", null, null, null, "10px"],
-    svg: {
-      position: "relative",
-      top: "3px",
+    letterSpacing: "-0.16px",
+    borderRadius: "5px",
+    border: "2px solid",
+    borderColor: "primary",
+    color: "primary",
+    padding: "8px 24px",
+    display: ["none", null, null, null, "inline-block"],
+    ml: ["0", null, null, "auto", "30%"],
+    mr: ["0", null, null, "20px", "0"],
+    mt: "3em",
+    "&:hover": {
+      color: "#fff",
     },
   },
 };
