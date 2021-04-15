@@ -87,7 +87,72 @@ const styles = {
   banner: {
     // pt: ["110px", null, null, null, "150px", "200px"],
     // pb: ["50px", null, null, null, "60px", null, "0"],
-    height: "100%", //"800px",
+    "@media screen and (min-height: 300px)": {
+      height: "300px",
+    },
+    "@media screen and (min-height: 350px)": {
+      height: "350px",
+    },
+    "@media screen and (min-height: 400px)": {
+      height: "400px",
+    },
+    "@media screen and (min-height: 450px)": {
+      height: "450px",
+    },
+    "@media screen and (min-height: 500px)": {
+      height: "500px",
+    },
+    "@media screen and (min-height: 550px)": {
+      height: "550px",
+    },
+    "@media screen and (min-height: 600px)": {
+      height: "600px",
+    },
+    "@media screen and (min-height: 640px)": {
+      height: "640px",
+    },
+    "@media screen and (min-height: 700px)": {
+      height: "700px",
+    },
+    "@media screen and (min-height: 730px)": {
+      height: "730px",
+    },
+    "@media screen and (min-height: 810px)": {
+      height: "810px",
+    },
+    "@media screen and (min-height: 860px)": {
+      height: "860px",
+    },
+    "@media screen and (min-height: 900px)": {
+      height: "900px",
+    },
+    "@media screen and (min-height: 950px)": {
+      height: "950px",
+    },
+    "@media screen and (min-height: 1024px)": {
+      height: "1024px",
+    },
+    "@media screen and (min-height: 1048px)": {
+      height: "1048px",
+    },
+    "@media screen and (min-height: 1100px)": {
+      height: "1100px",
+    },
+    "@media screen and (min-height: 1150px)": {
+      height: "1150px",
+    },
+    "@media screen and (min-height: 1200px)": {
+      height: "1200px",
+    },
+    "@media screen and (min-height: 1250px)": {
+      height: "1250px",
+    },
+    "@media screen and (min-height: 1300px)": {
+      height: "1300px",
+    },
+    "@media screen and (min-height: 1360px)": {
+      height: "1360px",
+    },
     backgroundColor: "#F6F8FB",
     overflow: "hidden",
   },

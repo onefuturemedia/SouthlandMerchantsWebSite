@@ -60,8 +60,7 @@ export default AboutUs;
 
 const styles = {
   aboutUs: {
-    // pt: ["70px", null, null, "80px", "120px", "130px", "130px"],
-    pt: "930px",
+    pt: "5em",
   },
   row: {
     display: "flex",
