@@ -7,14 +7,14 @@ const BlogCard = (props) => {
   return (
     <Box sx={styles.fevCard}>
       <Box className="image" sx={styles.image}>
-        <Image src={props.image} alt="" />
+        <Image src={props.image} alt="props.title" />
       </Box>
       <Box sx={styles.content}>
         <Heading as="h3">
-          <Link path={`/${slugify(props.title, "-")}`}>{props.title}</Link>
+          <Link alt={props.title} path={`/${slugify(props.title, "-")}`}>{props.title}</Link>
         </Heading>
         <Text as="p">
-          <Link path={`/${slugify(props.title, "-")}`}>{props.title}</Link>
+          <Link path={`/${slugify(props.title, "-")}`}>{props.contentSnippet.substring(0,120) + "..."}</Link>
           {/* <Image src={CommentIcon} alt="" /> */}
           {/* {props.contentSnipped} */}
         </Text>
@@ -37,13 +37,13 @@ const styles = {
     overflow: "hidden",
     borderTopLeftRadius: ["5px"],
     borderTopRightRadius: ["5px"],
+    height:"210px",
     img: {
       display: "block",
       width: "100%",
     },
   },
   content: {
-    backgroundColor: "#fff",
     paddingLeft: [20, null, null, "30px"],
     paddingRight: [20, null, null, "30px"],
     paddingTop: ["15px", null, null, "25px"],
@@ -66,7 +66,7 @@ const styles = {
     p: {
       display: "flex",
       alignItems: "center",
-      fontSize: [1, null, 2],
+      fontSize: [1, null, 1],
       lineHeight: [2],
       color: "text",
       opacity: 0.8,

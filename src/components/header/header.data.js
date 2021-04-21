@@ -4,7 +4,7 @@ export default [
     label: "ABOUT US",
   },
   {
-    path: "growers",
+    path: "our-growers",
     label: "OUR GROWERS",
   },
   // {

@@ -4,7 +4,7 @@ export default {
   // paleta pesquisada
   // marrom escuro  #4e3d2f
   // marrom claro #ede0d6
-  // verde escuro #
+  // verde da logo #
   // verde claro #
   // branco #
 
@@ -15,12 +15,14 @@ export default {
     heading: "#271e17", // primary heading color
     heading_secondary: "#130f0b", // heading color
     background: "#ede0d6", // body background color
-    background_secondary: "#ede0d6", // secondary background color
+    background_secondary: "#B2957F", // secondary background color
     border_color: "#ede0d6", // border color
     primary: "#4e3d2f", // primary button and link color
     secondary: "#3b2e23", // secondary color - can be used for hover states
     black: "#130f0b", // black color
     gray: "#F8FAFC",
+    logo_green: "#8a966e",
+    logo_green_dark: "#525A42",
     muted: "#7B8188", // muted color
     accent: "#4ca64c", // a contrast color for emphasizing UI
   },

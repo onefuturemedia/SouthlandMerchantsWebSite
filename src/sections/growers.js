@@ -3,7 +3,7 @@ import { Box, Container, Grid, Heading, Text, Image } from "theme-ui";
 import { FaAngleRight } from "react-icons/fa";
 import { Link } from "components/link";
 
-import img1 from "assets/growers-home.png";
+import img1 from "assets/growers-home.jpg";
 
 const Growers = () => {
   return (
@@ -53,9 +53,12 @@ export default Growers;
 
 const styles = {
   growers: {
+		background: 'linear-gradient(190deg, #B2957F 0%, #ede0d6 40%)',
+		// background: 'linear-gradient(190deg, white 0%, #B2957F 30%)',
+		// background: '#B2957F',
     overflow: "hidden",
     pt: ["75px", null, null, null, "0", "80px"],
-    pb: ["75px", null, null, null, null, "120px", "210px"],
+    pb: ["75px", null, null, null, null, null, null],
   },
   row: {
     display: "grid",
@@ -64,14 +67,14 @@ const styles = {
   },
   col: {
     img: {
-      maxWidth: ["100%", null, null, "60%", "80%", "80%"],
+      maxWidth: ["100%", null, null, "60%", "100%", "100%"],
       mx: [null, null, null, "auto", "0"],
       display: [null, null, null, "block"],
       mt: [null, null, null, null, "40px", "40px"],
     },
   },
   content: {
-    pt: [0, null, null, null, "100px", "100px"],
+    pt: [0, null, null, null, "30px", "30px"],
     mb: [null, null, null, "-40px", "0"],
     position: "relative",
     zIndex: 10,
@@ -125,7 +128,7 @@ const styles = {
     borderColor: "primary",
     color: "primary",
     padding: "8px 24px",
-    display: ["none", null, null, null, "inline-block"],
+    display: ["inline-block", "inline-block", "inline-block", "inline-block", "inline-block"],
     ml: ["0", null, null, "auto", "30%"],
     mr: ["0", null, null, "20px", "0"],
     mt: "3em",

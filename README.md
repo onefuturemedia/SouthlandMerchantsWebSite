@@ -1,40 +1,54 @@
-#TODOs
+# TODOs
 
 - Improve SEO element
 - Adicionar analytics
 
-##Banner
+## Banner
 
+- ver se menudrawer precisa mudar
 - placeholder sendo uma imagem igual ao inicio do video.
 - Teste final de responsividade.
 
-##About us
+
+## About us
 
 - Ajustes de layout responsivo.
+- Ao clicar no filtro, está ido mas a image está ficando cortada.
 
-##Growers
+## Growers
 
-- fazer primeiro layout conforme o que o bacon mandou
+- [ok] fazer primeiro layout conforme o que o bacon mandou
 - colocar alt na imagem
 
-##Página dos growers
+
+## Página dos growers
+
+- Fazer primeiro layout conforme o que o bacon mandou: mapas do site antigo, aí se passar o mouse aparece as informações da região
+
+## Testimonal clientes
+
+- [ok] Fazer primeiro layout
+- responsividade
+
+## Testimonials produtores
+
+- [ok] Fazer primeiro layout 
+- responsividade
+- pedir imagem dos growers pra bacon
+
+## Blog
+
+- Fazer primeiro layout conforme o que o bacon mandou
+- Fazer parecido com o medium
+
+## Pagina do blog
 
 - Fazer primeiro layout conforme o que o bacon mandou
 
-##Testimonal clientes
+## Footer
 
-- Fazer primeiro layout conforme o que o bacon mandou
+- Fazer conforme layout do bacon
 
-##Testimonials produtores
+## Contact Us
 
-- Fazer primeiro layout conforme o que o bacon mandou
-
-##Blog
-
-- Fazer primeiro layout conforme o que o bacon mandou
-
-##Pagina do blog
-
-- Fazer primeiro layout conforme o que o bacon mandou
-
-##Footer
+- Fazer a tela

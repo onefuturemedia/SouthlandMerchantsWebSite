@@ -22,19 +22,19 @@ import BlogHeader from "sections/blog-header";
 export default function IndexPage() {
   return (
     <StickyProvider>
-      <Layout>
+      <Layout isHome={true}>
         <SEO title="Southland Merchants" />
         <Banner />
-        {/* <Services /> */}
         <AboutUs />
+        <ClientTestimonials />
+        <Growers />
+        <ProductorTestimonials />
+        <BlogHeader />
+        {/* <Services /> */}
         {/* <BoostAgencies /> */}
         {/* <VideoOne /> */}
-        <ClientTestimonials />
-        <ProductorTestimonials />
         {/* <CustomerSupport /> */}
-        <Growers />
         {/* <Feature /> */}
-        <BlogHeader />
         {/* <CallToAction /> */}
       </Layout>
     </StickyProvider>
