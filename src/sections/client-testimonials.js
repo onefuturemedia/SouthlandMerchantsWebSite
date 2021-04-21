@@ -127,7 +127,7 @@ export default Testimonials;
 
 const styles = {
   testimonials: {
-		background: 'linear-gradient(170deg, #ede0d6 30%, #ede0d6 60%, #B2957F 95%)',
+		background: 'linear-gradient(160deg, #ede0d6 30%, #ede0d6 60%, #B2957F 100%)',
 		// background: 'linear-gradient(#ede0d6 90%, #B2957F 100%)',
     pt: ["65px", null, null, null, null, "80px", "80px"],
     pb: ["65px", null, null, null, null, "80px", "80px"],

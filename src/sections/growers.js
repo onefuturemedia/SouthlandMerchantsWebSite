@@ -53,7 +53,7 @@ export default Growers;
 
 const styles = {
   growers: {
-		background: 'linear-gradient(190deg, #B2957F 0%, #ede0d6 40%)',
+		background: 'linear-gradient(200deg, #B2957F 0%, #ede0d6 40%)',
 		// background: 'linear-gradient(190deg, white 0%, #B2957F 30%)',
 		// background: '#B2957F',
     overflow: "hidden",
