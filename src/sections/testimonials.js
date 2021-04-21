@@ -153,7 +153,7 @@ const styles = {
         paddingBottom: ["0", null, null, null, null, "15px"],
         minHeight: ["auto", null, null, null, null, "50px"],
         "&.swiper-slide-thumb-active": {
-          borderColor: "#8a966e",
+          borderColor: "logo_green",
         },
       },
       img: {

@@ -85,7 +85,7 @@ const Testimonials = () => {
     <Box as="section" id="testimonials" sx={styles.testimonials}>
       <Container>
         <BlockTitle
-          slogan="Customer Comments"
+          // slogan="Customer Comments"
           title="Why customers love us"
           styles={styles.blockTitle}
         />
@@ -97,7 +97,7 @@ const Testimonials = () => {
           {TESTIMONIALS_DATA.map((testimonialText, index) => (
             <SwiperSlide key={`testimonial-content-${index}`}>
               <Text sx={styles.testimonialsContent} as="p">
-                {testimonialText.content}
+                "{testimonialText.content}"
               </Text>
             </SwiperSlide>
           ))}
@@ -127,7 +127,10 @@ export default Testimonials;
 
 const styles = {
   testimonials: {
-    pt: ["65px", null, null, null, null, "80px", "170px"],
+		background: 'linear-gradient(160deg, #ede0d6 60%, #B2957F 100%)',
+		// background: 'linear-gradient(#ede0d6 90%, #B2957F 100%)',
+    pt: ["65px", null, null, null, null, "80px", "80px"],
+    pb: ["65px", null, null, null, null, "80px", "80px"],
     ".blockTitle": {
       textAlign: "center",
       marginBottom: ["25px", null, null, null, null, "50px"],
@@ -153,7 +156,7 @@ const styles = {
         paddingBottom: ["0", null, null, null, null, "15px"],
         minHeight: ["auto", null, null, null, null, "50px"],
         "&.swiper-slide-thumb-active": {
-          borderColor: "#8a966e",
+          borderColor: "logo_green",
         },
       },
       img: {
@@ -193,7 +196,7 @@ const styles = {
   },
   testimonialsContent: {
     margin: 0,
-    fontSize: [2, null, 3, null, 4, "32px", 7],
+    fontSize: [2, null, 3, null, 4, 4,4],
     color: "black",
     lineHeight: [2.3, null, 1.8],
     textAlign: "center",
@@ -202,6 +205,10 @@ const styles = {
     marginLeft: "auto",
     marginRight: "auto",
     maxWidth: "820px",
-    marginTop: ["0", null, null, null, null, "-15px"],
+    marginTop: ["0", null, null, null, null, null],
+    fontStyle:"italic"
   },
+  blockTitle:{
+    // fontSize: [5, null, null, '21px', '36px', '32px', 3],
+  }
 };
