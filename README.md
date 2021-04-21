@@ -52,3 +52,6 @@
 ## Contact Us
 
 - Fazer a tela
+
+
+- adicionar transitions nas imagens

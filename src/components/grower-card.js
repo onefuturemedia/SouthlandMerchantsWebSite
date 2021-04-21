@@ -24,7 +24,7 @@ const GrowerCard = ({ grower }) => {
 };
 
 export default GrowerCard;
-
+	
 const styles = {
 	growerImg: {
 		width: '80%'

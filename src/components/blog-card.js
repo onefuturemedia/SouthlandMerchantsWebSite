@@ -13,7 +13,8 @@ const BlogCard = props => {
 				</Box>
 				<Box sx={styles.content}>
 					<Heading as="h3">{props.title}</Heading>
-					<Text as="p">{props.contentSnippet.substring(0, 120) + '...'}</Text>
+					<Text as="p">{props.contentSnippet}</Text>
+					{/* <Text as="p">{props.contentSnippet.substring(0, 120) + '...'}</Text> */}
 				</Box>
 			</Link>
 		</Box>
@@ -46,6 +47,7 @@ const styles = {
 		paddingTop: ['15px', null, null, '25px'],
 		borderBottomLeftRadius: ['5px'],
 		borderBottomRightRadius: ['5px'],
+		minHeight:"155px",
 		pb: ['10px', null, null, null, '30px'],
 		border: '3px solid black',
 		borderTop: '0',
@@ -53,6 +55,7 @@ const styles = {
 			fontWeight: 'bold',
 			fontSize: ['18px', null, '17px', 3, 3],
 			lineHeight: [1.8],
+			textAlign:"center",
 			a: {
 				transition: '500ms',
 				'&:hover': {
@@ -63,6 +66,7 @@ const styles = {
 		p: {
 			display: 'flex',
 			alignItems: 'center',
+			textAlign:"center",
 			fontSize: [1, null, 2],
 			lineHeight: ['1.3em'],
 			color: 'text',
