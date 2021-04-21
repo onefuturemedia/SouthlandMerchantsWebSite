@@ -96,7 +96,7 @@ const styles = {
       mb: ["30px", null, null, null, "30px"],
     },
     p: {
-      fontSize: [0, null, 2, null, "17px"],
+      fontSize: [0, null, 2, null, 4],
       color: "text",
       lineHeight: ["26px", null, null, 1.8, null, 2.06],
       "+p": {

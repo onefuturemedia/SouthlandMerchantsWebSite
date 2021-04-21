@@ -116,7 +116,8 @@ export default BlogHeader;
 
 const styles = {
 	blockTitle: {
-		textAlign: 'center'
+		textAlign: 'center',
+		h2: { fontSize: [5, null, null, '21px', '36px', '32px', 8] }
 	},
 	features: {
 		background: 'linear-gradient(150deg, #B2957F 0%, #ede0d6 40%)',

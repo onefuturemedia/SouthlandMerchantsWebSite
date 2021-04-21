@@ -4,7 +4,7 @@ export default {
   // paleta pesquisada
   // marrom escuro  #4e3d2f
   // marrom claro #ede0d6
-  // verde da logo #
+  // verde da logo #8a966e
   // verde claro #
   // branco #
 

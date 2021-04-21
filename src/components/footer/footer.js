@@ -1,9 +1,11 @@
 /** @jsx jsx */
-import { jsx, Box, Text, Container, Grid } from 'theme-ui';
+import { jsx, Box, Text, Container, Grid, Image } from 'theme-ui';
 import { Link } from 'components/link';
 import { Link as ScrollLink } from 'react-scroll';
-import Logo from 'components/logo';
+import icon from 'assets/logo-icon.png';
 import menuItems from '../header/header.data';
+import { FaInstagram, FaFacebookSquare, FaMedium } from 'react-icons/fa';
+import { RiMailLine } from 'react-icons/ri';
 
 export default function Footer() {
 	return (
@@ -16,38 +18,47 @@ export default function Footer() {
 				sx={{
 					variant: 'layout.toolbar',
 					justifyContent: ['center', null, null, 'space-between'],
-					flexDirection: ['column', null, null, null, 'row'],
-					paddingTop: [30, 40],
-					paddingBottom: [30, 65]
+					flexDirection: ['column', null, null, null, 'column'],
+					paddingTop: [0],
+					paddingBottom: [0]
 				}}
 			>
-				<Box sx={styles.left}>
-					{/* <Logo /> */}
-					<Grid sx={{ gridGap: '0.1em' }}>
-						<Text as="p">Phone: +61 (0) 409 007 565</Text>
-						<Text as="p">E-mail:info@southlandmerchants.com.au</Text>
-						<Text as="p">Adelaide SA Australia</Text>
-					</Grid>
-				</Box>
-				<Box sx={styles.right}></Box>
-				{/* <Box sx={styles.right}>
-					{menuItems.map(({ path, label }, i) => (
-						<ScrollLink
-							activeClass="active"
-							sx={styles.right.navLink}
-							to={path}
-							spy={true}
-							smooth={true}
-							offset={10}
-							duration={500}
-							key={i}
-						>
-							{label}
-						</ScrollLink>
-					))}
-				</Box> */}
-
-				<Text as="p">
+				<Container
+					sx={{
+						variant: 'layout.toolbar',
+						justifyContent: ['center', null, null, 'space-between'],
+						flexDirection: ['row', null, null, null, 'row'],
+						py: [10, 20]
+					}}
+				>
+					<Box sx={styles.left}>
+						<Link path="/">
+							<Image src={icon} alt="southland merchants logo" sx={styles.logo} />
+						</Link>
+					</Box>
+					<Box sx={styles.middle}>
+						<Grid sx={{ gridGap: '0.1em' }}>
+							<Text as="p">Phone: +61 (0) 409 007 565</Text>
+							<Text as="p">E-mail:info@southlandmerchants.com.au</Text>
+							<Text as="p">Adelaide SA Australia</Text>
+						</Grid>
+					</Box>
+					<Box sx={styles.right}>
+						<a href="mailto:info@southlandmerchants.com.au">
+							<RiMailLine />
+						</a>
+						<a href="https://www.instagram.com/southlandmerchants/">
+							<FaInstagram />
+						</a>
+						<a href="https://www.facebook.com/southlandmerchants/">
+							<FaFacebookSquare />
+						</a>
+						<a href="https://medium.com/southlandmerchants">
+							<FaMedium />
+						</a>
+					</Box>
+				</Container>
+				<Text as="p" sx={{ fontSize: [1], color:"black" }}>
 					&copy; {new Date().getFullYear()} All right reserved - Design & Developed by On Future Media.
 				</Text>
 			</Container>
@@ -67,9 +78,21 @@ const styles = {
 			mt: ['10px', null, '0']
 		}
 	},
+	middle: {
+		display: 'flex',
+		flexDirection: ['column', null, 'row'],
+		alignItems: 'center',
+		p: {
+			fontSize: [0, 1],
+			color: 'black',
+			opacity: 1,
+			fontWeight:500,
+			mt: ['10px', null, '0']
+		}
+	},
 	right: {
 		display: ['none', null, null, null, 'flex'],
-		fontSize: 2,
+		fontSize: 6,
 		alignItems: 'center',
 		color: 'black',
 		a: {
@@ -79,7 +102,7 @@ const styles = {
 			}
 		},
 		'a+a': {
-			marginLeft: '30px'
+			marginLeft: '10px'
 		},
 		navLink: {
 			fontSize: '13px',
@@ -94,5 +117,8 @@ const styles = {
 				color: 'primary'
 			}
 		}
+	},
+	logo: {
+		width: '90px'
 	}
 };

@@ -111,7 +111,7 @@ const styles = {
 			letterSpacing: ['-0.5px', null, null, null, null, null, '-1.5px']
 		},
 		p: {
-			fontSize: [0, null, 2, null, '17px'],
+			fontSize: [0, null, 2, null, 4],
 			color: 'text_secondary',
 			opacity: '.6',
 			lineHeight: ['26px', null, null, 1.8, null, 2.06],

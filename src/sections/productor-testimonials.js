@@ -79,7 +79,7 @@ const Testimonials = () => {
 					{TESTIMONIALS_DATA.map((testimonialText, index) => (
 						<SwiperSlide key={`testimonial-content-${index}`}>
 							<Text sx={styles.testimonialsContent} as="p">
-								{testimonialText.content}
+								"{testimonialText.content}"
 							</Text>
 						</SwiperSlide>
 					))}
@@ -162,15 +162,16 @@ const styles = {
 	},
 	testimonialsContent: {
 		margin: 0,
-		fontSize: [2, null, 3, null, 4, '32px', 6],
-		color: 'black',
+		fontSize: [2, null, 3, null, 4, 4,4],
+		color: "black",
 		lineHeight: [2.3, null, 1.8],
-		textAlign: 'center',
-		fontFamily: 'special',
-		width: '100%',
-		marginLeft: 'auto',
-		marginRight: 'auto',
-		maxWidth: '820px',
-		marginTop: ['0', null, null, null, null, '-15px']
+		textAlign: "center",
+		fontFamily: "special",
+		width: "100%",
+		marginLeft: "auto",
+		marginRight: "auto",
+		maxWidth: "820px",
+		marginTop: ["0", null, null, null, null, null],
+		fontStyle:"italic"
 	}
 };
