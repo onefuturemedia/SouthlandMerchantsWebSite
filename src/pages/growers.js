@@ -25,7 +25,8 @@ import cerradoImg from '../assets/cerrado.png';
 import chapadaImg from '../assets/chapada.png';
 import mataImg from '../assets/mata.png';
 import mogianaImg from '../assets/mogiana.png';
-import foundersImg from '../assets/founders.png';
+// import foundersImg from '../assets/founders.png';
+import foundersImg from '../assets/grower-example.jpg';
 import { Container, Text, Heading } from 'theme-ui';
 
 const data = [
@@ -33,7 +34,7 @@ const data = [
 		name: 'Cerrado Mineiro',
 		tag: 'cerrado-mineiro',
 		img: cerradoImg,
-		imgPosAlt: true,
+		imgPosAlt: false,
 		text:
 			'This region is characterized by high plateaus that alternate with valleys, crossed by rivers. Most of the coffees from Chapada de Minas are natural processed, but the washed coffee production technique is constantly increasing the popularity.',
 		growers: [
@@ -67,7 +68,7 @@ const data = [
 		name: 'The Mountains of Espirito Santo',
 		tag: 'espirito-santo',
 		img: mogianaImg,
-		imgPosAlt: false,
+		imgPosAlt: true,
 		text:
 			'Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.',
 		growers: [
@@ -119,7 +120,7 @@ const data = [
 		name: 'Campos das Vertentes',
 		tag: 'campos-das-vertentes',
 		img: camposDasVertentesImg,
-		imgPosAlt: true,
+		imgPosAlt: false,
 		text:
 			'This is the heart of coffee production in Brazil. The climate here is mild with a constant rainfalls and stable weather, providing ideal conditions for year-round. production of beans. Processing methods are pulped natural, washed and natural. The coffees of this area stand out due to their fruity aroma and low acidity.',
 		growers: [
@@ -138,10 +139,32 @@ const data = [
 		]
 	},
 	{
+		name: 'Mata de Minas',
+		tag: 'mata-de-minas',
+		img: mataImg,
+		imgPosAlt: true,
+		text:
+			'Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.',
+		growers: [
+			{
+				name: 'Ednilson/Walter',
+				description: 'Dutra Farm',
+				img: foundersImg,
+				documentPath: '/'
+			},
+			{
+				name: 'Quezia Tavares',
+				description: 'Taquara Farm',
+				img: foundersImg,
+				documentPath: '/'
+			}
+		]
+	},
+	{
 		name: 'Mantiqueira de Minas',
 		tag: 'mantiqueira-de-minas',
 		img: cerradoImg,
-		imgPosAlt: true,
+		imgPosAlt: false,
 		text:
 			'This region comprises plateaus with highland tropical climate, characterized by rainy summers and dry winters, ideal for cropping with an annual medium temperature of 19 ºC. Altitudes vary between 800 and 1,300 meters and this area has a reputation of consistently producing high-quality coffees with a unique identity.',
 		growers: [
@@ -199,7 +222,7 @@ const data = [
 		name: 'Chapada de Minas',
 		tag: 'chapada-de-minas',
 		img: mataImg,
-		imgPosAlt: false,
+		imgPosAlt: true,
 		text:
 			'This region has rough terrains with a warm and humid climate ideal for the production of some of the highly internationally acclaimed Brazilian Coffees. Coffees from Matas de Minas have a delicate and balanced acidity and have a medium to full body. Processing methods are pulped natural and natural.',
 		growers: [
@@ -215,35 +238,13 @@ const data = [
 		name: 'Mogiana',
 		tag: 'mogiana',
 		img: mogianaImg,
-		imgPosAlt: true,
+		imgPosAlt: false,
 		text:
 			'Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.',
 		growers: [
 			{
 				name: 'Andre Aguila',
 				description: 'Aterradinho Farm',
-				img: foundersImg,
-				documentPath: '/'
-			}
-		]
-	},
-	{
-		name: 'Mata de Minas',
-		tag: 'mata-de-minas',
-		img: mataImg,
-		imgPosAlt: false,
-		text:
-			'Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.',
-		growers: [
-			{
-				name: 'Ednilson/Walter',
-				description: 'Dutra Farm',
-				img: foundersImg,
-				documentPath: '/'
-			},
-			{
-				name: 'Quezia Tavares',
-				description: 'Taquara Farm',
 				img: foundersImg,
 				documentPath: '/'
 			}
@@ -276,10 +277,11 @@ export default function GrowersPage() {
 
 const styles = {
 	container: {
-		mt: '15%',
+		mt: ['200px'],
 		mb: '5%',
 		h3: {
-			fontSize: [5, null, '21px', null, 7, '32px', 7],
+			fontSize: [6, 7, 7, 7, 7, 8, 8],
+			textAlign: 'center',
 			maxWidth: [null, null, null, '400px', 'none'],
 			mx: [null, null, null, 'auto', '0'],
 			color: 'text_secondary',
@@ -287,6 +289,11 @@ const styles = {
 			letterSpacing: ['-0.5px', null, null, null, null, null, '-1.5px'],
 			lineHeight: [1.5, null, 1.25],
 			mb: ['30px', null, null, null, '30px']
+		},
+		p: {
+			fontSize: [2, 2, 3, 3, 4, 5, 5],
+			fontStyle: 'italic',
+			mb: ['80px', '80px', '100px', 3, 4, 5, 5],
 		}
 	}
 };

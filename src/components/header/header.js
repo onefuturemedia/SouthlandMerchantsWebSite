@@ -1,8 +1,9 @@
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
+import { jsx, Container, Flex, Image } from 'theme-ui';
 import { Link } from 'components/link';
 import { Link as ScrollLink } from 'react-scroll';
 import Logo from 'components/logo';
+import icon from 'assets/logo-icon.png';
 
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
@@ -12,10 +13,9 @@ export default function Header({ isHome, className }) {
 	return (
 		<DrawerProvider>
 			<header sx={styles.header} className={className}>
-				<Container sx={styles.container}>
-					<Logo />
-
-					{isHome && (
+				{isHome && (
+					<Container sx={styles.container}>
+						<Logo />
 						<Flex as="nav" sx={styles.nav}>
 							{menuItems.map(({ path, label }, i) => (
 								<ScrollLink
@@ -32,13 +32,24 @@ export default function Header({ isHome, className }) {
 								</ScrollLink>
 							))}
 						</Flex>
-					)}
-					{isHome && (
-						<Link path="/contact" ml={2} label="Contact Us" sx={styles.headerBtn} variant="buttons.primary" />
-					)}
+						<Link
+							path="/contact"
+							ml={2}
+							label="Contact Us"
+							sx={styles.headerBtn}
+							variant="buttons.primary"
+						/>
 
-					<MobileDrawer />
-				</Container>
+						<MobileDrawer />
+					</Container>
+				)}
+				{!isHome && (
+					<Container sx={styles.containerOther}>
+						<Link path="/">
+							<Image src={icon} alt="southland merchants logo" sx={styles.logo} />
+						</Link>
+					</Container>
+				)}
 			</header>
 		</DrawerProvider>
 	);
@@ -86,7 +97,17 @@ const styles = {
 		width: [null, null, null, null, null, null, '1390px'],
 		'@media screen and (max-width: 960px)': {
 			justifyContent: 'space-between'
-		}
+		},
+		justifyContent: 'center'
+	},
+	containerOther: {
+		display: 'flex',
+		alignItems: 'center',
+		width: [null, null, null, null, null, null, '1390px'],
+		'@media screen and (max-width: 960px)': {
+			justifyContent: 'space-between'
+		},
+		justifyContent: 'center'
 	},
 	nav: {
 		mx: 'auto',
@@ -109,5 +130,11 @@ const styles = {
 				color: 'primary'
 			}
 		}
+	},
+	logo:{
+		// width:["60px", "100px"],
+		width:["15%"],
+		// mt:["10px"],
+		ml:["42%"],
 	}
 };

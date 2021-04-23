@@ -32,19 +32,19 @@ export default function Footer() {
 					}}
 				>
 					<Box sx={styles.left}>
+						<Grid sx={{ gridGap: '0.1em' }}>
+							<Text as="p">Phone: +61 (0) 409 007 565</Text>
+							<Text as="p">E-mail: info@southlandmerchants.com.au</Text>
+							<Text as="p">Adelaide SA, Australia</Text>
+						</Grid>
+					</Box>
+					<Box sx={styles.middle}>
 						<Link path="/">
 							<Image src={icon} alt="southland merchants logo" sx={styles.logo} />
 						</Link>
 					</Box>
-					<Box sx={styles.middle}>
-						<Grid sx={{ gridGap: '0.1em' }}>
-							<Text as="p">Phone: +61 (0) 409 007 565</Text>
-							<Text as="p">E-mail:info@southlandmerchants.com.au</Text>
-							<Text as="p">Adelaide SA Australia</Text>
-						</Grid>
-					</Box>
 					<Box sx={styles.right}>
-						<a href="mailto:info@southlandmerchants.com.au">
+						<a href="/contact">
 							<RiMailLine />
 						</a>
 						<a href="https://www.instagram.com/southlandmerchants/">
@@ -58,7 +58,7 @@ export default function Footer() {
 						</a>
 					</Box>
 				</Container>
-				<Text as="p" sx={{ fontSize: [1], color:"black" }}>
+				<Text as="p" sx={styles.footerFooter}>
 					&copy; {new Date().getFullYear()} All right reserved - Design & Developed by On Future Media.
 				</Text>
 			</Container>
@@ -68,7 +68,7 @@ export default function Footer() {
 
 const styles = {
 	left: {
-		display: 'flex',
+		display: ['none', 'none', 'flex', null, null, null, 'flex'],
 		flexDirection: ['column', null, 'row'],
 		alignItems: 'center',
 		p: {
@@ -79,19 +79,20 @@ const styles = {
 		}
 	},
 	middle: {
-		display: 'flex',
+		display: [null, null, null, null, 'flex'],
 		flexDirection: ['column', null, 'row'],
 		alignItems: 'center',
 		p: {
 			fontSize: [0, 1],
+			lineHeight: ['1em', '1.2em'],
 			color: 'black',
 			opacity: 1,
-			fontWeight:500,
+			fontWeight: 500,
 			mt: ['10px', null, '0']
 		}
 	},
 	right: {
-		display: ['none', null, null, null, 'flex'],
+		display: [null, null, null, null, 'flex'],
 		fontSize: 6,
 		alignItems: 'center',
 		color: 'black',
@@ -99,7 +100,8 @@ const styles = {
 			transition: '500ms',
 			'&:hover': {
 				color: 'primary'
-			}
+			},
+			svg: { width: ['0.8em', '1em','1em', '1em', '1em', '1em', '1em', '1em', '1em', '1em'] }
 		},
 		'a+a': {
 			marginLeft: '10px'
@@ -119,6 +121,12 @@ const styles = {
 		}
 	},
 	logo: {
-		width: '90px'
+		width: ['50px', '50px', '90px'],
+		mr: ['80px', '100px', '90px'],
+		mt: ['15px', '5px', null, null, null, null, null]
+	},
+	footerFooter: {
+		fontSize: ['10px', '10px', 1],
+		color: 'black'
 	}
 };

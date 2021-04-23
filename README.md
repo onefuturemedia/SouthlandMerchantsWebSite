@@ -13,7 +13,7 @@
 ## About us
 
 - Ajustes de layout responsivo.
-- Ao clicar no filtro, está ido mas a image está ficando cortada.
+- [ok] Ao clicar no filtro, está ido mas a image está ficando cortada.
 
 ## Growers
 
@@ -38,20 +38,20 @@
 
 ## Blog
 
-- Fazer primeiro layout conforme o que o bacon mandou
-- Fazer parecido com o medium
+- [ok] Fazer primeiro layout conforme o que o bacon mandou
+- [ok] Fazer parecido com o medium
 
 ## Pagina do blog
 
-- Fazer primeiro layout conforme o que o bacon mandou
+- [ok] Fazer primeiro layout conforme o que o bacon mandou
 
 ## Footer
 
-- Fazer conforme layout do bacon
+- [ok]~Fazer conforme layout do bacon
 
 ## Contact Us
 
-- Fazer a tela
+- [ok] Fazer a tela
 
 
 - adicionar transitions nas imagens
