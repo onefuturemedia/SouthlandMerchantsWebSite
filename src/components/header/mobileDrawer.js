@@ -43,7 +43,7 @@ const MobileDrawer = () => {
                 to={path}
                 spy={true}
                 smooth={true}
-                offset={10}
+                offset={-10}
                 duration={500}
                 key={i}
               >
@@ -54,7 +54,7 @@ const MobileDrawer = () => {
 
           <Box sx={styles.menuFooter}>
             <Button variant="primary" sx={styles.button}>
-              Register Now
+              CONTACT US
             </Button>
           </Box>
         </Box>

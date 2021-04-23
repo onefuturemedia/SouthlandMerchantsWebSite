@@ -24,7 +24,7 @@ const GrowerCard = ({ grower }) => {
 };
 
 export default GrowerCard;
-
+	
 const styles = {
 	growerImg: {
 		width: '80%'
@@ -32,9 +32,11 @@ const styles = {
 	growerCard: {
 		overflow: 'hidden',
 		width: ['120px'],
+		height: ['230px'],
 		mr: ['0.5%'],
 		mb: ['2%'],
-		pt: ['75px', null, null, null, '0', '20px'],
+		// pt: ['75px', null, null, null, '0', '20px'],
+		pt: ['5px'],
 		// pb: ['75px', null, null, null, null, '20px', '20px'],
 		flexWrap: 'wrap',
 		borderRadius: '0.4em',

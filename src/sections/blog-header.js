@@ -83,6 +83,13 @@ const BlogHeader = () => {
 		return src || '';
 	};
 
+	const extractSubtitleFromPost = content => {
+		const subtitlePattern = /<h4([\w\W]+?)\/h4>/g;
+		const subtitle = content.match(subtitlePattern)[0].replace('<h4>', '').replace('</h4>', '').replace('"', '')
+
+		return subtitle || '';
+	};
+
 	return (
 		<Box as="section" sx={styles.features} id="blog">
 			<Container>
@@ -94,7 +101,7 @@ const BlogHeader = () => {
 							<BlogCard
 								image={extractImageUrlFromPost(data.content.encoded)}
 								title={data.title}
-								contentSnippet={data.content.encodedSnippet}
+								contentSnippet={extractSubtitleFromPost(data.content.encoded)}
 							/>
 						</div>
 					))}

@@ -9,9 +9,23 @@ import GrowerCard from 'components/grower-card';
 const GrowersRegion = ({ region }) => {
 	//   console.log(region.growers)
 	return (
-		<Box as="section" sx={styles.growers} id="our-growers">
+		<Box
+			as="section"
+			sx={{
+				overflow: 'hidden',
+				pt: [null, null, null, null, null, null],
+				pb: [null, null, null, null, null, null, null]
+			}}
+			id="our-growers"
+		>
 			<Container>
 				<Grid sx={region.imgPosAlt ? styles.row : styles.reverseRow}>
+					<Box sx={styles.imgCol}>
+						<Image src={region.img} alt={region.tag} />
+						<Text as="p" sx={styles.imgCol.specialText}>
+							{region.text}
+						</Text>
+					</Box>
 					<Box sx={styles.col}>
 						<Box sx={styles.content}>
 							<Heading as="h3">{region.name}</Heading>
@@ -22,12 +36,6 @@ const GrowersRegion = ({ region }) => {
 							</Flex>
 						</Box>
 					</Box>
-					<Box sx={styles.imgCol}>
-						<Image src={region.img} alt={region.tag} />
-						<Text as="p" sx={styles.imgCol.specialText}>
-							{region.text}
-						</Text>
-					</Box>
 				</Grid>
 			</Container>
 		</Box>
@@ -37,11 +45,12 @@ const GrowersRegion = ({ region }) => {
 export default GrowersRegion;
 
 const styles = {
-	growers: {
-		overflow: 'hidden',
-		pt: [null, null, null, null, null, null],
-		pb: [null, null, null, null, null, null, null]
-	},
+	// growers: {
+	// 	background: region.imgPosAlt ? 'linear-gradient(90deg, #B2957F 0%, #ede0d6 90%)':'linear-gradient(270deg, #B2957F 0%, #ede0d6 90%)',
+	// 	overflow: 'hidden',
+	// 	pt: [null, null, null, null, null, null],
+	// 	pb: [null, null, null, null, null, null, null]
+	// },
 	row: {
 		display: 'grid',
 		gridGap: [0, null, null, null, '25px', null, '55px'],
@@ -57,10 +66,11 @@ const styles = {
 		img: {
 			maxWidth: ['100%', null, null, '60%', '100%', '100%'],
 			mx: ['auto', 'auto', 'auto', 'auto', 'auto', 'auto'],
-			display: [null, null, null, 'block'],
-			mt: [null, null, null, null, '6em', '6em']
+			display: ['block', null, null, 'block'],
+			mt: [null, null, null, '3em', '6em', '6em']
 		},
 		specialText: {
+			display: ['none', 'none', null, null, 'block'],
 			fontSize: [0, null, 2, null, '17px'],
 			// color: 'text',
 			// lineHeight: ['26px', null, null, 1.8, null, 2.06],
@@ -86,7 +96,7 @@ const styles = {
 	},
 	content: {
 		pt: [0, null, null, null, '30px', '30px'],
-		mb: [null, null, null, '-40px', '0'],
+		mb: [null, null, null, '0', '0'],
 		position: 'relative',
 		zIndex: 10,
 		paddingLeft: ['12px', null, null, null, '0'],
@@ -97,7 +107,7 @@ const styles = {
 		mx: [null, null, null, 'auto', null, '0'],
 		textAlign: ['center', null, null, null, 'center'],
 		h3: {
-			fontSize: [5, null, '21px', null, 7, '32px', 8],
+			fontSize: [6, 7, 7, 7, 7, 8, 8],
 			maxWidth: [null, null, null, '400px', 'none'],
 			mx: [null, null, null, 'auto', '0'],
 			color: 'black',
@@ -109,7 +119,7 @@ const styles = {
 		p: {
 			fontSize: [0, null, 2, null, '17px'],
 			color: 'text',
-			lineHeight: ['26px', null, null, 1.8, null, 2.06],
+			lineHeight: [1, null, null, 1.8, null, 2.06],
 			'+p': {
 				mt: ['15px', null, null, null, '15px']
 			}
@@ -147,5 +157,8 @@ const styles = {
 		flexWrap: 'wrap',
 		flexDirection: 'row-reverse',
 		justifyContent: 'center'
+	},
+	col: {
+		mb: ["150px", '150px', '200px','200px', '0', '0']
 	}
 };
