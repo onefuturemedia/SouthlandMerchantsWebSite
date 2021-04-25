@@ -1,40 +1,15 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Grid,
-  // Button,
-  // Input,
-  Heading,
-  // Text,
-  // Image as Img,
-} from "theme-ui";
-// import { useStaticQuery, graphql } from "gatsby";
+import { Box, Container, Grid, Heading } from "theme-ui";
 
-// import Image from "components/image";
 import VideoBanner from "components/video-banner";
 
-// import img1 from "assets/partner-1-1.png";
-// import img2 from "assets/partner-1-2.png";
-// import img3 from "assets/partner-1-3.png";
 import video from "assets/videos/video.mp4";
+import image from "assets/banner-placeholder.png";
 
 const Banner = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     placeholderImage: file(relativePath: { eq: "banner-image-1-1.png" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 958) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
-
   return (
     <Box as="section" sx={styles.banner} id="banner">
-      <VideoBanner src={video} />
+      <VideoBanner src={video} placeHolder={image} />
       <Container id="container" sx={styles.container}>
         <Grid id="grid" sx={styles.grid}>
           <Box id="box" sx={styles.content}>

@@ -2,7 +2,7 @@ import React from "react";
 import { withPrefix } from "gatsby";
 // import { Heading } from "theme-ui";
 
-export default function VideoBanner({ src }) {
+export default function VideoBanner({ src, placeholder }) {
   return (
     <video
       autoPlay

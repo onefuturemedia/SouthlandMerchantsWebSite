@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Container, Grid, Heading, Text, Image } from "theme-ui";
-import { FaAngleRight } from "react-icons/fa";
 import { Link } from "components/link";
 
 import img1 from "assets/growers-home.jpg";
@@ -53,9 +52,9 @@ export default Growers;
 
 const styles = {
   growers: {
-		background: 'linear-gradient(200deg, #B2957F 0%, #ede0d6 40%)',
-		// background: 'linear-gradient(190deg, white 0%, #B2957F 30%)',
-		// background: '#B2957F',
+    background: "linear-gradient(200deg, #B2957F 0%, #ede0d6 40%)",
+    // background: 'linear-gradient(190deg, white 0%, #B2957F 30%)',
+    // background: '#B2957F',
     overflow: "hidden",
     pt: ["75px", null, null, null, "0", "80px"],
     pb: ["75px", null, null, null, null, null, null],
@@ -128,7 +127,13 @@ const styles = {
     borderColor: "primary",
     color: "primary",
     padding: "8px 24px",
-    display: ["inline-block", "inline-block", "inline-block", "inline-block", "inline-block"],
+    display: [
+      "inline-block",
+      "inline-block",
+      "inline-block",
+      "inline-block",
+      "inline-block",
+    ],
     ml: ["0", null, null, "auto", "30%"],
     mr: ["0", null, null, "20px", "0"],
     mt: "3em",

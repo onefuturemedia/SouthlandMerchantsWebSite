@@ -8,13 +8,8 @@ import SEO from "components/seo";
 import Layout from "components/layout";
 
 import Banner from "sections/banner";
-// import Services from "sections/services";
 import ClientTestimonials from "sections/client-testimonials";
 import ProductorTestimonials from "sections/productor-testimonials";
-// import CustomerSupport from "sections/customer-support";
-// import VideoOne from "sections/video-one";
-// import CallToAction from "sections/call-to-action";
-// import BoostAgencies from "sections/boost-agencies";
 import AboutUs from "sections/about-us";
 import Growers from "sections/growers";
 import BlogHeader from "sections/blog-header";
@@ -30,12 +25,6 @@ export default function IndexPage() {
         <Growers />
         <ProductorTestimonials />
         <BlogHeader />
-        {/* <Services /> */}
-        {/* <BoostAgencies /> */}
-        {/* <VideoOne /> */}
-        {/* <CustomerSupport /> */}
-        {/* <Feature /> */}
-        {/* <CallToAction /> */}
       </Layout>
     </StickyProvider>
   );

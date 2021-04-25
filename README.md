@@ -1,14 +1,13 @@
 # TODOs
 
-- Improve SEO element
-- Adicionar analytics
+- [ok] Improve SEO element
+- Adicionar analytics - checar se está funcionando
 
 ## Banner
 
-- ver se menudrawer precisa mudar
-- placeholder sendo uma imagem igual ao inicio do video.
-- Teste final de responsividade.
-
+- [ok] ver se menudrawer precisa mudar - modificado
+- [ok] placeholder sendo uma imagem igual ao inicio do video. - video ja faz isso
+- [ok] Teste final de responsividade.
 
 ## About us
 
@@ -20,10 +19,9 @@
 - [ok] fazer primeiro layout conforme o que o bacon mandou
 - colocar alt na imagem
 
-
 ## Página dos growers
 
-- Fazer primeiro layout conforme o que o bacon mandou: mapas do site antigo, aí se passar o mouse aparece as informações da região
+- [ok] Fazer primeiro layout conforme o que o bacon mandou: mapas do site antigo, aí se passar o mouse aparece as informações da região
 
 ## Testimonal clientes
 
@@ -32,8 +30,8 @@
 
 ## Testimonials produtores
 
-- [ok] Fazer primeiro layout 
-- responsividade
+- [ok] Fazer primeiro layout
+- [ok] responsividade
 - pedir imagem dos growers pra bacon
 
 ## Blog
@@ -52,6 +50,5 @@
 ## Contact Us
 
 - [ok] Fazer a tela
-
 
 - adicionar transitions nas imagens
