@@ -4,43 +4,39 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Box, Container, Text, Heading, Image as Img } from "theme-ui";
 import BlockTitle from "components/block-title";
 
-import img1 from "assets/testi-1-1.png";
-import img2 from "assets/testi-1-2.png";
-import img3 from "assets/testi-1-3.png";
-
 SwiperCore.use([Thumbs, Autoplay]);
 
 const TESTIMONIALS_DATA = [
   {
-    image: img1,
+    // image: img1,
     heading: "Pierre Hackett",
     designation: "VP of Engineering",
     content:
       "They are doing amazing job with hundred percent customer satisfaction, Love their work and would like to work with them again",
   },
   {
-    image: img2,
+    // image: img2,
     heading: "Natalia Sanz",
     designation: "Head of Technology",
     content:
       "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.",
   },
   {
-    image: img3,
+    // image: img3,
     heading: "Ece Akman",
     designation: "Senior Marketer",
     content:
       "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal.",
   },
   {
-    image: img2,
+    // image: img2,
     heading: "Natalia Sanz",
     designation: "Head of Technology",
     content:
       "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional.",
   },
   {
-    image: img3,
+    // image: img3,
     heading: "Ece Akman",
     designation: "Senior Marketer",
     content:
@@ -112,7 +108,7 @@ const Testimonials = () => {
         >
           {TESTIMONIALS_DATA.map((testimonial, index) => (
             <SwiperSlide key={`testimonial-info-${index}`}>
-              <Img src={testimonial.image} alt="testimonials image" />
+              {/* <Img src={testimonial.image} alt="testimonials image" /> */}
               <Heading as="h3">{testimonial.heading}</Heading>
               <Text as="span">{testimonial.designation}</Text>
             </SwiperSlide>
@@ -135,7 +131,7 @@ const styles = {
       marginBottom: ["25px", null, null, null, null, "50px"],
     },
     "#testimonialsInfo": {
-      textAlign: ["center", null, null, null, null, "left"],
+      textAlign: ["center", null, null, null, null, "center"],
       marginTop: ["30px", null, null, null, "40px", "50px"],
       width: "100%",
       maxWidth: "820px",
@@ -150,7 +146,7 @@ const styles = {
           "5px solid transparent",
         ],
         position: "relative",
-        paddingLeft: ["0", null, null, null, null, "75px"],
+        paddingLeft: ["0", null, null, null, null, "0"],
         paddingTop: ["0", null, null, null, null, "25px"],
         paddingBottom: ["0", null, null, null, null, "15px"],
         minHeight: ["auto", null, null, null, null, "50px"],
