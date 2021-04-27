@@ -16,7 +16,7 @@ const TESTIMONIALS_DATA = [
   },
   {
     // image: img2,
-    heading: "Edval Soares de Paula",
+    heading: "Edval de Paula",
     designation: "Grower",
     content:
       "They have changed my vision on coffee production. Now I am always aware about the quality, in order to sell to them and aggregate value to my coffee.",
@@ -160,10 +160,11 @@ const styles = {
         ],
       },
       h3: {
-        fontSize: ["18px", null, 2, null, 3],
+        fontSize: ["12px", null, 2, null, 3],
+        my: ["15px", null, null, null, null],
         lineHeight: 1,
         color: "black",
-        display: ["none", null, "block"],
+        display: ["block", null, "block"],
       },
       span: {
         color: "text",

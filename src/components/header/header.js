@@ -114,6 +114,9 @@ const styles = {
       color: "white",
       borderColor: "white",
     },
+    "#drawer-handler": {
+      color: "white",
+    },
 
     "&.sticky": {
       backgroundColor: "background",
@@ -135,6 +138,9 @@ const styles = {
         fontWeight: "bold",
         color: "primary",
         borderColor: "primary",
+      },
+      "#drawer-handler": {
+        color: "primary",
       },
     },
   },
@@ -172,7 +178,7 @@ const styles = {
         mr: "0",
       },
       "&:hover, &.active": {
-        // color: "primary",
+        color: "primary",
       },
     },
   },

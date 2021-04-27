@@ -174,10 +174,12 @@ const styles = {
         ],
       },
       h3: {
-        fontSize: ["18px", null, 2, null, 3],
+        fontSize: ["12px", null, 2, null, 3],
+        mt: ["15px", null, null, null, null],
+        mb: ["30px"],
         lineHeight: 1,
         color: "black",
-        display: ["none", null, "block"],
+        display: ["block", null, "block"],
       },
       span: {
         color: "text",
