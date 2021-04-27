@@ -2,11 +2,11 @@ export default {
   // example colors with dark mode
 
   // paleta pesquisada
-  // marrom escuro  #4e3d2f
-  // marrom claro #ede0d6
+  // marrom escuro  #4e3d2f 513b2d
+  // marrom claro #ede0d6 C9BFB5
   // verde da logo #8a966e
   // verde claro #
-  // branco #
+  // branco #bab9be
 
   breakpoints: ["376px", "576px", "768px", "992px", "1200px", "1600px"],
   colors: {

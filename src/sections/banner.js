@@ -152,8 +152,8 @@ const styles = {
       mb: ["15px", null, null, null, "20px"],
       width: ["100%"],
       maxWidth: ["100%", null, null, "90%", "100%", "100%"],
-      fontSize: [6, null, null, "36px", null, "55px", 9],
-      marginTop: "30%",
+      fontSize: [6, 7, null, "36px", null, "55px", 9],
+      marginTop: ["20px", "30px", "300px"],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
