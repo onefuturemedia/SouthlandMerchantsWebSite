@@ -137,6 +137,7 @@ const styles = {
     ml: ["0", null, null, "auto", "30%"],
     mr: ["0", null, null, "20px", "0"],
     mt: "3em",
+    mb: ["2em", "2em", "2em", "4em", "0", "0"],
     "&:hover": {
       color: "#fff",
     },

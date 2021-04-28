@@ -22,8 +22,9 @@ export default function VideoBanner({ src, placeholder }) {
       src={withPrefix(src)}
       preload="auto"
     >
-      <source src={withPrefix(src)} type="video/webm" />
-      Your device does not support playing 'video/webm' videos
+      {/* <source src={withPrefix(src)} type="video/webm" /> */}
+      <source src={withPrefix(src)} type="video/mp4" />
+      Your device does not support playing 'video/mp4' videos
     </video>
   );
 }

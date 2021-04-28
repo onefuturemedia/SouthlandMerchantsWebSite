@@ -3,7 +3,7 @@ import { Box, Container, Grid, Heading } from "theme-ui";
 
 import VideoBanner from "components/video-banner";
 
-import video from "assets/videos/video.webm";
+import video from "assets/videos/video.mp4";
 import image from "assets/banner-placeholder.png";
 
 const Banner = () => {
