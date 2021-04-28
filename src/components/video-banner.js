@@ -2,7 +2,7 @@ import React from "react";
 import { withPrefix } from "gatsby";
 import { Image } from "theme-ui";
 
-export default function VideoBanner({ src, srcAlternative, placeholder }) {
+export default function VideoBanner({ src, placeholder }) {
   return (
     <video
       autoPlay
@@ -17,14 +17,14 @@ export default function VideoBanner({ src, srcAlternative, placeholder }) {
         width: "100%",
         height: "100%",
         objectFit: "cover",
+        zIndex: 1,
         objectPosition: "center",
-        backgroundSize: "cover",
       }}
       src={withPrefix(src)}
+      preload="auto"
     >
-      <source src={withPrefix(src)} type="video/mp4" />
-      <source src={withPrefix(srcAlternative)} type="video/webm" />
-      Your device does not support playing 'video/mp4' or 'video/webm' videos
+      <source src={withPrefix(src)} type="video/webm" />
+      Your device does not support playing 'video/webm' videos
     </video>
   );
 }
