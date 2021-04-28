@@ -4,12 +4,13 @@ import { Box, Container, Grid, Heading } from "theme-ui";
 import VideoBanner from "components/video-banner";
 
 import video from "assets/videos/video.mp4";
+import videoWebm from "assets/videos/video.webm";
 import image from "assets/banner-placeholder.png";
 
 const Banner = () => {
   return (
     <Box as="section" sx={styles.banner} id="banner">
-      <VideoBanner src={video} placeHolder={image} />
+      <VideoBanner src={video} srcAlternative={videoWebm} placeHolder={image} />
       <Container id="container" sx={styles.container}>
         <Grid id="grid" sx={styles.grid}>
           <Box id="box" sx={styles.content}>
