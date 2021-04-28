@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Button, Box } from "theme-ui";
+import { Button, Box, Link } from "theme-ui";
 import { Scrollbars } from "react-custom-scrollbars";
 import Drawer from "components/drawer";
 import { DrawerContext } from "contexts/drawer/drawer.context";
@@ -10,7 +10,7 @@ import Logo from "components/logo";
 import logoIcon from "assets/logo-icon.png";
 // import logoDark from "assets/logo-dark.png";
 
-const MobileDrawer = () => {
+const MobileDrawer = ({ isHome }) => {
   const { state, dispatch } = useContext(DrawerContext);
 
   // Toggle drawer
@@ -37,26 +37,38 @@ const MobileDrawer = () => {
       <Scrollbars autoHide>
         <Box sx={styles.content}>
           <Logo logo={logoIcon} />
-          <Box sx={styles.menu}>
-            {menuItems.map(({ path, label }, i) => (
-              <ScrollLink
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </ScrollLink>
-            ))}
-          </Box>
-
+          {isHome && (
+            <Box sx={styles.menu}>
+              {menuItems.map(({ path, label }, i) => (
+                <ScrollLink
+                  activeClass="active"
+                  to={path}
+                  spy={true}
+                  smooth={true}
+                  offset={-10}
+                  duration={500}
+                  key={i}
+                >
+                  {label}
+                </ScrollLink>
+              ))}
+            </Box>
+          )}
+          {!isHome && (
+            <Box sx={styles.menu}>
+              {menuItems.map(({ path, label }, i) => (
+                <Link href={`/#${path}`} key={i}>
+                  {label}
+                </Link>
+              ))}
+            </Box>
+          )}
           <Box sx={styles.menuFooter}>
-            <Button variant="primary" sx={styles.button}>
-              CONTACT US
-            </Button>
+            <a href="/contact">
+              <Button variant="primary" sx={styles.button}>
+                CONTACT US
+              </Button>
+            </a>
           </Box>
         </Box>
       </Scrollbars>

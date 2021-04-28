@@ -14,8 +14,8 @@ import menuItems from "./header.data";
 export default function Header({ isHome, className }) {
   return (
     <DrawerProvider>
-      <header sx={styles.header} className={className}>
-        {isHome && (
+      {isHome && (
+        <header sx={styles.header} className={className}>
           <Container sx={styles.container}>
             <Logo logo={logoDark} light={false} />
             <Logo logo={logoLight} light={true} />
@@ -43,22 +43,24 @@ export default function Header({ isHome, className }) {
               sx={styles.headerBtn}
               variant="buttons.primary"
             />
-
-            <MobileDrawer />
+            <MobileDrawer isHome={true} />
           </Container>
-        )}
-        {!isHome && (
-          <Container sx={styles.containerOther}>
-            <Link path="/">
-              <Image
-                src={icon}
-                alt="southland merchants logo"
-                sx={styles.logo}
-              />
-            </Link>
+        </header>
+      )}
+      {!isHome && (
+        <header sx={styles.headerOther} className={className}>
+          <Container sx={styles.container}>
+            <Logo logo={logoDark} light={false} />
+            {/* <Logo logo={logoLight} light={true} /> */}
+            <Flex as="nav" sx={styles.nav}>
+              <Link sx={styles.nav.navLink} path="/">
+                HOME
+              </Link>
+            </Flex>
+            <MobileDrawer isHome={false} />
           </Container>
-        )}
-      </header>
+        </header>
+      )}
     </DrawerProvider>
   );
 }
@@ -142,6 +144,44 @@ const styles = {
       "#drawer-handler": {
         color: "primary",
       },
+    },
+  },
+  headerOther: {
+    color: "text_white",
+    fontWeight: "normal",
+    py: "30px",
+    width: "100%",
+    position: "fixed",
+    top: 0,
+    left: 0,
+    backgroundColor: "transparent",
+    transition: "all 0.4s ease",
+    nav: {
+      fontWeight: 700,
+      color: "white",
+    },
+    backgroundColor: "background",
+    color: "text",
+    py: "10px",
+    boxShadow: "0 1px 2px rgba(0, 0, 0, 0.06)",
+    nav: {
+      color: "#02073E",
+      fontWeight: "400",
+    },
+    "#logo-dark": {
+      display: "block",
+      mt: ["10px"],
+    },
+    "#logo-light": {
+      display: "none",
+    },
+    "#contact-us": {
+      fontWeight: "bold",
+      color: "primary",
+      borderColor: "primary",
+    },
+    "#drawer-handler": {
+      color: "primary",
     },
   },
   container: {
