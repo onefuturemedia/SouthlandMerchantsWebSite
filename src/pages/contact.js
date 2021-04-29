@@ -22,7 +22,14 @@ export default function GrowersPage() {
         <SEO title="Southland Merchants" />
         <Container sx={styles.container}>
           <Heading as="h3">Contact us</Heading>
-          <Text as="p">Let us know more about you!</Text>
+          <Text as="p">
+            You can get in touch with us through: <br />
+            {/* <br /> */}
+            <b>Phone:</b> +61 (0) 409 007 565 <br />
+            <b>E-mail:</b> info@southlandmerchants.com.au <br />
+            <br />
+            Or if you want, you can send us a message here: <br />
+          </Text>
           <Box
             as="form"
             onSubmit={(e) => e.preventDefault()}
@@ -31,7 +38,7 @@ export default function GrowersPage() {
             <Label htmlFor="email">E-mail</Label>
             <Input name="email" id="email" mb={3} />
             <Label htmlFor="comment">Comment</Label>
-            <Textarea name="comment" id="comment" rows={6} mb={3} />
+            <Textarea name="comment" id="comment" rows={3} mb={3} />
             <Button>Submit</Button>
           </Box>
         </Container>
@@ -44,7 +51,10 @@ const styles = {
   container: {
     mt: ["100px", "100px", "100px", "150px", "150px", "10%"],
     h3: { fontSize: [5, 7], fontWeight: 700 },
-    p: { fontSize: [0, 3] },
+    p: {
+      fontSize: [0, 3],
+      mt: ["15px", "15px", "20px", "20px", "20px", "20px"],
+    },
   },
   formBox: {
     mt: ["5%"],
