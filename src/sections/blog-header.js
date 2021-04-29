@@ -99,7 +99,7 @@ const BlogHeader = () => {
     <Box as="section" sx={styles.features} id="blog">
       <Container>
         <BlockTitle
-          title="Want to know more about coffee?"
+          title="Let's talk about coffee"
           styles={styles.blockTitle}
         />
 
