@@ -53,10 +53,20 @@ export default function Header({ isHome, className }) {
             <Logo logo={logoDark} light={false} />
             {/* <Logo logo={logoLight} light={true} /> */}
             <Flex as="nav" sx={styles.nav}>
-              <Link sx={styles.nav.navLink} path="/">
-                HOME
-              </Link>
+              {menuItems.map(({ path, label }, i) => (
+                <Link sx={styles.nav.navLink} href={`/#${path}`} key={i}>
+                  {label}
+                </Link>
+              ))}
             </Flex>
+            <Link
+              id="contact-us"
+              path="/contact"
+              ml={2}
+              label="Contact Us"
+              sx={styles.headerBtn}
+              variant="buttons.primary"
+            />
             <MobileDrawer isHome={false} />
           </Container>
         </header>
