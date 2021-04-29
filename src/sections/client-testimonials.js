@@ -4,43 +4,39 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Box, Container, Text, Heading, Image as Img } from "theme-ui";
 import BlockTitle from "components/block-title";
 
-import img1 from "assets/testi-1-1.png";
-import img2 from "assets/testi-1-2.png";
-import img3 from "assets/testi-1-3.png";
-
 SwiperCore.use([Thumbs, Autoplay]);
 
 const TESTIMONIALS_DATA = [
   {
-    image: img1,
+    // image: img1,
     heading: "Pierre Hackett",
     designation: "VP of Engineering",
     content:
       "They are doing amazing job with hundred percent customer satisfaction, Love their work and would like to work with them again",
   },
   {
-    image: img2,
+    // image: img2,
     heading: "Natalia Sanz",
     designation: "Head of Technology",
     content:
       "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.",
   },
   {
-    image: img3,
+    // image: img3,
     heading: "Ece Akman",
     designation: "Senior Marketer",
     content:
       "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal.",
   },
   {
-    image: img2,
+    // image: img2,
     heading: "Natalia Sanz",
     designation: "Head of Technology",
     content:
       "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional.",
   },
   {
-    image: img3,
+    // image: img3,
     heading: "Ece Akman",
     designation: "Senior Marketer",
     content:
@@ -112,7 +108,7 @@ const Testimonials = () => {
         >
           {TESTIMONIALS_DATA.map((testimonial, index) => (
             <SwiperSlide key={`testimonial-info-${index}`}>
-              <Img src={testimonial.image} alt="testimonials image" />
+              {/* <Img src={testimonial.image} alt="testimonials image" /> */}
               <Heading as="h3">{testimonial.heading}</Heading>
               <Text as="span">{testimonial.designation}</Text>
             </SwiperSlide>
@@ -127,8 +123,7 @@ export default Testimonials;
 
 const styles = {
   testimonials: {
-		background: 'linear-gradient(160deg, #ede0d6 60%, #B2957F 100%)',
-		// background: 'linear-gradient(#ede0d6 90%, #B2957F 100%)',
+    background: "linear-gradient(160deg, #ede0d6 60%, #B2957F 100%)",
     pt: ["65px", null, null, null, null, "80px", "80px"],
     pb: ["65px", null, null, null, null, "80px", "80px"],
     ".blockTitle": {
@@ -136,7 +131,7 @@ const styles = {
       marginBottom: ["25px", null, null, null, null, "50px"],
     },
     "#testimonialsInfo": {
-      textAlign: ["center", null, null, null, null, "left"],
+      textAlign: ["center", null, null, null, null, "center"],
       marginTop: ["30px", null, null, null, "40px", "50px"],
       width: "100%",
       maxWidth: "820px",
@@ -151,7 +146,7 @@ const styles = {
           "5px solid transparent",
         ],
         position: "relative",
-        paddingLeft: ["0", null, null, null, null, "75px"],
+        paddingLeft: ["0", null, null, null, null, "0"],
         paddingTop: ["0", null, null, null, null, "25px"],
         paddingBottom: ["0", null, null, null, null, "15px"],
         minHeight: ["auto", null, null, null, null, "50px"],
@@ -179,10 +174,12 @@ const styles = {
         ],
       },
       h3: {
-        fontSize: ["18px", null, 2, null, 3],
+        fontSize: ["12px", null, 2, null, 3],
+        mt: ["15px", null, null, null, null],
+        mb: ["30px"],
         lineHeight: 1,
         color: "black",
-        display: ["none", null, "block"],
+        display: ["block", null, "block"],
       },
       span: {
         color: "text",
@@ -196,7 +193,7 @@ const styles = {
   },
   testimonialsContent: {
     margin: 0,
-    fontSize: [2, null, 3, null, 4, 4,4],
+    fontSize: [2, null, 3, null, 4, 4, 4],
     color: "black",
     lineHeight: [2.3, null, 1.8],
     textAlign: "center",
@@ -206,9 +203,9 @@ const styles = {
     marginRight: "auto",
     maxWidth: "820px",
     marginTop: ["0", null, null, null, null, null],
-    fontStyle:"italic"
+    fontStyle: "italic",
   },
-  blockTitle:{
+  blockTitle: {
     // fontSize: [5, null, null, '21px', '36px', '32px', 3],
-  }
+  },
 };

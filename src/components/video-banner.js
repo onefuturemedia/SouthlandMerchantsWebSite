@@ -1,8 +1,9 @@
 import React from "react";
 import { withPrefix } from "gatsby";
-// import { Heading } from "theme-ui";
+import video from "assets/videos/video.mp4";
+import image from "assets/banner-placeholder.png";
 
-export default function VideoBanner({ src }) {
+export default function VideoBanner() {
   return (
     <video
       autoPlay
@@ -11,18 +12,19 @@ export default function VideoBanner({ src }) {
       style={{
         position: "absolute",
         top: 0,
-        left: 0,
         bottom: 0,
         right: 0,
+        left: 0,
         width: "100%",
         height: "100%",
-        zIndex: "1",
-        objectFit: "fill",
+        objectFit: "cover",
+        zIndex: 1,
         objectPosition: "center",
       }}
-      src={withPrefix(src)}
+      src={withPrefix(video)}
     >
-      <source src={withPrefix(src)} type="video/mp4" />
+      {/* <source src={withPrefix(src)} type="video/webm" /> */}
+      <source src={withPrefix(video)} type="video/mp4" />
       Your device does not support playing 'video/mp4' videos
     </video>
   );

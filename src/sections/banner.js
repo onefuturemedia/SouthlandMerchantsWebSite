@@ -1,40 +1,12 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Grid,
-  // Button,
-  // Input,
-  Heading,
-  // Text,
-  // Image as Img,
-} from "theme-ui";
-// import { useStaticQuery, graphql } from "gatsby";
+import { Box, Container, Grid, Heading } from "theme-ui";
 
-// import Image from "components/image";
 import VideoBanner from "components/video-banner";
 
-// import img1 from "assets/partner-1-1.png";
-// import img2 from "assets/partner-1-2.png";
-// import img3 from "assets/partner-1-3.png";
-import video from "assets/videos/video.mp4";
-
 const Banner = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     placeholderImage: file(relativePath: { eq: "banner-image-1-1.png" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 958) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
-
   return (
     <Box as="section" sx={styles.banner} id="banner">
-      <VideoBanner src={video} />
+      <VideoBanner />
       <Container id="container" sx={styles.container}>
         <Grid id="grid" sx={styles.grid}>
           <Box id="box" sx={styles.content}>
@@ -153,7 +125,8 @@ const styles = {
     "@media screen and (min-height: 1360px)": {
       height: "1360px",
     },
-    backgroundColor: "#F6F8FB",
+    background:
+      "linear-gradient(190deg, #ede0d6 0%, #B2957F 35%, #B2957F 60%,#ede0d6 90%)",
     overflow: "hidden",
   },
   container: {
@@ -177,8 +150,8 @@ const styles = {
       mb: ["15px", null, null, null, "20px"],
       width: ["100%"],
       maxWidth: ["100%", null, null, "90%", "100%", "100%"],
-      fontSize: [6, null, null, "36px", null, "55px", 9],
-      marginTop: "30%",
+      fontSize: [6, 7, null, "36px", null, "55px", 9],
+      marginTop: ["20px", "30px", "300px"],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
