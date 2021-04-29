@@ -1,7 +1,9 @@
 import React from "react";
 import { withPrefix } from "gatsby";
+import video from "assets/videos/video.mp4";
+import image from "assets/banner-placeholder.png";
 
-export default function VideoBanner({ src, placeholder }) {
+export default function VideoBanner() {
   return (
     <video
       autoPlay
@@ -19,11 +21,10 @@ export default function VideoBanner({ src, placeholder }) {
         zIndex: 1,
         objectPosition: "center",
       }}
-      src={withPrefix(src)}
-      preload="auto"
+      src={withPrefix(video)}
     >
       {/* <source src={withPrefix(src)} type="video/webm" /> */}
-      <source src={withPrefix(src)} type="video/mp4" />
+      <source src={withPrefix(video)} type="video/mp4" />
       Your device does not support playing 'video/mp4' videos
     </video>
   );

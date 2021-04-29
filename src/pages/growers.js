@@ -9,10 +9,13 @@ import Layout from "components/layout";
 import GrowersRegion from "sections/growers-region";
 import { Container, Text, Heading } from "theme-ui";
 
-import camposDasVertentesImg from "../assets/sul.png";
+import camposDasVertentesImg from "../assets/campos-das-vertentes.png";
 import cerradoImg from "../assets/cerrado.png";
 import mataImg from "../assets/mata.png";
 import mogianaImg from "../assets/mogiana.png";
+import espiritoSantoImg from "../assets/espirito-santo.png";
+import mantiqueiraImg from "../assets/chapada.png";
+import chapadaImg from "../assets/chapada.png";
 import foundersImg from "../assets/grower-example.jpg";
 import cesarGalliPDF from "../assets/documents/grower-document-example.pdf";
 import gabrielNunesPDF from "../assets/documents/grower-document-example.pdf";
@@ -76,7 +79,7 @@ const data = [
   {
     name: "The Mountains of Espirito Santo",
     tag: "espirito-santo",
-    img: mogianaImg,
+    img: espiritoSantoImg,
     imgPosAlt: true,
     text:
       "Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.",
@@ -172,7 +175,7 @@ const data = [
   {
     name: "Mantiqueira de Minas",
     tag: "mantiqueira-de-minas",
-    img: cerradoImg,
+    img: mantiqueiraImg,
     imgPosAlt: false,
     text:
       "This region comprises plateaus with highland tropical climate, characterized by rainy summers and dry winters, ideal for cropping with an annual medium temperature of 19 ºC. Altitudes vary between 800 and 1,300 meters and this area has a reputation of consistently producing high-quality coffees with a unique identity.",
@@ -230,7 +233,7 @@ const data = [
   {
     name: "Chapada de Minas",
     tag: "chapada-de-minas",
-    img: mataImg,
+    img: chapadaImg,
     imgPosAlt: true,
     text:
       "This region has rough terrains with a warm and humid climate ideal for the production of some of the highly internationally acclaimed Brazilian Coffees. Coffees from Matas de Minas have a delicate and balanced acidity and have a medium to full body. Processing methods are pulped natural and natural.",

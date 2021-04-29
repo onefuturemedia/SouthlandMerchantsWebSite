@@ -3,13 +3,10 @@ import { Box, Container, Grid, Heading } from "theme-ui";
 
 import VideoBanner from "components/video-banner";
 
-import video from "assets/videos/video.mp4";
-import image from "assets/banner-placeholder.png";
-
 const Banner = () => {
   return (
     <Box as="section" sx={styles.banner} id="banner">
-      <VideoBanner src={video} placeHolder={image} />
+      <VideoBanner />
       <Container id="container" sx={styles.container}>
         <Grid id="grid" sx={styles.grid}>
           <Box id="box" sx={styles.content}>
@@ -128,7 +125,8 @@ const styles = {
     "@media screen and (min-height: 1360px)": {
       height: "1360px",
     },
-    backgroundColor: "#F6F8FB",
+    background:
+      "linear-gradient(190deg, #ede0d6 0%, #B2957F 35%, #B2957F 60%,#ede0d6 90%)",
     overflow: "hidden",
   },
   container: {

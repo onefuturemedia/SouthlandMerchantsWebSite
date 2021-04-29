@@ -1,7 +1,7 @@
 # TODOs
 
 - [ok] Improve SEO element
-- Adicionar analytics - checar se está funcionando
+- [ok] Adicionar analytics - checar se está funcionando
 
 ## Banner
 
@@ -11,7 +11,7 @@
 
 ## About us
 
-- Ajustes de layout responsivo.
+- [ok] Ajustes de layout responsivo.
 - [ok] Ao clicar no filtro, está ido mas a image está ficando cortada.
 
 ## Growers
@@ -51,4 +51,6 @@
 
 - [ok] Fazer a tela
 
-- adicionar transitions nas imagens
+## Geral
+
+- Limpar arquivos não usados

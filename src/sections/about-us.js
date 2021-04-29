@@ -57,7 +57,7 @@ export default AboutUs;
 const styles = {
   aboutUs: {
     pt: "5em",
-    background: "linear-gradient(170deg, #B2957F 0%, #ede0d6 40%)",
+    background: "linear-gradient(220deg, #B2957F 0%, #ede0d6 40%)",
   },
   row: {
     display: "flex",

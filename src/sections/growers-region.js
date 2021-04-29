@@ -59,7 +59,7 @@ const styles = {
   },
   imgCol: {
     img: {
-      maxWidth: ["100%", null, null, "60%", "100%", "100%"],
+      maxWidth: ["100%", "50%", "50%", "50%", "70%", "70%"],
       mx: ["auto", "auto", "auto", "auto", "auto", "auto"],
       display: ["block", null, null, "block"],
       mt: [null, null, null, "3em", "6em", "6em"],
