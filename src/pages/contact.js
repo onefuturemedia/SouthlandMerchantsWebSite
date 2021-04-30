@@ -15,14 +15,16 @@ import {
   Button,
 } from "theme-ui";
 
-export default function GrowersPage() {
+export default function Contact() {
   return (
     <StickyProvider>
       <Layout isHome={false}>
         <SEO title="Southland Merchants" />
-        <Container sx={styles.container}>
-          <Heading as="h3">Contact us</Heading>
-          <Text as="p">
+        <Container classname="contact-us-container" sx={styles.container}>
+          <Heading classname="contact-us-heading" as="h3">
+            Contact us
+          </Heading>
+          <Text classname="contact-us-text" as="p">
             You can get in touch with us through: <br />
             <b>Phone:</b> +61 (0) 409 007 565 or +61 (0) 452 142 412
             <br />
@@ -31,6 +33,7 @@ export default function GrowersPage() {
             Or if you want, you can send us a message here: <br />
           </Text>
           <Box
+            classname="contact-us-form"
             as="form"
             onSubmit={(e) => e.preventDefault()}
             sx={styles.formBox}
@@ -81,6 +84,7 @@ const styles = {
     },
     textarea: {
       // backgroundColor: 'white',
+      backgroundColor: "background_ligther",
       borderColor: "gray",
       "&:focus": {
         borderColor: "primary",
