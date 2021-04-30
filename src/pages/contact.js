@@ -24,8 +24,8 @@ export default function GrowersPage() {
           <Heading as="h3">Contact us</Heading>
           <Text as="p">
             You can get in touch with us through: <br />
-            {/* <br /> */}
-            <b>Phone:</b> +61 (0) 409 007 565 <br />
+            <b>Phone:</b> +61 (0) 409 007 565 or +61 (0) 452 142 412
+            <br />
             <b>E-mail:</b> info@southlandmerchants.com.au <br />
             <br />
             Or if you want, you can send us a message here: <br />
@@ -52,7 +52,7 @@ const styles = {
     mt: ["100px", "100px", "100px", "150px", "150px", "10%"],
     h3: { fontSize: [5, 7], fontWeight: 700 },
     p: {
-      fontSize: [0, 3],
+      fontSize: ["10px", "12px", 3],
       mt: ["15px", "15px", "20px", "20px", "20px", "20px"],
     },
   },

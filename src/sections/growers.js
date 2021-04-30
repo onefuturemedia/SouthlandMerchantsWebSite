@@ -19,13 +19,8 @@ const Growers = () => {
                 issues on our dime period customers.
               </Text> */}
               <Text as="p" sx={styles.specialText}>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt.
+                Get to know our growers that send the goodness of coffee to you.
+                We work closely to them to source exciting specialty coffees!
               </Text>
               {/* <Link path="/" sx={styles.link}>
                 Know more <FaAngleRight />
@@ -52,7 +47,8 @@ export default Growers;
 
 const styles = {
   growers: {
-    background: "linear-gradient(200deg, #B2957F 0%, #ede0d6 40%)",
+    // background: "linear-gradient(200deg, #B2957F 0%, #ede0d6 40%)",
+    backgroundColor: "background_lighter",
     // background: 'linear-gradient(190deg, white 0%, #B2957F 30%)',
     // background: '#B2957F',
     overflow: "hidden",

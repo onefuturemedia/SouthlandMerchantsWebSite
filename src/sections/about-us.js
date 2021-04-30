@@ -65,7 +65,8 @@ export default AboutUs;
 const styles = {
   aboutUs: {
     pt: "5em",
-    background: "linear-gradient(220deg, #B2957F 0%, #ede0d6 40%)",
+    // background: "linear-gradient(220deg, #B2957F 0%, #ede0d6 40%)",
+    backgroundColor: "background",
   },
   row: {
     display: "flex",
@@ -100,7 +101,7 @@ const styles = {
       alignItems: "center",
       justifyContent: ["flex-start", null, null, null, null, "flex-start"],
       fontSize: [1, null, 2, null, "18px"],
-      color: "text_secondary",
+      color: "text",
       lineHeight: [2.56],
       svg: {
         width: [17, null, null, 23],
@@ -122,7 +123,7 @@ const styles = {
     },
     p: {
       fontSize: [0, null, 0, 0, 2, 4],
-      color: "text_secondary",
+      color: "text",
       opacity: ".6",
       lineHeight: ["26px", null, null, 1.8, null, 2.06],
       padding: ["0 20px", null, null, "0"],
@@ -145,7 +146,7 @@ const styles = {
   content: {
     width: "100%",
     textAlign: ["left", null, null, null, "left"],
-    py: [null, "40px", "40px", null, null, "50px"],
+    py: ["40px", "40px", "40px", null, null, "50px"],
     pl: [null, null, null, "20px", "40px", "60px", "140px"],
   },
 };

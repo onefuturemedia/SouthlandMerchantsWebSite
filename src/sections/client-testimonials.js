@@ -123,7 +123,8 @@ export default Testimonials;
 
 const styles = {
   testimonials: {
-    background: "linear-gradient(160deg, #ede0d6 60%, #B2957F 100%)",
+    // background: "linear-gradient(160deg, #ede0d6 60%, #B2957F 100%)",
+    backgroundColor: "background",
     pt: ["65px", null, null, null, null, "80px", "80px"],
     pb: ["65px", null, null, null, null, "80px", "80px"],
     ".blockTitle": {

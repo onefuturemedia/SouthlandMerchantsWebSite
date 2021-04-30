@@ -298,7 +298,7 @@ const styles = {
       textAlign: "center",
       maxWidth: [null, null, null, "400px", "none"],
       mx: [null, null, null, "auto", "0"],
-      color: "text_secondary",
+      color: "text",
       fontWeight: "bold",
       letterSpacing: ["-0.5px", null, null, null, null, null, "-1.5px"],
       lineHeight: [1.5, null, 1.25],

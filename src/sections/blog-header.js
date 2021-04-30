@@ -101,14 +101,16 @@ const BlogHeader = () => {
         <BlockTitle
           title="Let's talk about coffee"
           styles={styles.blockTitle}
+          className="blog-title"
         />
 
-        <Swiper {...params} ref={ref}>
+        <Swiper {...params} ref={ref} className="blog-swiper">
           {allFeedMediumData.nodes.map((data, index) => (
             <div className="swiper-slider" key={`feature-card-key${index}`}>
               <BlogCard
                 image={extractImageUrlFromPost(data.content.encoded)}
                 title={data.title}
+                className="blog-card-container"
                 contentSnippet={extractSubtitleFromPost(data.content.encoded)}
               />
             </div>
@@ -135,7 +137,8 @@ const styles = {
     h2: { fontSize: [5, null, null, "21px", "36px", "32px", 8] },
   },
   features: {
-    background: "linear-gradient(150deg, #B2957F 0%, #ede0d6 40%)",
+    // background: "linear-gradient(150deg, #B2957F 0%, #ede0d6 40%)",
+    backgroundColor: "background_lighter",
     pt: ["80px", null, null, null, null, null, "120px"],
     pb: ["80px", null, null, null, "170px"],
     ".swiper-slider": {

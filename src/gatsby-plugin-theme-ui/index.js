@@ -1,23 +1,26 @@
 export default {
   // example colors with dark mode
 
-  // paleta pesquisada
-  // marrom escuro  #4e3d2f 513b2d
-  // marrom claro #ede0d6 C9BFB5
-  // verde da logo #8a966e
-  // verde claro #
-  // branco #bab9be
+  // paleta da marca
+  // marrom escuro:  #513b2d
+  // marrom claro: #C9BFB5
+  // verde da logo: #8a966e
+  // Azul: #3c435e
+  // branco #bab9be (meio cinza, do manual da marca)
+  // branco: #eeeeef (mais claro que o da marca)
 
   breakpoints: ["376px", "576px", "768px", "992px", "1200px", "1600px"],
   colors: {
-    text: "#271e17", // body color and primary color
-    text_secondary: "#130f0b", // secondary body color
+    text: "#130f0b", // body color and primary color
+    text_secondary: "#513b2d", // secondary body color
     heading: "#271e17", // primary heading color
     heading_secondary: "#130f0b", // heading color
-    background: "#ede0d6", // body background color
-    background_secondary: "#B2957F", // secondary background color
-    border_color: "#ede0d6", // border color
-    primary: "#4e3d2f", // primary button and link color
+    background: "#eeeeef", // body background color
+    background_dark: "#513b2d", // secondary background color
+    background_alt: "#C9BFB5", // secondary background color
+    background_lighter: "#f8f8f9", // secondary background color
+    border_color: "#C9BFB5", // border color
+    primary: "#513b2d", // primary button and link color
     secondary: "#3b2e23", // secondary color - can be used for hover states
     black: "#130f0b", // black color
     gray: "#F8FAFC",

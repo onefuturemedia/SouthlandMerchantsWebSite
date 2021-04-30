@@ -31,7 +31,6 @@ const styles = {
     height: ["230px"],
     mr: ["0.5%"],
     mb: ["2%"],
-    // pt: ['75px', null, null, null, '0', '20px'],
     pt: ["5px"],
     // pb: ['75px', null, null, null, null, '20px', '20px'],
     flexWrap: "wrap",

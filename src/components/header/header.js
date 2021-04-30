@@ -150,6 +150,9 @@ const styles = {
         fontWeight: "bold",
         color: "primary",
         borderColor: "primary",
+        "&:hover": {
+          color: "#fff",
+        },
       },
       "#drawer-handler": {
         color: "primary",
@@ -189,6 +192,9 @@ const styles = {
       fontWeight: "bold",
       color: "primary",
       borderColor: "primary",
+      "&:hover": {
+        color: "#fff",
+      },
     },
     "#drawer-handler": {
       color: "primary",
