@@ -28,6 +28,20 @@ const TESTIMONIALS_DATA = [
     content:
       "With the higher price at which they buy our coffee, we are able to improve our properties and mainly in our family quality of life. Because of them we are now known for the quality of our coffee.",
   },
+  {
+    // image: img3,
+    heading: "Coopeavi",
+    designation: "Grower",
+    content:
+      "Working with Southland makes us so proud. It is so clear the change that they make in the growers perception. We as partners believe that we should always improve our knowledge, so we can always deliver the best, it is because we will go along this way with many families together, which will always be grateful and have the joy of a better future.",
+  },
+  {
+    // image: img3,
+    heading: "Silvanius Kutz",
+    designation: "Grower",
+    content:
+      "Working with them helped me to improve the quality of my coffee through the time. They recognize our coffees so it makes us always seek to improve.",
+  },
 ];
 
 const Testimonials = () => {

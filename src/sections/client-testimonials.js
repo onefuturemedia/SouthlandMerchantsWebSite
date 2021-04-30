@@ -9,38 +9,38 @@ SwiperCore.use([Thumbs, Autoplay]);
 const TESTIMONIALS_DATA = [
   {
     // image: img1,
-    heading: "Pierre Hackett",
-    designation: "VP of Engineering",
+    heading: "Brad Nixon",
+    designation: "Elementary Coffee, SA",
     content:
-      "They are doing amazing job with hundred percent customer satisfaction, Love their work and would like to work with them again",
+      " Southland was able to offer us much more than just an importing service. (...) After working with Southland, we  made a visit to Brazil in 2019 and were blown away not only by how passionate the producers were about their coffee but also how different in flavour a coffee from Brazil can be when processed differently.",
   },
   {
     // image: img2,
-    heading: "Natalia Sanz",
-    designation: "Head of Technology",
+    heading: "Patio Roasters",
+    designation: "",
     content:
-      "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.",
+      "It is a privilege to have partnered with Southland from their small beginnings in SA, ever since our first chat with Nadia here at Patio in September 2018. From the outset, their commitment to both the quality of their product and service has encouraged a great working relationship. This is also apparent with how Southland value and interact with the coffee growers with whom they partner. Nadia and Andre have further encouraged and extended to roasters the opportunity to engage with coffee growers at a personal level, making our Brazil visit to the farms like a meeting of old friends, not a facility tour.",
   },
   {
     // image: img3,
-    heading: "Ece Akman",
-    designation: "Senior Marketer",
+    heading: "Allan Yeh",
+    designation: "Code Black coffee roasters, VIC",
     content:
-      "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal.",
+      "We’ve always seen the potential of Brazil as an origin beyond blenders with usually around 1 or 2 incredible microlots entering our offers list across the season. It’s great to see Southland exceeding this standard from our point of view, with multiple lots entering our buying programme this year and a couple even exceeding our expectations of quality when arriving. It’s a testament to Southland's buying and connections at origin.",
   },
   {
     // image: img2,
-    heading: "Natalia Sanz",
-    designation: "Head of Technology",
+    heading: "Alex & Heather",
+    designation: "extraction coffee Roasters, QLD",
     content:
-      "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional.",
+      "Southland shares our philosophy of 'community first'. They truly care about creating connections and developing relationships, which is at the forefront of everything we do at Extraction Coffee Roasters.",
   },
   {
     // image: img3,
-    heading: "Ece Akman",
-    designation: "Senior Marketer",
+    heading: "Matt, V",
+    designation: "Antz Coffee Co team",
     content:
-      "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base.",
+      "Our business is better for having worked with Southland Merchants. Our customers rely on us to make socially responsible decisions in how we operate, and that includes where and who we buy beans from. That responsibility is made easy, highly enjoyable and rewarding (ethically and taste wise) thanks to Southland Merchants. We have had no issues with supply, delivery or quality. 10/10",
   },
 ];
 
@@ -193,7 +193,7 @@ const styles = {
   },
   testimonialsContent: {
     margin: 0,
-    fontSize: [2, null, 3, null, 4, 4, 4],
+    fontSize: [0, null, 3, null, 4, 4, 4],
     color: "black",
     lineHeight: [2.3, null, 1.8],
     textAlign: "center",
