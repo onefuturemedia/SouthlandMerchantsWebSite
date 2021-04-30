@@ -51,10 +51,9 @@ export default function Header({ isHome, className }) {
         <header sx={styles.headerOther} className={className}>
           <Container sx={styles.container}>
             <Logo logo={logoDark} light={false} />
-            {/* <Logo logo={logoLight} light={true} /> */}
             <Flex as="nav" sx={styles.nav}>
-              {menuItems.map(({ path, label }, i) => (
-                <Link sx={styles.nav.navLink} href={`/#${path}`} key={i}>
+              {menuItems.map(({ altPath, label }, i) => (
+                <Link sx={styles.nav.navLink} href={altPath} key={i}>
                   {label}
                 </Link>
               ))}
