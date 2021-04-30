@@ -8,6 +8,7 @@ const GrowersRegion = ({ region }) => {
       as="section"
       sx={{
         overflow: "hidden",
+        backgroundColor: "background_lighter",
         pt: [null, null, null, null, null, null],
         pb: [null, null, null, null, null, null, null],
       }}
