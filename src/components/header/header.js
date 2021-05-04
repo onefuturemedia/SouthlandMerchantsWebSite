@@ -95,12 +95,12 @@ const styles = {
   header: {
     color: "text_white",
     fontWeight: "normal",
-    py: "30px",
+    py: "20px",
     width: "100%",
     position: "fixed",
     top: 0,
     left: 0,
-    backgroundColor: "transparent",
+    backgroundColor: "heading_alt_opaque",
     transition: "all 0.4s ease",
     nav: {
       fontWeight: 700,

@@ -14,6 +14,7 @@ export default {
     text: "#130f0b", // body color and primary color
     text_secondary: "#513b2d", // secondary body color
     heading: "#271e17", // primary heading color
+    heading_alt_opaque: "rgb(60, 67, 94, 0.5)", //same as "#3c435e", with opacity
     heading_secondary: "#130f0b", // heading color
     background: "#eeeeef", // body background color
     background_dark: "#513b2d", // secondary background color
