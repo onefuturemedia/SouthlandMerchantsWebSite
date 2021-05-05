@@ -1,7 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Text, Container, Grid, Image } from "theme-ui";
-import { Link } from "components/link";
-import icon from "assets/logo-icon.png";
+import { jsx, Box, Text, Container, Grid } from "theme-ui";
 import { FaInstagram, FaFacebookSquare, FaMedium } from "react-icons/fa";
 import { RiMailLine } from "react-icons/ri";
 

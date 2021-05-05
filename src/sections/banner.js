@@ -127,7 +127,7 @@ const styles = {
     },
     // background:
     //   "linear-gradient(190deg, #ede0d6 0%, #B2957F 35%, #B2957F 60%,#ede0d6 90%)",
-    backgroundColor: "background_alt",
+    backgroundColor: "heading_alt",
     overflow: "hidden",
   },
   container: {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SwiperCore, { Thumbs, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Box, Container, Text, Heading, Image as Img } from "theme-ui";
+import { Box, Container, Text, Heading } from "theme-ui";
 import BlockTitle from "components/block-title";
 
 SwiperCore.use([Thumbs, Autoplay]);
@@ -82,7 +82,7 @@ const Testimonials = () => {
       <Container>
         <BlockTitle
           // slogan="Customer Comments"
-          title="Why customers love us"
+          title="How We Are Seen"
           styles={styles.blockTitle}
         />
         <Swiper

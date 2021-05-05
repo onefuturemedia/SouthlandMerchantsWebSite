@@ -1,9 +1,8 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Image } from "theme-ui";
+import { jsx, Container, Flex } from "theme-ui";
 import { Link } from "components/link";
 import { Link as ScrollLink } from "react-scroll";
 import Logo from "components/logo";
-import icon from "assets/logo-icon.png";
 import logoDark from "assets/logo-dark.png";
 import logoLight from "assets/logo-light.png";
 
@@ -159,19 +158,12 @@ const styles = {
     },
   },
   headerOther: {
-    color: "text_white",
     fontWeight: "normal",
-    py: "30px",
     width: "100%",
     position: "fixed",
     top: 0,
     left: 0,
-    backgroundColor: "transparent",
     transition: "all 0.4s ease",
-    nav: {
-      fontWeight: 700,
-      color: "white",
-    },
     backgroundColor: "background",
     color: "text",
     py: "10px",
