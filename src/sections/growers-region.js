@@ -15,24 +15,39 @@ const GrowersRegion = ({ region }) => {
       id="our-growers"
     >
       <Container>
-        <Grid sx={region.imgPosAlt ? styles.row : styles.reverseRow}>
-          <Box sx={styles.imgCol}>
-            <Image src={region.img} alt={region.tag} />
-            <Text as="p" sx={styles.imgCol.specialText}>
-              {region.text}
-            </Text>
-          </Box>
-          <Box sx={styles.col}>
-            <Box sx={styles.content}>
-              <Heading as="h3">{region.name}</Heading>
-              <Flex sx={styles.growerGrid}>
-                {region.growers.map((growerData) => (
-                  <GrowerCard grower={growerData} />
-                ))}
-              </Flex>
+        {region.img ? (
+          <Grid sx={region.imgPosAlt ? styles.row : styles.reverseRow}>
+            <Box sx={styles.imgCol}>
+              <Image src={region.img} alt={region.tag} />
+              <Text as="p" sx={styles.imgCol.specialText}>
+                {region.text}
+              </Text>
             </Box>
-          </Box>
-        </Grid>
+            <Box sx={styles.col}>
+              <Box sx={styles.content}>
+                <Heading as="h3">{region.name}</Heading>
+                <Flex sx={styles.growerGrid}>
+                  {region.growers.map((growerData) => (
+                    <GrowerCard grower={growerData} />
+                  ))}
+                </Flex>
+              </Box>
+            </Box>
+          </Grid>
+        ) : (
+          <Grid sx={styles.singleRow}>
+            <Box sx={styles.col}>
+              <Box sx={styles.content}>
+                <Heading as="h3">{region.name}</Heading>
+                <Flex sx={styles.growerGrid}>
+                  {region.growers.map((growerData) => (
+                    <GrowerCard grower={growerData} />
+                  ))}
+                </Flex>
+              </Box>
+            </Box>
+          </Grid>
+        )}
       </Container>
     </Box>
   );
@@ -41,12 +56,12 @@ const GrowersRegion = ({ region }) => {
 export default GrowersRegion;
 
 const styles = {
-  // growers: {
-  // 	background: region.imgPosAlt ? 'linear-gradient(90deg, #B2957F 0%, #ede0d6 90%)':'linear-gradient(270deg, #B2957F 0%, #ede0d6 90%)',
-  // 	overflow: 'hidden',
-  // 	pt: [null, null, null, null, null, null],
-  // 	pb: [null, null, null, null, null, null, null]
-  // },
+  singleRow: {
+    display: "grid",
+    gridGap: [0, null, null, null, "25px", null, "55px"],
+    gridTemplateColumns: ["1fr", null, null, null, "1fr"],
+    mb: ["100px"],
+  },
   row: {
     display: "grid",
     gridGap: [0, null, null, null, "25px", null, "55px"],

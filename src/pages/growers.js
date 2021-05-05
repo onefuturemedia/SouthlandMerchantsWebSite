@@ -1,264 +1,303 @@
-import React from 'react';
-import 'swiper/swiper-bundle.min.css';
-import 'rc-drawer/assets/index.css';
-import 'react-modal-video/css/modal-video.min.css';
+import React from "react";
+import "swiper/swiper-bundle.min.css";
+import "rc-drawer/assets/index.css";
+import "react-modal-video/css/modal-video.min.css";
 
-import { StickyProvider } from 'contexts/app/app.provider';
-import SEO from 'components/seo';
-import Layout from 'components/layout';
-import GrowersRegion from 'sections/growers-region';
-import { Container, Text, Heading } from 'theme-ui';
+import { StickyProvider } from "contexts/app/app.provider";
+import SEO from "components/seo";
+import Layout from "components/layout";
+import GrowersRegion from "sections/growers-region";
+import { Container, Text, Heading } from "theme-ui";
 
-import camposDasVertentesImg from '../assets/campos-das-vertentes.png';
-import cerradoImg from '../assets/cerrado.png';
-import mataImg from '../assets/mata.png';
-import mogianaImg from '../assets/mogiana.png';
-import espiritoSantoImg from '../assets/espirito-santo.png';
-import mantiqueiraImg from '../assets/chapada.png';
-import chapadaImg from '../assets/chapada.png';
-import foundersImg from '../assets/grower-example.jpg';
-import cesarGalliPDF from '../assets/documents/Panorama.pdf';
-import gabrielNunesPDF from '../assets/documents/Chapadao.pdf';
-import gilMeloPDF from '../assets/documents/Espigao.pdf';
-import tomasCostaPDF from '../assets/documents/Sao-Francisco.pdf';
-import daniloDonesPDF from '../assets/documents/grower-document-example.pdf';
-import edilioSoaresPDF from '../assets/documents/Coqueiral.pdf';
-import elioUlianaPDF from '../assets/documents/Pedra-Bonita.pdf';
-import marcosTomaziniPDF from '../assets/documents/Sitio-Tomazini.pdf';
-import silvaniusKutzPDF from '../assets/documents/grower-document-example.pdf';
-import vaniltoPDF from '../assets/documents/grower-document-example.pdf';
-import andreGarciaPDF from '../assets/documents/Jaguara.pdf';
-import cibelePDF from '../assets/documents/Embira.pdf';
-import ednilsonPDF from '../assets/documents/Dutra.pdf';
-import queziaTavaresPDF from '../assets/documents/Taquara.pdf';
-import abelardoJosePDF from '../assets/documents/Divisa.pdf';
-import carlosRenatoPDF from '../assets/documents/Pedra-Batista.pdf';
-import guilhermeCastroPDF from '../assets/documents/Serra-da-Campanha.pdf';
-import ledaAparecidaPDF from '../assets/documents/Roseira.pdf';
-import luizPauloPDF from '../assets/documents/Santuario-do-Sul.pdf';
-import tatianePDF from '../assets/documents/grower-document-example.pdf';
-import ricardoTavaresPDF from '../assets/documents/Matilde.pdf';
-import andreAquilaPDF from '../assets/documents/Aterradinho.pdf';
-import pedroCorreaPDF from '../assets/documents/grower-document-example.pdf';
-import biquinhaPDF from '../assets/documents/Biquinha.pdf';
-import NiquinhoPDF from '../assets/documents/Niquinho.pdf';
+import camposDasVertentesImg from "../assets/campos-das-vertentes.png";
+import cerradoImg from "../assets/cerrado.png";
+import mataImg from "../assets/mata.png";
+import mogianaImg from "../assets/mogiana.png";
+import espiritoSantoImg from "../assets/espirito-santo.png";
+import mantiqueiraImg from "../assets/chapada.png";
+import chapadaImg from "../assets/chapada.png";
+import foundersImg from "../assets/grower-example.jpg";
+import cesarGalliPDF from "../assets/documents/Panorama.pdf";
+import gabrielNunesPDF from "../assets/documents/Chapadao.pdf";
+import gilMeloPDF from "../assets/documents/Espigao.pdf";
+import tomasCostaPDF from "../assets/documents/Sao-Francisco.pdf";
+import daniloDonesPDF from "../assets/documents/grower-document-example.pdf";
+import edilioSoaresPDF from "../assets/documents/Coqueiral.pdf";
+import elioUlianaPDF from "../assets/documents/Pedra-Bonita.pdf";
+import marcosTomaziniPDF from "../assets/documents/Sitio-Tomazini.pdf";
+import silvaniusKutzPDF from "../assets/documents/grower-document-example.pdf";
+import vaniltoPDF from "../assets/documents/grower-document-example.pdf";
+import andreGarciaPDF from "../assets/documents/Jaguara.pdf";
+import cibelePDF from "../assets/documents/Embira.pdf";
+import ednilsonPDF from "../assets/documents/Dutra.pdf";
+import queziaTavaresPDF from "../assets/documents/Taquara.pdf";
+import abelardoJosePDF from "../assets/documents/Divisa.pdf";
+import carlosRenatoPDF from "../assets/documents/Pedra-Batista.pdf";
+import guilhermeCastroPDF from "../assets/documents/Serra-da-Campanha.pdf";
+import ledaAparecidaPDF from "../assets/documents/Roseira.pdf";
+import luizPauloPDF from "../assets/documents/Santuario-do-Sul.pdf";
+import tatianePDF from "../assets/documents/grower-document-example.pdf";
+import ricardoTavaresPDF from "../assets/documents/Matilde.pdf";
+import andreAquilaPDF from "../assets/documents/Aterradinho.pdf";
+import pedroCorreaPDF from "../assets/documents/grower-document-example.pdf";
+import biquinhaPDF from "../assets/documents/Biquinha.pdf";
+import NiquinhoPDF from "../assets/documents/Niquinho.pdf";
 
 const data = [
   {
-    name: 'Cerrado Mineiro',
-    tag: 'cerrado-mineiro',
+    name: "Cerrado Mineiro",
+    tag: "cerrado-mineiro",
     img: cerradoImg,
     imgPosAlt: false,
     text:
-      'This region is characterized by high plateaus that alternate with valleys, crossed by rivers. Most of the coffees from Chapada de Minas are natural processed, but the washed coffee production technique is constantly increasing the popularity.',
+      "This region is characterized by high plateaus that alternate with valleys, crossed by rivers. Most of the coffees from Chapada de Minas are natural processed, but the washed coffee production technique is constantly increasing the popularity.",
     growers: [
       {
-        name: 'Cesar Galli',
-        description: 'Panorama Farm',
+        name: "Cesar Galli",
+        description: "Panorama Farm",
         img: foundersImg,
         documentPath: cesarGalliPDF,
       },
       {
-        name: 'Gabriel Nunes',
-        description: 'Chapadao Farm',
+        name: "Gabriel Nunes",
+        description: "Chapadao Farm",
         img: foundersImg,
         documentPath: gabrielNunesPDF,
       },
       {
-        name: 'Gil Melo',
-        description: 'Espigao Farm',
+        name: "Gil Melo",
+        description: "Espigao Farm",
         img: foundersImg,
         documentPath: gilMeloPDF,
       },
       {
-        name: 'Tomas Costa',
-        description: 'Sao Francisco',
+        name: "Tomas Costa",
+        description: "Sao Francisco",
         img: foundersImg,
         documentPath: tomasCostaPDF,
       },
     ],
   },
   {
-    name: 'The Mountains of Espirito Santo',
-    tag: 'espirito-santo',
+    name: "The Mountains of Espirito Santo",
+    tag: "espirito-santo",
     img: espiritoSantoImg,
     imgPosAlt: true,
     text:
-      'Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.',
+      "Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.",
     growers: [
       {
-        name: 'Danilo Dones',
-        description: 'Dones Farm',
+        name: "Danilo Dones",
+        description: "Dones Farm",
         img: foundersImg,
         documentPath: daniloDonesPDF,
       },
       {
-        name: 'Edilio Soares',
-        description: 'Coqueiral Farm',
+        name: "Edilio Soares",
+        description: "Coqueiral Farm",
         img: foundersImg,
         documentPath: edilioSoaresPDF,
       },
       {
-        name: 'Elio Uliana',
-        description: 'Pedra Bonita Farm',
+        name: "Elio Uliana",
+        description: "Pedra Bonita Farm",
         img: foundersImg,
         documentPath: elioUlianaPDF,
       },
       {
-        name: 'Marcos Tomazini',
-        description: 'Tomazini Farm',
+        name: "Marcos Tomazini",
+        description: "Tomazini Farm",
         img: foundersImg,
         documentPath: marcosTomaziniPDF,
       },
       {
-        name: 'Pedro Correa',
-        description: 'Boa Sorte Farm',
+        name: "Pedro Correa",
+        description: "Boa Sorte Farm",
         img: foundersImg,
         documentPath: pedroCorreaPDF,
       },
       {
-        name: 'Silvanius Kutz',
-        description: 'Kutz Farm',
+        name: "Silvanius Kutz",
+        description: "Kutz Farm",
         img: foundersImg,
         documentPath: silvaniusKutzPDF,
       },
       {
-        name: 'Vanilto Grinewald',
-        description: 'Fe Esperanca Farm',
+        name: "Vanilto Grinewald",
+        description: "Fe Esperanca Farm",
         img: foundersImg,
         documentPath: vaniltoPDF,
       },
     ],
   },
   {
-    name: 'Campos das Vertentes',
-    tag: 'campos-das-vertentes',
+    name: "Campos das Vertentes",
+    tag: "campos-das-vertentes",
     img: camposDasVertentesImg,
     imgPosAlt: false,
     text:
-      'This is the heart of coffee production in Brazil. The climate here is mild with a constant rainfalls and stable weather, providing ideal conditions for year-round. production of beans. Processing methods are pulped natural, washed and natural. The coffees of this area stand out due to their fruity aroma and low acidity.',
+      "This is the heart of coffee production in Brazil. The climate here is mild with a constant rainfalls and stable weather, providing ideal conditions for year-round. production of beans. Processing methods are pulped natural, washed and natural. The coffees of this area stand out due to their fruity aroma and low acidity.",
     growers: [
       {
-        name: 'Andre Garcia',
-        description: 'Jaguara Farm',
+        name: "Andre Garcia",
+        description: "Jaguara Farm",
         img: foundersImg,
         documentPath: andreGarciaPDF,
       },
       {
-        name: 'Cibele',
-        description: 'Embira Farm',
+        name: "Cibele",
+        description: "Embira Farm",
         img: foundersImg,
         documentPath: cibelePDF,
       },
     ],
   },
   {
-    name: 'Mata de Minas',
-    tag: 'mata-de-minas',
+    name: "Matas de Minas",
+    tag: "mata-de-minas",
     img: mataImg,
     imgPosAlt: true,
     text:
-      'Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.',
+      "Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.",
     growers: [
       {
-        name: 'Ednilson/Walter',
-        description: 'Dutra Farm',
+        name: "Ednilson/Walter",
+        description: "Dutra Farm",
         img: foundersImg,
         documentPath: ednilsonPDF,
       },
       {
-        name: 'Quezia Tavares',
-        description: 'Taquara Farm',
+        name: "Quezia Tavares",
+        description: "Taquara Farm",
         img: foundersImg,
         documentPath: queziaTavaresPDF,
       },
     ],
   },
   {
-    name: 'Mantiqueira de Minas',
-    tag: 'mantiqueira-de-minas',
+    name: "Mantiqueira de Minas",
+    tag: "mantiqueira-de-minas",
     img: mantiqueiraImg,
     imgPosAlt: false,
     text:
-      'This region comprises plateaus with highland tropical climate, characterized by rainy summers and dry winters, ideal for cropping with an annual medium temperature of 19 ºC. Altitudes vary between 800 and 1,300 meters and this area has a reputation of consistently producing high-quality coffees with a unique identity.',
+      "This region comprises plateaus with highland tropical climate, characterized by rainy summers and dry winters, ideal for cropping with an annual medium temperature of 19 ºC. Altitudes vary between 800 and 1,300 meters and this area has a reputation of consistently producing high-quality coffees with a unique identity.",
     growers: [
       {
-        name: 'Abelardo José',
-        description: 'Divisa Farm',
+        name: "Abelardo José",
+        description: "Divisa Farm",
         img: foundersImg,
         documentPath: abelardoJosePDF,
       },
       {
-        name: 'Carlos Renato',
-        description: 'Pedra Batista Farm',
+        name: "Carlos Renato",
+        description: "Pedra Batista Farm",
         img: foundersImg,
         documentPath: carlosRenatoPDF,
       },
       {
-        name: 'Guilherme Castro',
-        description: 'Biquinha Farm',
+        name: "Guilherme Castro",
+        description: "Biquinha Farm",
         img: foundersImg,
         documentPath: biquinhaPDF,
       },
       {
-        name: 'Guilherme Castro',
-        description: 'Serra da Campanha',
+        name: "Guilherme Castro",
+        description: "Serra da Campanha",
         img: foundersImg,
         documentPath: guilhermeCastroPDF,
       },
       {
-        name: 'Leda Aparecida',
-        description: 'Roseira Farm',
+        name: "Leda Aparecida",
+        description: "Roseira Farm",
         img: foundersImg,
         documentPath: ledaAparecidaPDF,
       },
       {
-        name: 'Luiz Paulo Pereira',
-        description: 'Niquinho Farm',
+        name: "Luiz Paulo Pereira",
+        description: "Niquinho Farm",
         img: foundersImg,
         documentPath: NiquinhoPDF,
       },
       {
-        name: 'Luiz Paulo Pereira',
-        description: 'Santuario do Sul',
+        name: "Luiz Paulo Pereira",
+        description: "Santuario do Sul",
         img: foundersImg,
         documentPath: luizPauloPDF,
       },
       {
-        name: 'Tatiane Gonçalves',
-        description: 'Santa Edwiges Farm',
+        name: "Tatiane Gonçalves",
+        description: "Santa Edwiges Farm",
         img: foundersImg,
         documentPath: tatianePDF,
       },
     ],
   },
   {
-    name: 'Chapada de Minas',
-    tag: 'chapada-de-minas',
+    name: "Chapada de Minas",
+    tag: "chapada-de-minas",
     img: chapadaImg,
     imgPosAlt: true,
     text:
-      'This region has rough terrains with a warm and humid climate ideal for the production of some of the highly internationally acclaimed Brazilian Coffees. Coffees from Matas de Minas have a delicate and balanced acidity and have a medium to full body. Processing methods are pulped natural and natural.',
+      "This region has rough terrains with a warm and humid climate ideal for the production of some of the highly internationally acclaimed Brazilian Coffees. Coffees from Matas de Minas have a delicate and balanced acidity and have a medium to full body. Processing methods are pulped natural and natural.",
     growers: [
       {
-        name: 'Ricardo Tavares',
-        description: 'Matilde Farm',
+        name: "Ricardo Tavares",
+        description: "Matilde Farm",
         img: foundersImg,
         documentPath: ricardoTavaresPDF,
       },
     ],
   },
   {
-    name: 'Mogiana',
-    tag: 'mogiana',
+    name: "Mogiana",
+    tag: "mogiana",
     img: mogianaImg,
     imgPosAlt: false,
     text:
-      'Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.',
+      "Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.",
     growers: [
       {
-        name: 'Andre Aguila',
-        description: 'Aterradinho Farm',
+        name: "Andre Aguila",
+        description: "Aterradinho Farm",
+        img: foundersImg,
+        documentPath: andreAquilaPDF,
+      },
+    ],
+  },
+  {
+    name: "All Year Round",
+    tag: "allYearRound",
+    img: null,
+    imgPosAlt: false,
+    text: null,
+    growers: [
+      {
+        name: "Amana",
+        description: "Amana",
+        img: foundersImg,
+        documentPath: andreAquilaPDF,
+      },
+      {
+        name: "Anahy",
+        description: "Anahy",
+        img: foundersImg,
+        documentPath: andreAquilaPDF,
+      },
+      {
+        name: "Andira",
+        description: "Andira",
+        img: foundersImg,
+        documentPath: andreAquilaPDF,
+      },
+      {
+        name: "Jaguara",
+        description: "Jaguara Farm",
+        img: foundersImg,
+        documentPath: andreAquilaPDF,
+      },
+      {
+        name: "Uyara",
+        description: "Uyara",
         img: foundersImg,
         documentPath: andreAquilaPDF,
       },
@@ -293,23 +332,23 @@ export default function GrowersPage() {
 
 const styles = {
   container: {
-    mt: ['200px'],
-    mb: '5%',
+    mt: ["200px"],
+    mb: "5%",
     h3: {
       fontSize: [6, 7, 7, 7, 7, 8, 8],
-      textAlign: 'center',
-      maxWidth: [null, null, null, '400px', 'none'],
-      mx: [null, null, null, 'auto', '0'],
-      color: 'text',
-      fontWeight: 'bold',
-      letterSpacing: ['-0.5px', null, null, null, null, null, '-1.5px'],
+      textAlign: "center",
+      maxWidth: [null, null, null, "400px", "none"],
+      mx: [null, null, null, "auto", "0"],
+      color: "text",
+      fontWeight: "bold",
+      letterSpacing: ["-0.5px", null, null, null, null, null, "-1.5px"],
       lineHeight: [1.5, null, 1.25],
-      mb: ['30px', null, null, null, '30px'],
+      mb: ["30px", null, null, null, "30px"],
     },
     p: {
       fontSize: [2, 2, 3, 3, 4, 5, 5],
-      fontStyle: 'italic',
-      mb: ['80px', '80px', '100px', 3, 4, 5, 5],
+      fontStyle: "italic",
+      mb: ["80px", "80px", "100px", 3, 4, 5, 5],
     },
   },
 };
