@@ -74,7 +74,9 @@ export default {
       alignItems: "center",
       // justifyContent: 'space-between',
     },
-    main: {},
+    main: {
+      backgroundColor: "background",
+    },
     footer: {
       backgroundColor: "background_secondary",
     },

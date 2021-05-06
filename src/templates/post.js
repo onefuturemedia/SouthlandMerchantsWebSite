@@ -11,13 +11,13 @@ const MySinglePostPage = ({ data: { post }, ...props }) => {
     <StickyProvider>
       <Layout isHome={false}>
         <SEO />
-        <Box classname="blog-box" sx={styles.box}>
-          <Container classname="blog-box-container">
+        <Box className="blog-box" sx={styles.box}>
+          <Container className="blog-box-container">
             <Text as="h3" sx={styles.title}>
               {post.title}
             </Text>
             <Text
-              classname="blog-content"
+              className="blog-content"
               sx={styles.text}
               dangerouslySetInnerHTML={{ __html: post.content.encoded }}
             />
@@ -48,6 +48,7 @@ export default MySinglePostPage;
 
 const styles = {
   box: {
+    backgroundColor: "background",
     px: [0, 0, 0, 0, 0, 0],
     mt: ["150px", "120px", null, "200px", null, "200px"],
   },

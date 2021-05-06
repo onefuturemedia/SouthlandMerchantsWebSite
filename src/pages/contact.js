@@ -4,7 +4,6 @@ import emailjs from "emailjs-com";
 import { StickyProvider } from "contexts/app/app.provider";
 import SEO from "components/seo";
 import Layout from "components/layout";
-import "./main_bg_change.css";
 
 import {
   Container,
@@ -48,7 +47,11 @@ export default function Contact() {
     <StickyProvider>
       <Layout isHome={false}>
         <SEO title="Southland Merchants" />
-        <Container classname="contact-us-container" sx={styles.container}>
+        <Box
+          as="section"
+          classname="contact-us-container"
+          sx={styles.container}
+        >
           <Heading classname="contact-us-heading" as="h3">
             Contact Us
           </Heading>
@@ -80,7 +83,7 @@ export default function Contact() {
           <Text classname="contact-us-text" as="p">
             Or if you want, you can send us a message here: <br />
           </Text>
-          <Box
+          <Container
             classname="contact-us-form"
             as="form"
             onSubmit={(e) => sendEmail(e)}
@@ -91,8 +94,8 @@ export default function Contact() {
             <Label htmlFor="comment">Comment</Label>
             <Textarea name="comment" id="comment" rows={3} mb={3} />
             <Button>Submit</Button>
-          </Box>
-        </Container>
+          </Container>
+        </Box>
       </Layout>
     </StickyProvider>
   );
@@ -107,7 +110,7 @@ const styles = {
       fontSize: ["10px", "12px", 3],
       mt: ["15px", "15px", "20px", "20px", "20px", "20px"],
     },
-    backgroundColor: "white",
+    backgroundColor: "background_lighter",
   },
   founders: {
     pt: ["20px", "50px", "100px", "100px"],
