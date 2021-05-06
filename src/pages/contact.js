@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 import { StickyProvider } from "contexts/app/app.provider";
 import SEO from "components/seo";
@@ -21,6 +22,28 @@ import AndreImg from "assets/nadia-profile.jpeg";
 import NadiaImg from "assets/nadia-profile.jpeg";
 
 export default function Contact() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_lkhznlr",
+        "template_j4y823d",
+        e.target,
+        "user_B410xs5Zte99ElgBpjyJW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Mensagem enviada com sucesso!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Erro no envio da mensagem!");
+        }
+      );
+  }
+
   return (
     <StickyProvider>
       <Layout isHome={false}>
@@ -60,7 +83,7 @@ export default function Contact() {
           <Box
             classname="contact-us-form"
             as="form"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={(e) => sendEmail(e)}
             sx={styles.formBox}
           >
             <Label htmlFor="email">E-mail</Label>
