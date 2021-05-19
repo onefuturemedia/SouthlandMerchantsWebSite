@@ -66,7 +66,7 @@ const styles = {
   aboutUs: {
     pt: "5em",
     // background: "linear-gradient(220deg, #B2957F 0%, #ede0d6 40%)",
-    backgroundColor: "background",
+    backgroundColor: "background_lighter",
   },
   row: {
     display: "flex",
