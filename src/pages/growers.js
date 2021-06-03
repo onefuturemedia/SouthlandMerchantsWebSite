@@ -47,7 +47,6 @@ import boaSorteIMG from '../assets/grower/boasorte.jpeg';
 import chapadaoIMG from '../assets/grower/chapadao.jpeg';
 import coqueiralIMG from '../assets/grower/coqueiral.jpg';
 import divisaIMG from '../assets/grower/divisafarm.jpeg';
-import donaSinhaIMG from '../assets/grower/donasinha.jpeg';
 import donesIMG from '../assets/grower/dones.jpg';
 import dutraIMG from '../assets/grower/dutra.jpg';
 import embiraIMG from '../assets/grower/embira.jpg';
@@ -57,11 +56,10 @@ import kutzIMG from '../assets/grower/kutz.jpg';
 import jaguaraIMG from '../assets/grower/jaguara.jpg';
 import niquinhoIMG from '../assets/grower/niquinho.jpg';
 import panoramaIMG from '../assets/grower/panorama.jpg';
-import pedrabatistaIMG from '../assets/grower/pedrabatista.jpg';
+import pedrabatistaIMG from '../assets/grower/pedrabatista.jpeg';
 import pedrabonitaIMG from '../assets/grower/pedrabonita.jpg';
-import ranchoDantasIMG from '../assets/grower/aterradinho.jpg';
 import roseiraIMG from '../assets/grower/roseira.jpg';
-import santaEdwigesIMG from '../assets/grower/santaedwiges.jpg';
+import santaEdwigesIMG from '../assets/grower/santaedwiges.jpeg';
 import santuarioIMG from '../assets/grower/santuario.jpg';
 import serradaCampanhaIMG from '../assets/grower/serradacampanha.jpeg';
 import taquaraIMG from '../assets/grower/taquara.jpg';
@@ -74,12 +72,12 @@ const data = [
     img: cerradoImg,
     imgPosAlt: false,
     text:
-      'The Cerrado Mineiro region, located northwest in Minas Gerais, is renowned for its high-quality coffee production globally. The large area produces annually 5 million bags of coffee comprising 25% of Minas Gerais and 12.7% of Brazil. The area's coffee industry is the first region with a Geographical Indication (GI) in Brazil. They received the renowned recognition in 2005 for their unique identity and distinct aroma notes. 
+      `The Cerrado Mineiro region, located northwest in Minas Gerais, is renowned for its high-quality coffee production globally. The large area produces annually 5 million bags of coffee comprising 25% of Minas Gerais and 12.7% of Brazil. The area's coffee industry is the first region with a Geographical Indication (GI) in Brazil. They received the renowned recognition in 2005 for their unique identity and distinct aroma notes. 
       With hot and wet summers and mild and dry winters, cherries typically ripen at the same time. The ideal climate and altitude between 800 and 1,300 meters above sea level afford perfect conditions for cultivating this unique and extraordinary coffee with nice taste and intensive aromas from caramel to walnut, with a pleasant acidity and a vigorous chocolaty aftertaste. 
       Coffee from Cerrado Mineiro is "Origin and Quality Certified" by the Cerrado Mineiro Region GI Regulatory Board and prides itself for its traceability and transparency. 
       The region of Campo das Vertentes region houses 17 cities: Bom Sucesso, Camacho, Campo Belo, Cana Verde, Candeias, Carmo da Mata, Conceição da Barra de Minas, Ibituruna, Nazareno, Oliveira, Perdões, Ritápolis, Santana do Jacaré, Santo Antônio do Amparo, São Francisco de Paula, São João Del Rei and São Tiago. 
 Campo das Vertentes was recognised with the Geographical Indication (GI) in November 2020. Along the Mantiqueira de Minas region and Cerrado Mineiro, it is another region to receive this honour for coffee production. It demonstrates the hard work ethic, dedication and commitment to promoting the area's economic development in liaison with the Brazilian ONG Sebrae
-',
+`,
     growers: [
       {
         name: 'Cesar Galli',
@@ -113,8 +111,8 @@ Campo das Vertentes was recognised with the Geographical Indication (GI) in Nove
     img: espiritoSantoImg,
     imgPosAlt: true,
     text:
-      'Small-scale coffee growers dominate the Montanhas do Espirito Santo region who are actively engaged in the entire chain of the production process. Usually, growers in Espirito Santo work with family members and pass on their traditions and skill to younger generations. The coffee growers constantly strive for better innovation and development in speciality coffee production to improve their living standards. 
-      Located in the southern area of the state of Espirito Santo, mild temperatures and steep highlands (between 700 and 1300 meters above sea level) provide ideal conditions for growing superb quality Arabica coffee with a round body, pleasant acidity, and delicate sweetness. The increasingly popular Pulped Naturals processing style coins the region's coffee characteristics, putting Espirito Santo on the map of high-quality speciality coffees. Espirito Santo is in the southeast of Brazil by the Atlantic Ocean. Its extensive coastline south of Bahia, east of Minas Gerais and north of Rio de Janeiro is a popular tourist destination. Our co-founder Andre was born and raised in its capital Vitoria. Inland Espirito Santo is home to nature parks and reserves that protect the rich biodiversity of the local flora and fauna. Many settlers in the mountains of Espirito Santo arrived at the beginning of the twentieth century from Europe. The state is home to large Italian communities and immigrants from the Pomeranian region, an area lying along the Baltic Sea coastal plain between northern Germany and Poland.',
+      `Small-scale coffee growers dominate the Montanhas do Espirito Santo region who are actively engaged in the entire chain of the production process. Usually, growers in Espirito Santo work with family members and pass on their traditions and skill to younger generations. The coffee growers constantly strive for better innovation and development in speciality coffee production to improve their living standards. 
+      Located in the southern area of the state of Espirito Santo, mild temperatures and steep highlands (between 700 and 1300 meters above sea level) provide ideal conditions for growing superb quality Arabica coffee with a round body, pleasant acidity, and delicate sweetness. The increasingly popular Pulped Naturals processing style coins the region's coffee characteristics, putting Espirito Santo on the map of high-quality speciality coffees. Espirito Santo is in the southeast of Brazil by the Atlantic Ocean. Its extensive coastline south of Bahia, east of Minas Gerais and north of Rio de Janeiro is a popular tourist destination. Our co-founder Andre was born and raised in its capital Vitoria. Inland Espirito Santo is home to nature parks and reserves that protect the rich biodiversity of the local flora and fauna. Many settlers in the mountains of Espirito Santo arrived at the beginning of the twentieth century from Europe. The state is home to large Italian communities and immigrants from the Pomeranian region, an area lying along the Baltic Sea coastal plain between northern Germany and Poland.`,
     growers: [
       {
         name: 'Danilo Dones',
@@ -166,11 +164,11 @@ Campo das Vertentes was recognised with the Geographical Indication (GI) in Nove
     img: camposDasVertentesImg,
     imgPosAlt: false,
     text:
-      'Campo das Vertentes, an area with high mountains and lush forests, lies next to the Mantiqueira de Minas region in the State of Minas Gerais. 
+      `Campo das Vertentes, an area with high mountains and lush forests, lies next to the Mantiqueira de Minas region in the State of Minas Gerais. 
       The region’s mild climate and ideal altitude offer perfect conditions for its high-quality coffee production. 
       The region of Campo das Vertentes region houses 17 cities: Bom Sucesso, Camacho, Campo Belo, Cana Verde, Candeias, Carmo da Mata, Conceição da Barra de Minas, Ibituruna, Nazareno, Oliveira, Perdões, Ritápolis, Santana do Jacaré, Santo Antônio do Amparo, São Francisco de Paula, São João Del Rei and São Tiago. 
       Campo das Vertentes was recognised with the Geographical Indication (GI) in November 2020. Along the Mantiqueira de Minas region and Cerrado Mineiro, it is another region to receive this honour for coffee production. It demonstrates the hard work ethic, dedication and commitment to promoting the area's economic development in liaison with the Brazilian ONG Sebrae. 
-      ',
+      `,
     growers: [
       {
         name: 'Andre Garcia',
@@ -214,10 +212,10 @@ Campo das Vertentes was recognised with the Geographical Indication (GI) in Nove
     img: mantiqueiraImg,
     imgPosAlt: false,
     text:
-      'The region of Mantiqueira de Minas in the southern part of Minas Gerais is an excellent area to produce speciality coffee. It is one of the most recognised and awarded regions in Brazil. This region’s longstanding traditions and expertise in producing high quality coffees with unique profiles. 
+      `The region of Mantiqueira de Minas in the southern part of Minas Gerais is an excellent area to produce speciality coffee. It is one of the most recognised and awarded regions in Brazil. This region’s longstanding traditions and expertise in producing high quality coffees with unique profiles. 
       Mantiqueira de Minas benefits from a colder than usual climate, good geological conditions and an ideal altitude. Most of the over 7,000 growers own small farms and cultivate their coffee on slopes between 900 and 1,500 metres above sea level. They maintain their rich traditions and a deep connection to the land and their ancestors. Manual harvesting guarantees that only the best and ripe fruit is used for the approximately 1 million bags of coffee. Their rigorous approach results in the region’s respected reputation and their outstanding, distinctive product the world’s coffee lovers benefit from.
       As part of the Serra da Mantiqueira micro-region, the Mantiqueira de Minas lies within the municipalities of Lambari, Cristina, Olímpio Noronha, Santa Rita do Sapucaí and Mantiqueira; the latter being home to our milling process warehouse
-      ',
+      `,
     growers: [
       {
         name: 'Abelardo José',
