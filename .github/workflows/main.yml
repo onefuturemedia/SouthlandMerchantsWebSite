@@ -38,7 +38,7 @@ jobs:
 #           echo Add other actions to build,
 #           echo test, and deploy your project.
 
-      - name: 📂 Sync files
+      - name: 📂 Sync files in website Cpanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: new_website@southlandmerchants.com.au	
