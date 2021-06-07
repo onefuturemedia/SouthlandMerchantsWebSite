@@ -44,4 +44,5 @@ jobs:
           server: new_website@southlandmerchants.com.au	
           username: new_website
           password: ${{ secrets.ftp_password }}
-    
+          local-dir: ./public/
+          server-dir: test/   
