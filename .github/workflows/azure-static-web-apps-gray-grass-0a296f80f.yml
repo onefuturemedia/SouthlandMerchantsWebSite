@@ -1,8 +1,6 @@
 name: Azure Static Web Apps CI/CD
 
 on:
-  schedule:
-      - cron:  '*/6 * * * *'
   push:
     branches:
       - dev
