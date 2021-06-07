@@ -43,6 +43,6 @@ jobs:
         with:
           server: ftp.southlandmerchants.com.au
           username: south@southlandmerchants.com.au
-          password: ${{ secrets.ftp_password }}
+          password: ${{ secrets.FTP_PASSWORDSS }}
           local-dir: ./public/
           server-dir: test/   
