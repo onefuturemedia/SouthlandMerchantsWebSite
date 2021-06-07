@@ -87,7 +87,7 @@ const BlogHeader = () => {
 		const subtitlePattern = /<h4([\w\W]+?)\/h4>/g;
 		const subtitle = content.match(subtitlePattern)
 			? content.match(subtitlePattern)[0].replace('<h4>', '').replace('</h4>', '').replace('"', '')
-			: '';gast
+			: '';
 
 		return subtitle || '';
 	};
