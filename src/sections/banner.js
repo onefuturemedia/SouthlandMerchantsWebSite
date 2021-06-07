@@ -125,8 +125,9 @@ const styles = {
     "@media screen and (min-height: 1360px)": {
       height: "1360px",
     },
-    background:
-      "linear-gradient(190deg, #ede0d6 0%, #B2957F 35%, #B2957F 60%,#ede0d6 90%)",
+    // background:
+    //   "linear-gradient(190deg, #ede0d6 0%, #B2957F 35%, #B2957F 60%,#ede0d6 90%)",
+    backgroundColor: "heading_alt",
     overflow: "hidden",
   },
   container: {
@@ -156,7 +157,7 @@ const styles = {
     p: {
       fontSize: [1, null, null, 2, null, 3],
       lineHeight: ["26px", null, null, null, 2.33],
-      color: "text_secondary",
+      color: "text",
       mb: ["20px", null, null, null, null, "30px"],
       width: ["100%"],
       maxWidth: ["100%", null, null, null, null, "410px"],

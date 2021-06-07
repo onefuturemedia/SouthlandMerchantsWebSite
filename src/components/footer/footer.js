@@ -1,7 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Text, Container, Grid, Image } from "theme-ui";
-import { Link } from "components/link";
-import icon from "assets/logo-icon.png";
+import { jsx, Box, Text, Container, Grid } from "theme-ui";
 import { FaInstagram, FaFacebookSquare, FaMedium } from "react-icons/fa";
 import { RiMailLine } from "react-icons/ri";
 
@@ -13,15 +11,18 @@ export default function Footer() {
       }}
     >
       <Container
+        className="footer-container"
         sx={{
           variant: "layout.toolbar",
           justifyContent: ["center", null, null, "space-between"],
           flexDirection: ["column", null, null, null, "column"],
           paddingTop: [0],
           paddingBottom: [0],
+          maxWidth: [null, null, null, null, "90%"],
         }}
       >
         <Container
+          className="footer-upper-container"
           sx={{
             variant: "layout.toolbar",
             justifyContent: ["center", null, null, "space-between"],
@@ -29,14 +30,22 @@ export default function Footer() {
             py: [10, 20],
           }}
         >
-          <Box sx={styles.left}>
-            <Grid sx={{ gridGap: "0.1em" }}>
-              <Text as="p">Phone: +61 (0) 409 007 565</Text>
+          <Box sx={styles.left} className="footer-box">
+            <Grid sx={{ gridGap: "0.1em" }} className="footer-grid">
+              {/* <Text as="p">
+                Adelaide SA, Australia - info@southlandmerchants.com.au - +61
+                (0) 409 007 565
+              </Text> */}
+              <Text as="p">
+                +61 (0) 409 007 565 <br /> info@southlandmerchants.com.au <br />
+                Adelaide SA, Australia
+              </Text>
+              {/* <Text as="p"><b>Phone:</b> +61 (0) 409 007 565/+61 (0) 452 142 412</Text>
               <Text as="p">E-mail: info@southlandmerchants.com.au</Text>
-              <Text as="p">Adelaide SA, Australia</Text>
+              <Text as="p">Adelaide SA, Australia</Text> */}
             </Grid>
           </Box>
-          <Box sx={styles.middle}>
+          {/* <Box sx={styles.middle}>
             <Link path="/">
               <Image
                 src={icon}
@@ -44,7 +53,7 @@ export default function Footer() {
                 sx={styles.logo}
               />
             </Link>
-          </Box>
+          </Box> */}
           <Box sx={styles.right}>
             <a href="/contact">
               <RiMailLine />
@@ -60,7 +69,7 @@ export default function Footer() {
             </a>
           </Box>
         </Container>
-        <Text as="p" sx={styles.footerFooter}>
+        <Text as="p" sx={styles.footerFooter} className="footer-made-by">
           &copy; {new Date().getFullYear()} All right reserved - Design &
           Developed by On Future Media.
         </Text>
@@ -142,7 +151,7 @@ const styles = {
     mt: ["15px", "5px", null, null, null, null, null],
   },
   footerFooter: {
-    fontSize: ["10px", "10px", 1],
+    fontSize: ["10px", "10px", "10px"],
     color: "black",
   },
 };

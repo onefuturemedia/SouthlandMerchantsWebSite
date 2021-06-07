@@ -21,9 +21,9 @@ export default function IndexPage() {
         <SEO title="Southland Merchants" />
         <Banner />
         <AboutUs />
-        <ClientTestimonials />
-        <Growers />
         <ProductorTestimonials />
+        <Growers />
+        <ClientTestimonials />
         <BlogHeader />
       </Layout>
     </StickyProvider>

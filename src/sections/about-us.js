@@ -1,14 +1,17 @@
 import React from "react";
 import { Box, Container, Flex, Heading, Text, Image } from "theme-ui";
-import image from "assets/founders.png";
+import image from "assets/founders.jpeg";
 
 const AboutUs = () => {
   return (
     <Box as="section" sx={styles.aboutUs} id="about-us">
-      <Container>
-        <Box sx={styles.row}>
-          <Flex sx={styles.col}>
-            <Box sx={styles.content}>
+      <Container
+        className="about-container"
+        sx={{ maxWidth: [null, null, null, "90%", "80%"] }}
+      >
+        <Box className="about-box" sx={styles.row}>
+          <Flex className="about-col" sx={styles.col}>
+            <Box className="about-text-col" sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Heading as="h3">About Us</Heading>
                 <Text as="p">
@@ -43,8 +46,13 @@ const AboutUs = () => {
               </Link> */}
             </Box>
           </Flex>
-          <Flex sx={styles.col}>
-            <Image src={image} sx={styles.image} alt="" />
+          <Flex className="about-image-col" sx={styles.col}>
+            <Image
+              className="about-image"
+              src={image}
+              sx={styles.image}
+              alt=""
+            />
           </Flex>
         </Box>
       </Container>
@@ -57,7 +65,8 @@ export default AboutUs;
 const styles = {
   aboutUs: {
     pt: "5em",
-    background: "linear-gradient(220deg, #B2957F 0%, #ede0d6 40%)",
+    // background: "linear-gradient(220deg, #B2957F 0%, #ede0d6 40%)",
+    backgroundColor: "background_lighter",
   },
   row: {
     display: "flex",
@@ -68,13 +77,17 @@ const styles = {
     flex: ["0 0 100%", null, null, "0 0 50%"],
   },
   image: {
-    mt: ["25px", null, null, "0"],
     display: "flex",
-    marginLeft: ["0", null, null, null, "auto"],
-    marginRight: ["0", null, null, null, "auto"],
-    height: ["385px", null, null, "auto"],
+    // maxWidth: "100%",
+    // maxHeight: "500px",
+    maxWidth: ["1024*0.5", "1024*0.5", "1024*0.3", "1024*0.5", "1024*0.8"],
+    maxHeigth: ["576*0.5", "576*0.5", "576*0.3", "576*0.5", "576*0.8"],
+    // height: [null, null, null, null],
     position: "relative",
-    top: [null, null, null, "-20px", "-45px", "auto"],
+    // 1024 × 576
+    // top: [null, null, null, "-20px", "-45px", "auto"],
+    // mt: ["25px", "auto", "auto", "auto", "auto"],
+    my: "auto",
   },
   list: {
     margin: 0,
@@ -88,7 +101,7 @@ const styles = {
       alignItems: "center",
       justifyContent: ["flex-start", null, null, null, null, "flex-start"],
       fontSize: [1, null, 2, null, "18px"],
-      color: "text_secondary",
+      color: "text",
       lineHeight: [2.56],
       svg: {
         width: [17, null, null, 23],
@@ -109,8 +122,8 @@ const styles = {
       letterSpacing: ["-0.5px", null, null, null, null, null, "-1.5px"],
     },
     p: {
-      fontSize: [0, null, 2, null, 4],
-      color: "text_secondary",
+      fontSize: [0, null, 0, 0, 2, 4],
+      color: "text",
       opacity: ".6",
       lineHeight: ["26px", null, null, 1.8, null, 2.06],
       padding: ["0 20px", null, null, "0"],
@@ -133,7 +146,7 @@ const styles = {
   content: {
     width: "100%",
     textAlign: ["left", null, null, null, "left"],
-    pt: [null, null, null, null, null, "100px"],
-    pl: [null, null, null, null, null, "60px", "140px"],
+    py: ["40px", "40px", "40px", null, null, "50px"],
+    pl: [null, null, null, "20px", "40px", "60px", "140px"],
   },
 };

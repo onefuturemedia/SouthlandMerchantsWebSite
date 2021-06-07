@@ -56,19 +56,19 @@ const MobileDrawer = ({ isHome }) => {
           )}
           {!isHome && (
             <Box sx={styles.menu}>
-              {menuItems.map(({ path, label }, i) => (
-                <Link href={`/#${path}`} key={i}>
+              {menuItems.map(({ altPath, label }, i) => (
+                <Link href={altPath} key={i}>
                   {label}
                 </Link>
               ))}
             </Box>
           )}
           <Box sx={styles.menuFooter}>
-            <a href="/contact">
+            <Link href="/contact">
               <Button variant="primary" sx={styles.button}>
                 CONTACT US
               </Button>
-            </a>
+            </Link>
           </Box>
         </Box>
       </Scrollbars>

@@ -1,7 +1,6 @@
 import React from "react";
 import { withPrefix } from "gatsby";
 import video from "assets/videos/video.mp4";
-import image from "assets/banner-placeholder.png";
 
 export default function VideoBanner() {
   return (

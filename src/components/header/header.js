@@ -1,9 +1,8 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Image } from "theme-ui";
+import { jsx, Container, Flex } from "theme-ui";
 import { Link } from "components/link";
 import { Link as ScrollLink } from "react-scroll";
 import Logo from "components/logo";
-import icon from "assets/logo-icon.png";
 import logoDark from "assets/logo-dark.png";
 import logoLight from "assets/logo-light.png";
 
@@ -51,12 +50,21 @@ export default function Header({ isHome, className }) {
         <header sx={styles.headerOther} className={className}>
           <Container sx={styles.container}>
             <Logo logo={logoDark} light={false} />
-            {/* <Logo logo={logoLight} light={true} /> */}
             <Flex as="nav" sx={styles.nav}>
-              <Link sx={styles.nav.navLink} path="/">
-                HOME
-              </Link>
+              {menuItems.map(({ altPath, label }, i) => (
+                <Link sx={styles.nav.navLink} href={altPath} key={i}>
+                  {label}
+                </Link>
+              ))}
             </Flex>
+            <Link
+              id="contact-us"
+              path="/contact"
+              ml={2}
+              label="Contact Us"
+              sx={styles.headerBtn}
+              variant="buttons.primary"
+            />
             <MobileDrawer isHome={false} />
           </Container>
         </header>
@@ -86,12 +94,12 @@ const styles = {
   header: {
     color: "text_white",
     fontWeight: "normal",
-    py: "30px",
+    py: "20px",
     width: "100%",
     position: "fixed",
     top: 0,
     left: 0,
-    backgroundColor: "transparent",
+    backgroundColor: "heading_alt_opaque",
     transition: "all 0.4s ease",
     nav: {
       fontWeight: 700,
@@ -140,6 +148,9 @@ const styles = {
         fontWeight: "bold",
         color: "primary",
         borderColor: "primary",
+        "&:hover": {
+          color: "#fff",
+        },
       },
       "#drawer-handler": {
         color: "primary",
@@ -147,19 +158,12 @@ const styles = {
     },
   },
   headerOther: {
-    color: "text_white",
     fontWeight: "normal",
-    py: "30px",
     width: "100%",
     position: "fixed",
     top: 0,
     left: 0,
-    backgroundColor: "transparent",
     transition: "all 0.4s ease",
-    nav: {
-      fontWeight: 700,
-      color: "white",
-    },
     backgroundColor: "background",
     color: "text",
     py: "10px",
@@ -179,6 +183,9 @@ const styles = {
       fontWeight: "bold",
       color: "primary",
       borderColor: "primary",
+      "&:hover": {
+        color: "#fff",
+      },
     },
     "#drawer-handler": {
       color: "primary",

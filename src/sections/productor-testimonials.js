@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SwiperCore, { Thumbs, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Box, Container, Text, Heading, Image as Img } from "theme-ui";
+import { Box, Container, Text, Heading } from "theme-ui";
 import BlockTitle from "components/block-title";
 
 SwiperCore.use([Thumbs, Autoplay]);
@@ -27,6 +27,20 @@ const TESTIMONIALS_DATA = [
     designation: "Grower",
     content:
       "With the higher price at which they buy our coffee, we are able to improve our properties and mainly in our family quality of life. Because of them we are now known for the quality of our coffee.",
+  },
+  {
+    // image: img3,
+    heading: "Coopeavi",
+    designation: "Grower",
+    content:
+      "Working with Southland makes us so proud. It is so clear the change that they make in the growers perception. We as partners believe that we should always improve our knowledge, so we can always deliver the best, it is because we will go along this way with many families together, which will always be grateful and have the joy of a better future.",
+  },
+  {
+    // image: img3,
+    heading: "Silvanius Kutz",
+    designation: "Grower",
+    content:
+      "Working with them helped me to improve the quality of my coffee through the time. They recognize our coffees so it makes us always seek to improve.",
   },
 ];
 
@@ -66,11 +80,7 @@ const Testimonials = () => {
   return (
     <Box as="section" id="testimonials" sx={styles.testimonials}>
       <Container>
-        <BlockTitle
-          // slogan="Customer Comments"
-          title="How Growers Lives Are Impacted"
-          styles={styles.blockTitle}
-        />
+        <BlockTitle title="What Drives Us" styles={styles.blockTitle} />
         <Swiper
           id="testimonialsContent"
           thumbs={{ swiper: thumbsSwiper }}
@@ -109,8 +119,9 @@ export default Testimonials;
 
 const styles = {
   testimonials: {
-    background:
-      "linear-gradient(200deg, #ede0d6 30%, #ede0d6 60%, #B2957F 100%)",
+    // background:
+    //   "linear-gradient(200deg, #ede0d6 30%, #ede0d6 60%, #B2957F 100%)",
+    backgroundColor: "background",
     pt: ["65px", null, null, null, null, null, null],
     ".blockTitle": {
       textAlign: "center",
