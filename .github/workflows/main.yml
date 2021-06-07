@@ -1,16 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build and Deploy on website Cpanel (via ftp)
 
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   schedule:
-      - cron:  '*/6 * * * *'
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+      - cron:  '*/60 * * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -43,6 +39,6 @@ jobs:
         with:
           server: ftp.southlandmerchants.com.au
           username: south@southlandmerchants.com.au
-          password: ${{ secrets.FTP_PASSWORDSS }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: test/   
