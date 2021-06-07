@@ -78,7 +78,7 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `https://medium.com/feed/@Starbucks`, // change this Medium to get the website medium
+        url: `https://medium.com/feed/@namoreira-nm`,
         name: `MediumData`,
       },
     },
