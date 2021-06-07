@@ -17,8 +17,8 @@ import {
   Image,
 } from "theme-ui";
 
-import AndreImg from "assets/nadia-profile.jpeg";
-import NadiaImg from "assets/nadia-profile.jpeg";
+import AndreImg from "assets/andre.jpeg";
+import NadiaImg from "assets/nadia.jpeg";
 
 export default function Contact() {
   function sendEmail(e) {

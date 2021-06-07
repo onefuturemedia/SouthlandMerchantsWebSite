@@ -14,16 +14,16 @@ const GrowersRegion = ({ region }) => {
       }}
       id="our-growers"
     >
-      <Container>
+      <Container className="our-growers-container">
         {region.img ? (
           <Grid sx={region.imgPosAlt ? styles.row : styles.reverseRow}>
-            <Box sx={styles.imgCol}>
+            <Box sx={styles.imgCol} className="our-growers-region-image">
               <Image src={region.img} alt={region.tag} />
-              <Text as="p" sx={styles.imgCol.specialText}>
+              <Text as="p" className="our-growers-region-map-info" sx={styles.imgCol.specialText}>
                 {region.text}
               </Text>
             </Box>
-            <Box sx={styles.col}>
+            <Box sx={styles.col} className="our-growers-region-text">
               <Box sx={styles.content}>
                 <Heading as="h3">{region.name}</Heading>
                 <Flex sx={styles.growerGrid}>
@@ -60,7 +60,7 @@ const styles = {
     display: "grid",
     gridGap: [0, null, null, null, "25px", null, "55px"],
     gridTemplateColumns: ["1fr", null, null, null, "1fr"],
-    mb: ["100px"],
+    mb: ["200px"],
   },
   row: {
     display: "grid",
@@ -82,14 +82,19 @@ const styles = {
     },
     specialText: {
       display: ["none", "none", null, null, "block"],
-      fontSize: [0, null, 2, null, "17px"],
+      fontSize: [0, null, 2, "10px", "12px", "15px"],
       // color: 'text',
       // lineHeight: ['26px', null, null, 1.8, null, 2.06],
       // '+p': {
       //   mt: ['15px', null, null, null, '15px']
       // }
-      mt: ["-50px"],
+      // mt: ["-100px"],
+      position:"absolute",
+      width: ["400px", "400px", "400px", "400px", "500px", "600px"],
+      // width:"40%",
+      mt:["-300px"],
       textAlign: "center",
+      justifyContent: "center",
       color: "white",
       opacity: 0,
       backgroundColor: "logo_green_dark",
@@ -175,6 +180,6 @@ const styles = {
     justifyContent: "center",
   },
   col: {
-    mb: ["150px", "150px", "200px", "200px", "0", "0"],
+    mb: ["150px", "150px", "200px", "200px", "100px", "100px"],
   },
 };
