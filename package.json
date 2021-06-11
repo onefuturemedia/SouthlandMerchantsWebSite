@@ -25,14 +25,15 @@
     "gatsby-transformer-sharp": "^2.4.1",
     "prop-types": "^15.7.2",
     "rc-drawer": "^4.1.0",
-    "react": "^16.13.1",
+    "react": "^17.0.1",
     "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "^16.13.1",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.9.0",
     "react-id-swiper": "^4.0.0",
     "react-modal-video": "^1.2.6",
     "react-scroll": "^1.8.0",
+    "react-scripts": "^4.0.2",
     "react-stickynode": "^3.0.3",
     "react-waypoint": "^9.0.2",
     "swiper": "^6.3.1",
@@ -45,6 +46,7 @@
     "gatsby"
   ],
   "scripts": {
+    "start": "react-scripts start",
     "dev": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
