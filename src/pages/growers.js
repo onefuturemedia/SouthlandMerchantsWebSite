@@ -47,10 +47,10 @@ import boaSorteIMG from '../assets/grower/boasorte.jpeg';
 import chapadaoIMG from '../assets/grower/chapadao.jpeg';
 import coqueiralIMG from '../assets/grower/coqueiral.jpg';
 import divisaIMG from '../assets/grower/divisafarm.jpeg';
-import donesIMG from '../assets/grower/dones.jpg';
-import dutraIMG from '../assets/grower/dutra.jpg';
+import donesIMG from '../assets/grower/dones.png';
+import dutraIMG from '../assets/grower/dutra.jpeg';
 import embiraIMG from '../assets/grower/embira.jpg';
-import espigaoIMG from '../assets/grower/espigao.jpg';
+import espigaoIMG from '../assets/grower/espigao.jpeg';
 import feeEsperancaIMG from '../assets/grower/feeesperanca.jpg';
 import kutzIMG from '../assets/grower/kutz.jpg';
 import jaguaraIMG from '../assets/grower/jaguara.jpg';
@@ -58,7 +58,7 @@ import niquinhoIMG from '../assets/grower/niquinho.jpg';
 import panoramaIMG from '../assets/grower/panorama.jpg';
 import pedrabatistaIMG from '../assets/grower/pedrabatista.jpeg';
 import pedrabonitaIMG from '../assets/grower/pedrabonita.jpg';
-import roseiraIMG from '../assets/grower/roseira.jpg';
+import roseiraIMG from '../assets/grower/roseira.jpeg';
 import santaEdwigesIMG from '../assets/grower/santaedwiges.jpeg';
 import santuarioIMG from '../assets/grower/santuario.jpg';
 import serradaCampanhaIMG from '../assets/grower/serradacampanha.jpeg';
@@ -389,7 +389,7 @@ export default function GrowersPage() {
 					<GrowersRegion region={regionData} />
 				))}
 				<Container sx={styles.containerCoffee}>
-					<Heading as="h3">Some Information on Our Signature Coffee</Heading>
+					<Heading as="h3">Our Signature Coffee</Heading>
 					<Text as="p">
 						Apart from our single estate coffees, we offer a wide range of speciality coffee throughout the
 						entire year. <br />
