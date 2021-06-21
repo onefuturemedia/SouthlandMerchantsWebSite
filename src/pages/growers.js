@@ -16,7 +16,6 @@ import mogianaImg from '../assets/mogiana.png';
 import espiritoSantoImg from '../assets/espirito-santo.png';
 import mantiqueiraImg from '../assets/chapada.png';
 import chapadaImg from '../assets/chapada.png';
-import foundersImg from '../assets/grower-example.jpg';
 import cesarGalliPDF from '../assets/documents/Panorama.pdf';
 import gabrielNunesPDF from '../assets/documents/Chapadao.pdf';
 import gilMeloPDF from '../assets/documents/Espigao.pdf';
@@ -49,7 +48,6 @@ import coqueiralIMG from '../assets/grower/coqueiral.jpg';
 import divisaIMG from '../assets/grower/divisafarm.jpeg';
 import donesIMG from '../assets/grower/dones.png';
 import dutraIMG from '../assets/grower/dutra.jpeg';
-import embiraIMG from '../assets/grower/embira.jpg';
 import espigaoIMG from '../assets/grower/espigao.jpeg';
 import feeEsperancaIMG from '../assets/grower/feeesperanca.jpg';
 import kutzIMG from '../assets/grower/kutz.jpg';
@@ -69,6 +67,10 @@ import anahyIMG from '../assets/grower/Anahy.png';
 import andiraIMG from '../assets/grower/andira.png';
 import apuaIMG from '../assets/grower/Apua.jpg';
 import UyaraIMG from '../assets/grower/Uyara.png';
+import tomascostaImg from '../assets/grower/tomasdacosta.png'
+import marcostomaziniIMG from '../assets/grower/marcostomazini.jpg'
+import ricardoleonardotavaresIMG from '../assets/grower/ricardo_leonardo_tavares.jpg'
+import luizcarlosedilaineIMG from '../assets/grower/luizcarloseedilaine.jpeg'
 
 const data = [
 	{
@@ -102,7 +104,7 @@ const data = [
 			{
 				name: 'Tomas Costa',
 				description: 'Sao Francisco',
-				img: foundersImg,
+				img: tomascostaImg,
 				documentPath: tomasCostaPDF,
 				instagramUrl: 'https://www.instagram.com/southlandmerchants/'
 			}
@@ -140,7 +142,7 @@ const data = [
 			{
 				name: 'Marcos Tomazini',
 				description: 'Tomazini Farm',
-				img: foundersImg,
+				img: marcostomaziniIMG,
 				documentPath: marcosTomaziniPDF,
 				instagramUrl: 'https://www.instagram.com/southlandmerchants/'
 			},
@@ -186,16 +188,16 @@ const data = [
 				instagramUrl: 'https://www.instagram.com/southlandmerchants/'
 			},
 			{
-				name: 'Cibele',
+				name: 'Luiz C. e Edilaine',
 				description: 'Embira Farm',
-				img: embiraIMG,
+				img: luizcarlosedilaineIMG,
 				documentPath: cibelePDF,
 				instagramUrl: 'https://www.instagram.com/southlandmerchants/'
 			}
 		]
 	},
 	{
-		name: 'Matas de Minas',
+		name: 'Matas de Minas',	
 		tag: 'mata-de-minas',
 		img: mataImg,
 		imgPosAlt: true,
@@ -297,7 +299,7 @@ const data = [
 			{
 				name: 'Ricardo Tavares',
 				description: 'Matilde Farm',
-				img: foundersImg,
+				img: ricardoleonardotavaresIMG,
 				documentPath: ricardoTavaresPDF,
 				instagramUrl: 'https://www.instagram.com/southlandmerchants/'
 			}
@@ -389,7 +391,7 @@ export default function GrowersPage() {
 					<GrowersRegion region={regionData} />
 				))}
 				<Container sx={styles.containerCoffee}>
-					<Heading as="h3">Our Signature Coffee</Heading>
+					<Heading as="h3">Our Signature Coffees</Heading>
 					<Text as="p">
 						Apart from our single estate coffees, we offer a wide range of speciality coffee throughout the
 						entire year. <br />

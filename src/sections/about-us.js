@@ -10,50 +10,70 @@ const AboutUs = () => {
         sx={{ maxWidth: [null, null, null, "90%", "80%"] }}
       >
         <Box className="about-box" sx={styles.row}>
-          <Flex className="about-col" sx={styles.col}>
-            <Box className="about-text-col" sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">About Us</Heading>
-                <Text as="p">
-                  Nadia and Andre were born and raised in Brazil. In 2003 they
-                  established their export company and got involved in the
-                  coffee industry building a close relationship with local
-                  producers. Realising their dream of living in Australia, with
-                  its flourishing coffee culture, great people and breathtaking
-                  landscapes, Nadia and Andre moved to Adelaide in 2017 with
-                  their three children. Now that Southland Merchants is on your
-                  doorstep, their team can connect you with Brazil’s finest
-                  beans and the pleasure of the world’s best coffee, direct from
-                  the origin. We’d love to hear from you.
-                </Text>
-              </Box>
-              {/* <Box as="ul" sx={styles.list}>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Unlimited design possibility
-                </Text>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Completely responsive features
-                </Text>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Easy to customize plugins
-                </Text>
-              </Box>
-              <Link path="/" sx={styles.link}>
-                Learn more <FaAngleRight />
-              </Link> */}
-            </Box>
-          </Flex>
-          <Flex className="about-image-col" sx={styles.col}>
+          {/* <Flex className="about-col" sx={styles.col}> */}
+          {/* <Box className="about-text-col" sx={styles.content}> */}
+          <Box sx={styles.titleBox}>
+            <Heading as="h3">About Us</Heading>
+            <Text as="p">
+              Olá, we are Nadia and Andre, fellow Brazilians, passionate coffee
+              lovers, partners in business and life, and the founders and owners
+              of Southland Merchants.
+              <br />
+              We met in 2002 in a casual setting and instantly felt connected.
+              Within a year, we established our first company and fell in love.{" "}
+              <br />
+              Life in Brazil was great; we love the country and its people, the
+              lifestyle and being with our families, but we could not let go of
+              the urge to venture out into the world and explore new places.
+              Eventually, we decided to embark on an adventure and to move
+              overseas with our three girls. We wanted to find a place that
+              would offer a bright future for our children, allow them to meet a
+              new culture and learn another language. After a lot of research,
+              we realised Australia would be our ideal destination. <br />
+              In 2017 Australia became our new home. In the same year of our
+              arrival, we founded Southland Merchants. Our company supplies
+              Australian roasters with delicious Brazilian green coffee, full of
+              stories and passion, and connects us back to our roots.
+            </Text>
+            <Image
+              className="about-image"
+              src={image}
+              sx={styles.image}
+              alt=""
+              width="60%"
+            />
+            <Text as="p">
+              We want to make a difference and contribute to improving the local
+              growers' lives in Brazil. At the same time, we aspire to embrace
+              the diversity and potential Brazil has to offer.
+              <br />
+              In 2021 we launched a dry milling facility in the Mantiqueira de
+              Minas region in partnership with a local coffee producer. This
+              project means a lot to us. It allows us to develop a closer
+              relationship with the local growers, fosters open conversations
+              and gives us an insight into what we can do to ensure all parties
+              (growers, us and roasters) benefit from each other. One of our
+              many achievements is developing a project, Educacoffee, that
+              supports the coffee growers in everything they need to run a
+              successful farm business. <br />
+              We also value our relationship with our coffee roasters. We
+              believe, if we understand exactly what they desire and want, what
+              they like and enjoy, we can cooperate with our growers in finding
+              the best green coffees that suit the roasters’ market and build a
+              successful supply chain for all parties involved.
+              <br />
+            </Text>
+            {/* </Box> */}
+          </Box>
+          {/* </Flex> */}
+          {/* <Flex className="about-image-col" sx={styles.col}>
             <Image
               className="about-image"
               src={image}
               sx={styles.image}
               alt=""
             />
-          </Flex>
+          </Flex> */}
         </Box>
       </Container>
     </Box>
@@ -77,7 +97,7 @@ const styles = {
     flex: ["0 0 100%", null, null, "0 0 50%"],
   },
   image: {
-    display: "flex",
+    // display: "flex",
     // maxWidth: "100%",
     // maxHeight: "500px",
     maxWidth: ["1024*0.5", "1024*0.5", "1024*0.3", "1024*0.5", "1024*0.8"],
@@ -113,7 +133,7 @@ const styles = {
     },
   },
   titleBox: {
-    textAlign: ["center", null, null, "left"],
+    textAlign: ["center", null, null, "center"],
     h3: {
       color: "black",
       fontSize: [5, null, null, "21px", "36px", "32px", 8],
@@ -127,7 +147,8 @@ const styles = {
       opacity: ".6",
       lineHeight: ["26px", null, null, 1.8, null, 2.06],
       padding: ["0 20px", null, null, "0"],
-      mt: ["15px"],
+      my: ["25px"],
+      textAlign: "justify",
     },
   },
   link: {
