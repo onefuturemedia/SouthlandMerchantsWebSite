@@ -1,52 +1,21 @@
 import React from "react";
-import { Box, Container, Grid, Heading } from "theme-ui";
+import { Box, Container, Grid, Heading, Image } from "theme-ui";
 
 import VideoBanner from "components/video-banner";
+import thumb from "assets/videos/thumbnail.png";
 
 const Banner = () => {
   return (
     <Box as="section" sx={styles.banner} id="banner">
       <VideoBanner />
+      <Image src={thumb} alt="" sx={styles.image} />
       <Container id="container" sx={styles.container}>
         <Grid id="grid" sx={styles.grid}>
           <Box id="box" sx={styles.content}>
             <Heading as="h3">
               Connecting coffee growers with coffee lovers
             </Heading>
-            {/* <Text as="p">
-              We help build and manage a team of world-class developers to bring
-              your vision to life
-            </Text> */}
-            {/* <Box as="form" sx={styles.form}>
-              <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
-                subscribe
-              </Box>
-              <Input
-                name="subscribe"
-                id="subscribe"
-                placeholder="Subscribe newsletter"
-                sx={styles.form.input}
-              />
-              <Button type="submit" sx={styles.form.button}>
-                Subscribe
-              </Button>
-            </Box> */}
-            {/* <Box sx={styles.partner}>
-              <Text as="span">Key Partners:</Text>
-              <Box as="div">
-                <Img src={img1} alt="" />
-              </Box>
-              <Box as="div">
-                <Img src={img2} alt="" />
-              </Box>
-              <Box as="div">
-                <Img src={img3} alt="" />
-              </Box>
-            </Box> */}
           </Box>
-          {/* <Box sx={styles.image}>
-            <Image src={data.placeholderImage.childImageSharp.fluid} alt="" />
-          </Box> */}
         </Grid>
       </Container>
     </Box>
@@ -189,13 +158,15 @@ const styles = {
     },
   },
   image: {
-    img: {
-      display: "flex",
-      mixBlendMode: "darken",
-      position: "relative",
-      top: ["0", null, null, null, null, "-40px"],
-      maxWidth: ["100%", null, null, null, null, null, "none"],
-    },
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    right: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    objectPosition: "center",
   },
   partner: {
     display: "flex",
