@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Flex, Heading, Text, Image } from "theme-ui";
+import { Box, Container, Heading, Text, Image } from "theme-ui";
 import image from "assets/founders.jpeg";
 
 const AboutUs = () => {
