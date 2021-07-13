@@ -19,29 +19,29 @@ import chapadaImg from '../assets/chapada.png';
 import cesarGalliPDF from '../assets/documents/Panorama.pdf';
 import gabrielNunesPDF from '../assets/documents/Chapadao.pdf';
 import gilMeloPDF from '../assets/documents/Espigao.pdf';
-import tomasCostaPDF from '../assets/documents/Sao-Francisco.pdf';
-import daniloDonesPDF from '../assets/documents/grower-document-example.pdf';
+import tomasCostaPDF from '../assets/documents/SaoFrancisco.pdf';
+import daniloDonesPDF from '../assets/documents/Dones.pdf';
 import edilioSoaresPDF from '../assets/documents/Coqueiral.pdf';
-import elioUlianaPDF from '../assets/documents/Pedra-Bonita.pdf';
-import marcosTomaziniPDF from '../assets/documents/Sitio-Tomazini.pdf';
-import silvaniusKutzPDF from '../assets/documents/grower-document-example.pdf';
-import vaniltoPDF from '../assets/documents/grower-document-example.pdf';
+import elioUlianaPDF from '../assets/documents/Pedra Bonita.pdf';
+import marcosTomaziniPDF from '../assets/documents/Tomazini.pdf';
+import silvaniusKutzPDF from '../assets/documents/Irmao-Kutz.pdf';
+import vaniltoPDF from '../assets/documents/Fe-e-Esperanca.pdf';
 import andreGarciaPDF from '../assets/documents/Jaguara.pdf';
 import cibelePDF from '../assets/documents/Embira.pdf';
 import ednilsonPDF from '../assets/documents/Dutra.pdf';
 import queziaTavaresPDF from '../assets/documents/Taquara.pdf';
-import abelardoJosePDF from '../assets/documents/Divisa.pdf';
-import carlosRenatoPDF from '../assets/documents/Pedra-Batista.pdf';
-import guilhermeCastroPDF from '../assets/documents/Serra-da-Campanha.pdf';
+import abelardoJosePDF from '../assets/documents/Divisa Farm.pdf';
+import carlosRenatoPDF from '../assets/documents/Pedra Batista.pdf';
+import guilhermeCastroPDF from '../assets/documents/Serra da Campanha.pdf';
 import ledaAparecidaPDF from '../assets/documents/Roseira.pdf';
-import luizPauloPDF from '../assets/documents/Santuario-do-Sul.pdf';
-import tatianePDF from '../assets/documents/grower-document-example.pdf';
+import luizPauloPDF from '../assets/documents/Santuario do Sul.pdf';
+import tatianePDF from '../assets/documents/SantaEdwiges.pdf';
 import ricardoTavaresPDF from '../assets/documents/Matilde.pdf';
 import andreAquilaPDF from '../assets/documents/Aterradinho.pdf';
-import pedroCorreaPDF from '../assets/documents/grower-document-example.pdf';
+import pedroCorreaPDF from '../assets/documents/Boa Sorte.pdf';
 import biquinhaPDF from '../assets/documents/Biquinha.pdf';
 import NiquinhoPDF from '../assets/documents/Niquinho.pdf';
-import aterradinhoIMG from '../assets/grower/aterradinho.jpg';
+import aterradinhoIMG from '../assets/grower/aterradinho.jpeg';
 import boaSorteIMG from '../assets/grower/boasorte.jpeg';
 import chapadaoIMG from '../assets/grower/chapadao.jpeg';
 import coqueiralIMG from '../assets/grower/coqueiral.jpg';
@@ -52,13 +52,13 @@ import espigaoIMG from '../assets/grower/espigao.jpeg';
 import feeEsperancaIMG from '../assets/grower/feeesperanca.jpg';
 import kutzIMG from '../assets/grower/kutz.jpg';
 import jaguaraIMG from '../assets/grower/jaguara.jpg';
-import niquinhoIMG from '../assets/grower/niquinho.jpg';
+import niquinhoIMG from '../assets/grower/niquinho.jpeg';
 import panoramaIMG from '../assets/grower/panorama.jpg';
 import pedrabatistaIMG from '../assets/grower/pedrabatista.jpeg';
 import pedrabonitaIMG from '../assets/grower/pedrabonita.jpg';
 import roseiraIMG from '../assets/grower/roseira.jpeg';
 import santaEdwigesIMG from '../assets/grower/santaedwiges.jpeg';
-import santuarioIMG from '../assets/grower/santuario.jpg';
+import santuarioIMG from '../assets/grower/santuario.jpeg';
 import serradaCampanhaIMG from '../assets/grower/serradacampanha.jpeg';
 import taquaraIMG from '../assets/grower/taquara.jpg';
 import biquinhaIMG from '../assets/grower/biquinha.jpeg';
@@ -69,7 +69,7 @@ import apuaIMG from '../assets/grower/Apua.jpg';
 import UyaraIMG from '../assets/grower/Uyara.png';
 import tomascostaImg from '../assets/grower/tomasdacosta.png'
 import marcostomaziniIMG from '../assets/grower/marcostomazini.jpg'
-import ricardoleonardotavaresIMG from '../assets/grower/ricardo_leonardo_tavares.jpg'
+import ricardoleonardotavaresIMG from '../assets/grower/ricardo_leonardo_tavares.jpeg'
 import luizcarlosedilaineIMG from '../assets/grower/luizcarloseedilaine.jpeg'
 
 const data = [
