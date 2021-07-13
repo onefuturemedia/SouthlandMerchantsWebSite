@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Text, Image } from 'theme-ui';
-import { FaPlusCircle, FaInstagram } from 'react-icons/fa';
+import { FaPlusCircle } from 'react-icons/fa';
 
 const GrowerCard = ({ grower }) => {
 	return (
@@ -16,9 +16,9 @@ const GrowerCard = ({ grower }) => {
 				<a href={grower.documentPath} download>
 					<FaPlusCircle />
 				</a>
-				<a href={grower.instagramUrl}>
+				{/* <a href={grower.instagramUrl}>
 					<FaInstagram />
-				</a>
+				</a> */}
 			</Box>
 		</Box>
 	);
