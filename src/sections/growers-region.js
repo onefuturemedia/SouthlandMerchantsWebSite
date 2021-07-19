@@ -111,7 +111,7 @@ const styles = {
 			position: 'absolute',
 			width: ['400px', '400px', '400px', '400px', '500px', '600px'],
 			// width:"40%",
-			mt: ['-300px'],
+			mt: ['-400px'],
 			textAlign: 'center',
 			justifyContent: 'center',
 			color: 'white',
