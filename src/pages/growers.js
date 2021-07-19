@@ -14,7 +14,7 @@ import cerradoImg from '../assets/cerrado.png';
 import mataImg from '../assets/mata.png';
 import mogianaImg from '../assets/mogiana.png';
 import espiritoSantoImg from '../assets/espirito-santo.png';
-import mantiqueiraImg from '../assets/chapada.png';
+import mantiqueiraImg from '../assets/mantiqueira.jpeg';
 import chapadaImg from '../assets/chapada.png';
 import cesarGalliPDF from '../assets/documents/Panorama.pdf';
 import gabrielNunesPDF from '../assets/documents/Chapadao.pdf';
@@ -67,10 +67,10 @@ import anahyIMG from '../assets/grower/Anahy.png';
 import andiraIMG from '../assets/grower/andira.png';
 import apuaIMG from '../assets/grower/Apua.jpg';
 import UyaraIMG from '../assets/grower/Uyara.png';
-import tomascostaImg from '../assets/grower/tomasdacosta.png'
-import marcostomaziniIMG from '../assets/grower/marcostomazini.jpg'
-import ricardoleonardotavaresIMG from '../assets/grower/ricardo_leonardo_tavares.jpeg'
-import luizcarlosedilaineIMG from '../assets/grower/luizcarloseedilaine.jpeg'
+import tomascostaImg from '../assets/grower/tomasdacosta.png';
+import marcostomaziniIMG from '../assets/grower/marcostomazini.jpg';
+import ricardoleonardotavaresIMG from '../assets/grower/ricardo_leonardo_tavares.jpeg';
+import luizcarlosedilaineIMG from '../assets/grower/luizcarloseedilaine.jpeg';
 
 const data = [
 	{
@@ -78,7 +78,7 @@ const data = [
 		tag: 'cerrado-mineiro',
 		img: cerradoImg,
 		imgPosAlt: false,
-		text: `The Cerrado Mineiro region, located northwest in Minas Gerais, is renowned for its high-quality coffee production globally. The large area produces annually 5 million bags of coffee comprising 25% of Minas Gerais and 12.7% of Brazil. The area's coffee industry is the first region with a Geographical Indication (GI) in Brazil. They received the renowned recognition in 2005 for their unique identity and distinct aroma notes. With hot and wet summers and mild and dry winters, cherries typically ripen at the same time. The ideal climate and altitude between 800 and 1,300 meters above sea level afford perfect conditions for cultivating this unique and extraordinary coffee with nice taste and intensive aromas from caramel to walnut, with a pleasant acidity and a vigorous chocolaty aftertaste. Coffee from Cerrado Mineiro is "Origin and Quality Certified" by the Cerrado Mineiro Region GI Regulatory Board and prides itself for its traceability and transparency.`,
+		text: `The Cerrado Mineiro region, located northwest in Minas Gerais, is globally renowned for its high-quality coffee production. The large area covers 210,000 hectares of coffee plantations with over 4500 farmers and produces 5 million bags of coffee annually. This equates to 25% of Minas Gerais and 12.7% of Brazil's coffee crop. Quantity plays a big part in defining the region's output, but not at the expense of quality. Many factors contribute to the outstanding coffee's excellence. Hot and wet summers and mild and dry winters result in one ripening season eliminating the risk of under or overripened fruit at harvest. Other favourable contributors to growing the region's extraordinary green coffee are the ideal altitude between 800 and 1,300 metres above sea level, rich soil and the indispensable knowledge and wisdom of the growers to produce the area's unique and exceptional product. It is not surprising that the area's coffee industry is the first region with a Geographical Indication (GI) in Brazil. They received the renowned recognition in 2005 for their unique identity and distinct aroma notes from caramel to walnut, with a pleasant acidity and a vigorous chocolaty aftertaste.`,
 		growers: [
 			{
 				name: 'Cesar Galli',
@@ -115,8 +115,7 @@ const data = [
 		tag: 'espirito-santo',
 		img: espiritoSantoImg,
 		imgPosAlt: true,
-		text: `Small-scale coffee growers dominate the Montanhas do Espirito Santo region who are actively engaged in the entire chain of the production process. Usually, growers in Espirito Santo work with family members and pass on their traditions and skill to younger generations. The coffee growers constantly strive for better innovation and development in speciality coffee production to improve their living standards. 
-      Located in the southern area of the state of Espirito Santo, mild temperatures and steep highlands (between 700 and 1300 meters above sea level) provide ideal conditions for growing superb quality Arabica coffee with a round body, pleasant acidity, and delicate sweetness. The increasingly popular Pulped Naturals processing style coins the region's coffee characteristics, putting Espirito Santo on the map of high-quality speciality coffees. Espirito Santo is in the southeast of Brazil by the Atlantic Ocean. Its extensive coastline south of Bahia, east of Minas Gerais and north of Rio de Janeiro is a popular tourist destination. Our co-founder Andre was born and raised in its capital Vitoria. Inland Espirito Santo is home to nature parks and reserves that protect the rich biodiversity of the local flora and fauna. Many settlers in the mountains of Espirito Santo arrived at the beginning of the twentieth century from Europe. The state is home to large Italian communities and immigrants from the Pomeranian region, an area lying along the Baltic Sea coastal plain between northern Germany and Poland.`,
+		text: `Small-scale coffee growers dominate the Mountains do Espirito Santo region who are actively engaged in the entire chain of the production process. Usually, growers in Espirito Santo work with family members and pass on their traditions and skill to younger generations. The coffee growers constantly strive for better innovation and development in speciality coffee production to improve their living standards. Located in the southern area of the state of Espirito Santo, mild temperatures and steep highlands (between 700 and 1300 meters above sea level) provide ideal conditions for growing superb quality Arabica coffee with a good body, pleasant acidity, and delicate sweetness. The increasingly popular Pulped Naturals processing style coins the region's coffee characteristics, putting Espirito Santo on the map of high-quality speciality coffees. Espirito Santo is in the southeast of Brazil by the Atlantic Ocean. Its extensive coastline south of Bahia, east of Minas Gerais and north of Rio de Janeiro is a popular tourist destination. Our co-founder Andre was born and raised in its capital Vitoria. Inland Espirito Santo is home to nature parks and reserves that protect the rich biodiversity of the local flora and fauna. Many settlers in the mountains of Espirito Santo arrived at the beginning of the twentieth century from Europe. The state is home to large Italian communities and immigrants from the Pomeranian region, an area lying along the Baltic Sea coastal plain between northern Germany and Poland.`,
 		growers: [
 			{
 				name: 'Danilo Dones',
@@ -174,11 +173,7 @@ const data = [
 		tag: 'campos-das-vertentes',
 		img: camposDasVertentesImg,
 		imgPosAlt: false,
-		text: `Campo das Vertentes, an area with high mountains and lush forests, lies next to the Mantiqueira de Minas region in the State of Minas Gerais.
-      The region’s mild climate and ideal altitude offer perfect conditions for its high-quality coffee production.
-      The region of Campo das Vertentes region houses 17 cities: Bom Sucesso, Camacho, Campo Belo, Cana Verde, Candeias, Carmo da Mata, Conceição da Barra de Minas, Ibituruna, Nazareno, Oliveira, Perdões, Ritápolis, Santana do Jacaré, Santo Antônio do Amparo, São Francisco de Paula, São João Del Rei and São Tiago. 
-      Campo das Vertentes was recognised with the Geographical Indication (GI) in November 2020. Along the Mantiqueira de Minas region and Cerrado Mineiro, it is another region to receive this honour for coffee production. It demonstrates the hard work ethic, dedication and commitment to promoting the area's economic development in liaison with the Brazilian ONG Sebrae. 
-      `,
+		text: `Campo das Vertentes, an area with high mountains and lush forests, lies next to the Mantiqueira de Minas region in the State of Minas Gerais. The region’s mild climate and ideal altitude offer perfect conditions for its high-quality coffee production. The region of Campo das Vertentes region houses 17 cities: Bom Sucesso, Camacho, Campo Belo, Cana Verde, Candeias, Carmo da Mata, Conceição da Barra de Minas, Ibituruna, Nazareno, Oliveira, Perdões, Ritápolis, Santana do Jacaré, Santo Antônio do Amparo, São Francisco de Paula, São João Del Rei and São Tiago. Campo das Vertentes was recognised with the Geographical Indication (GI) in November 2020. Along the Mantiqueira de Minas region and Cerrado Mineiro, it is another region to receive this honour for coffee production. It demonstrates the hard work ethic, dedication and commitment to promoting the area's economic development in liaison with the Brazilian ONG Sebrae.`,
 		growers: [
 			{
 				name: 'Andre Garcia',
@@ -197,12 +192,12 @@ const data = [
 		]
 	},
 	{
-		name: 'Matas de Minas',	
+		name: 'Matas de Minas',
 		tag: 'mata-de-minas',
 		img: mataImg,
 		imgPosAlt: true,
-		text:
-			'Located on the border between Sao Paulo and Minas Gerais state, this region is traditionally known as the producer of the finest specialty coffees given its climate (20ºC all-year round), fertile soil, ideal altitude (Between 900m and 1000m) and excellent infrastructure and technologies for the production and transportation of coffee. Processing methods are fully natural. The coffees of Mogiana normally have a heavy body and medium acidity.',
+		text: `Another region of significance for coffee production in Minas Gerais is the Matas de Minas region, located in the Brazilian Atlantic Forest in the eastern part of the state. It consists in around 60 municipalities and covers 275,000 hectares of production area, where 80% of the 36,000 growers harvest on small family farms. Sustainability and the connection between the people and the land play a vital role in the region’s coffee industry.  
+		Coffees from Matas de Minas are of Arabica variety that grow on mountainous terrain between 600 and 1,200 metres above sea level. Artisanal processes are a significant influence on producing coffee of outstanding quality. The farmers harvest the cherries manually to ensure that only the ripest fruit is selected for the final product. They purposefully plant the trees with broader spacing to expose them to more sunlight for better ripening. After harvest, they follow a rigorous process with a focus on best results, ensuring only to use treated water for washing and pulping and a meticulous and careful process for drying. The results are exceptional coffees of rich diversity with floral and citrusy aroma notes, delicate acidity, a medium to full body with sweet flavours and a pleasant and long-lasting aftertaste. `,
 		growers: [
 			{
 				name: 'Ednilson/Walter',
@@ -225,10 +220,7 @@ const data = [
 		tag: 'mantiqueira-de-minas',
 		img: mantiqueiraImg,
 		imgPosAlt: false,
-		text: `The region of Mantiqueira de Minas in the southern part of Minas Gerais is an excellent area to produce speciality coffee. It is one of the most recognised and awarded regions in Brazil. This region’s longstanding traditions and expertise in producing high quality coffees with unique profiles. 
-      Mantiqueira de Minas benefits from a colder than usual climate, good geological conditions and an ideal altitude. Most of the over 7,000 growers own small farms and cultivate their coffee on slopes between 900 and 1,500 metres above sea level. They maintain their rich traditions and a deep connection to the land and their ancestors. Manual harvesting guarantees that only the best and ripe fruit is used for the approximately 1 million bags of coffee. Their rigorous approach results in the region’s respected reputation and their outstanding, distinctive product the world’s coffee lovers benefit from.
-      As part of the Serra da Mantiqueira micro-region, the Mantiqueira de Minas lies within the municipalities of Lambari, Cristina, Olímpio Noronha, Santa Rita do Sapucaí and Mantiqueira; the latter being home to our milling process warehouse
-      `,
+		text: `The region of Mantiqueira de Minas in the southern part of Minas Gerais is an excellent and Traditional area to produce speciality coffee. It is one of the most recognised and awarded regions in Brazil. This region’s longstanding traditions and expertise in producing high quality coffees with unique profiles. Mantiqueira de Minas benefits from a colder than usual climate, good geological conditions and an ideal altitude. Most of the over 8,200 growers own small and medium farms and cultivate their coffee on slopes between 900 and 1,500 MASL. They maintain their rich traditions and a deep connection to the land and their ancestors. Manual harvesting guarantees that only the best and ripe fruit is used for the approximately 1,2 million bags of coffee. Their rigorous approach results in the region’s respected reputation and their outstanding, distinctive product the world’s coffee lovers benefit from. As part of the Serra da Mantiqueira micro-region, the Mantiqueira de Minas lies within the municipalities of Lambari, Cristina, Olímpio Noronha, Santa Rita do Sapucaí and Mantiqueira; the latter being home to our milling process warehouse.`,
 		growers: [
 			{
 				name: 'Abelardo José',
@@ -293,8 +285,10 @@ const data = [
 		tag: 'chapada-de-minas',
 		img: chapadaImg,
 		imgPosAlt: true,
-		text:
-			'This region has rough terrains with a warm and humid climate ideal for the production of some of the highly internationally acclaimed Brazilian Coffees. Coffees from Matas de Minas have a delicate and balanced acidity and have a medium to full body. Processing methods are pulped natural and natural.',
+		text: `Chapada de Minas, is a small region in the north east of Minas Gerais. Until recently, the area was overshadowed by the better-known coffee farms in the south of the state, but it is establishing an appreciated reputation on the map of coffee lovers due to its high-quality coffees and innovative farming.  
+			The diverse terrain is characterised by plateaus and river canyons. Coffee growers take advantage of both the uneven and flatter landscape to grow and harvest coffee, the latter encouraging farmers to integrate the mechanisation of coffee harvesting. High humidity, a climate similar to Central America, consistent rain periods, and access to freshwater streams influence the superior quality of the harvest. 
+			Coffees from the region are mainly Natural Processed, but the Washed Process is gaining popularity, which provides a very intriguing and exciting alternative to the traditional approach.  
+			The Chapada de Minas region’s importance in the coffee industry has steadily grown and significantly influences the region’s economy. `,
 		growers: [
 			{
 				name: 'Ricardo Tavares',
@@ -311,7 +305,7 @@ const data = [
 		img: mogianaImg,
 		imgPosAlt: false,
 		text:
-			'Located in the northeast of the São Paulo state along the border of Minas Gerais, Mogiana has elevations between 900 and 1,000 meters above sea level and an average annual temperature of 21 degrees Celsius. It is home to some of the most consistent coffees in Brazil. With its gently rolling hills, rich soil, sufficient water supplies from the Rio Grande, and higher elevations, the terrain is well suited for growing outstanding Brazilian coffee. Although small family-owned farms dominate the region, the investment into the mechanisation of the harvest, the well-established infrastructure and favourable access to innovative technologies enables the well-skilled farmers of Mogiana to play a leading role in the volume of highly regarded coffee production.',
+			'Located in the northeast of the São Paulo state along the border of Minas Gerais, Mogiana has elevations between 900 and 1,000 meters above sea level and an average annual temperature of 21 degrees Celsius. With its gently rolling hills, rich soil, sufficient water supplies from the Rio Grande river, and higher elevations, the terrain is well suited for growing outstanding Brazilian coffee. Although small family-owned farms dominate the region, the investment into the mechanisation of the harvest, the well-established infrastructure and favourable access to innovative technologies enables the well-skilled coffee farmers of Mogiana to play a new role in the volume of highly regarded coffee production. The name "Mogiana" stems from "Mogiana Railroad", a railway built in 1872 by 21 coffee growers in the region. The farmers who have gained enough wealth through coffee production were frustrated that 10% of their cost went into transporting their coffee beans on the British owned "Sao Paulo Railway". To combat their frustration, they decided to collaborate and build a track which they named "Mogiana Railroad". With more demand for coffee, the region grew more inland, requiring more labour for coffee production. ',
 		growers: [
 			{
 				name: 'Andre Aguila',
@@ -350,7 +344,7 @@ const coffeData = [
 		imgPosAlt: false,
 		isCoffee: true,
 		text: `Andirá delivers a high-quality classic natural processed coffee from Cerrado Mineiro. It represents the consistent quality with a good body, great sweetness and velvet after taste created by Brazil's coffee farmers, who are committed to improving coffee production with a balanced and smooth profile using all available technologies. `,
-    growers: []
+		growers: []
 	},
 	{
 		name: 'Apua Coffee',
@@ -359,7 +353,7 @@ const coffeData = [
 		imgPosAlt: true,
 		isCoffee: true,
 		text: `Apua delivers a superior quality of a classic pulped natural processed coffee. Apua means "mountains" and is a perfect example of what we can find around the beautiful mountains of Espirito Santo. It is a great coffee, grown and harvested by the regional seasoned coffee growers, and offers a balanced, round-bodied, pleasantly sweet profile with hints of fruit and a nice acidity.`,
-    growers: []
+		growers: []
 	},
 	{
 		name: 'Amana Coffee',
@@ -368,7 +362,7 @@ const coffeData = [
 		imgPosAlt: false,
 		isCoffee: true,
 		text: `Amana, meaning "heaven water, rain", is an impressive washed coffee from the mountains of Espirito Santo. The regional seasoned farmers consistently cultivate a balanced round-bodied coffee with a pleasant acidity and a delightful sweetness. Unusual for Brazil, Amana coffee is a washed process coffee, setting it apart from your standard Brazilian coffees.`,
-    growers: []
+		growers: []
 	}
 ];
 
@@ -403,7 +397,7 @@ export default function GrowersPage() {
 					</Text>
 				</Container>
 				{coffeData.map(coffeeData => (
-					<GrowersRegion region={coffeeData}/>
+					<GrowersRegion region={coffeeData} />
 				))}
 			</Layout>
 		</StickyProvider>
