@@ -53,9 +53,12 @@ const AboutUs = () => {
               relationship with the local growers, fosters open conversations
               and gives us an insight into what we can do to ensure all parties
               (growers, us and roasters) benefit from each other. One of our
-              many achievements is developing a project, Educacoffee, that
-              supports the coffee growers in everything they need to run a
-              successful farm business. <br />
+              many achievements is developing a project,{" "}
+              <a href="https://www.instagram.com/educarecoffee/">
+                <b>Educare Coffee</b>
+              </a>
+              , that supports the coffee growers in everything they need to run
+              a successful farm business. <br />
               We also value our relationship with our coffee roasters. We
               believe, if we understand exactly what they desire and want, what
               they like and enjoy, we can cooperate with our growers in finding
