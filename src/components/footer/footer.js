@@ -71,7 +71,8 @@ export default function Footer() {
         </Container>
         <Text as="p" sx={styles.footerFooter} className="footer-made-by">
           &copy; {new Date().getFullYear()} All right reserved - Design &
-          Developed by On Future Media.
+          Developed by On Future Media in behalf of
+          https://www.agenciatroiabrasil.com.br/
         </Text>
       </Container>
     </footer>
