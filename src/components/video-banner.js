@@ -8,7 +8,6 @@ export default function VideoBanner() {
       autoPlay
       muted
       loop
-      crossOrigin="anonymous"
       style={{
         position: "absolute",
         top: 0,
@@ -22,6 +21,7 @@ export default function VideoBanner() {
         objectPosition: "center",
       }}
       src={withPrefix(video)}
+      crossOrigin="anonymous"
     >
       <source src={withPrefix(video)} type="video/mp4" />
       Your device does not support playing 'video/mp4' videos
