@@ -6,6 +6,7 @@ export default function VideoBanner() {
   return (
     <video
       autoPlay
+      preload="metadata"
       muted
       loop
       style={{
