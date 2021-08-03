@@ -1,11 +1,10 @@
-// Add Range Request support to fetching videos from cache
-workbox.routing.registerRoute(
-  /.*\.mp4/,
-  new workbox.strategies.CacheFirst({
-    plugins: [
-      new workbox.cacheableResponse.Plugin({ statuses: [200] }),
-      new workbox.rangeRequests.Plugin(),
-    ],
-  }),
-  "GET"
+import { registerRoute } from "workbox-routing";
+import { CacheFirst } from "workbox-strategies";
+import { RangeRequestsPlugin } from "workbox-range-requests";
+
+registerRoute(
+  ({ url }) => url.pathname.endsWith(".mp4"),
+  new CacheFirst({
+    plugins: [new RangeRequestsPlugin()],
+  })
 );
