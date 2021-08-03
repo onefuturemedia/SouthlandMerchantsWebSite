@@ -8,6 +8,7 @@ export default function VideoBanner() {
       autoPlay
       muted
       loop
+      crossOrigin="anonymous"
       style={{
         position: "absolute",
         top: 0,
@@ -22,7 +23,6 @@ export default function VideoBanner() {
       }}
       src={withPrefix(video)}
     >
-      {/* <source src={withPrefix(src)} type="video/webm" /> */}
       <source src={withPrefix(video)} type="video/mp4" />
       Your device does not support playing 'video/mp4' videos
     </video>
