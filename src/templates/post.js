@@ -13,6 +13,9 @@ const MySinglePostPage = ({ data: { post }, ...props }) => {
         <SEO />
         <Box className="blog-box" sx={styles.box}>
           <Container className="blog-box-container">
+            <Text as="h3" sx={styles.title}>
+              {post.title}
+            </Text>
             <Text
               className="blog-content"
               sx={styles.text}
@@ -53,15 +56,16 @@ const styles = {
     fontSize: [6, 6, "50px"],
     my: ["5%"],
     textAlign: "center",
+    lineHeight: "1.2em",
   },
   text: {
     width: "100%",
-    h3: {
-      fontSize: [6, 6, "50px"],
-      my: ["5%"],
-      textAlign: "center",
-      lineHeight: "1.2em",
-    },
+    // h3: {
+    //   fontSize: [6, 6, "50px"],
+    //   my: ["5%"],
+    //   textAlign: "center",
+    //   lineHeight: "1.2em",
+    // },
     "figure:first-child": {
       mt: [0],
       // px: ['-5%', '-5%', '-5%', null, null, '-10%'],
