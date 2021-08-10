@@ -12,7 +12,7 @@ import { Container, Text, Heading } from "theme-ui";
 import camposDasVertentesImg from "../assets/campos-das-vertentes.png";
 import cerradoImg from "../assets/cerrado.png";
 import mataImg from "../assets/mata.png";
-import mogianaImg from "../assets/mogiana.jpeg";
+import mogianaImg from "../assets/Mogiana-MG-SP.png";
 import espiritoSantoImg from "../assets/espirito-santo.png";
 import mantiqueiraImg from "../assets/mantiqueira.jpeg";
 import chapadaImg from "../assets/chapada.png";
