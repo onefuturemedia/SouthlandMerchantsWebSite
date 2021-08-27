@@ -9,7 +9,7 @@ export default function VideoBanner() {
     let placeholder = document.querySelector('.loader')
     let video = document.querySelector('.video')
     video.addEventListener('play', function () {
-      //placeholder.style.display = 'none'
+      placeholder.style.display = 'none'
     })
   })
 
