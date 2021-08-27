@@ -3,6 +3,7 @@ import "swiper/swiper-bundle.min.css";
 import "rc-drawer/assets/index.css";
 import "react-modal-video/css/modal-video.min.css";
 
+import { useEffect } from "react";
 import { StickyProvider } from "contexts/app/app.provider";
 import SEO from "components/seo";
 import Layout from "components/layout";
@@ -15,6 +16,18 @@ import Growers from "sections/growers";
 import BlogHeader from "sections/blog-header";
 
 export default function IndexPage() {
+  
+
+  // function to guarantee navigation to href ids
+  useEffect(() => {
+    const id = document.location.hash
+    if ( id != undefined && id != ""){
+      const elem = document.getElementById(id.replace("#", ""));
+      elem.scrollIntoView();
+    }
+
+  })
+
   return (
     <StickyProvider>
       <Layout isHome={true}>
