@@ -9,7 +9,7 @@ export default function VideoBanner() {
     let placeholder = document.querySelector('.loader')
     let video = document.querySelector('.video')
     video.addEventListener('play', function () {
-      placeholder.style.display = 'none'
+      //placeholder.style.display = 'none'
     })
   })
 
@@ -58,7 +58,7 @@ export default function VideoBanner() {
       }}><div className="loader-icon" style={{
         position: "absolute",
         top: "50%",
-        right: "50%",
+        left: "50%",
         objectFit: "cover",
         zIndex: 1,
         objectPosition: "center",
@@ -68,7 +68,7 @@ export default function VideoBanner() {
         width: "120px",
         height: "120px",
         animation: "spin 2s linear infinite",
-
+        margin: "-60px 0 0 -60px"
       }}></div></div>
       <style>
         {`
