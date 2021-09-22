@@ -25,48 +25,22 @@ const AboutUs = () => {
               width="60%"
             />
              <Text as="p">
-             <br />Olá, we are Nadia and Andre, fellow Brazilians, passionate coffee
-              lovers, partners in business and life, and the founders and owners
-              of Southland Merchants.
+              <br />Olá, we are Nadia and Andre, fellow Brazilians, passionate coffee lovers, partners in business and life, and the founders and owners of Southland Merchants.
               <br />
-              We met in 2002 in a casual setting and instantly felt connected.
-              Within a year, we established our first company and fell in love.{" "}
+               We met in 2002 in a casual setting and instantly felt connected. Within a year, we established our first company and fell in love. {" "}
               <br />
-              Life in Brazil was great; we love the country and its people, the
-              lifestyle and being with our families, but we could not let go of
-              the urge to venture out into the world and explore new places.
-              Eventually, we decided to embark on an adventure and to move
-              overseas with our three girls. We wanted to find a place that
-              would offer a bright future for our children, allow them to meet a
-              new culture and learn another language. After a lot of research,
-              we realised Australia would be our ideal destination. <br />
-              In 2017 Australia became our new home. In the same year of our
-              arrival, we founded Southland Merchants. Our company supplies
-              Australian roasters with delicious Brazilian green coffee, full of
-              stories and passion, and connects us back to our roots.
+               Life in Brazil was great; we love the country and its people, the lifestyle and being with our families, but we could not let go of the urge to venture out into the world and explore new places. Eventually, we decided to embark on an adventure and to move overseas with our three girls. We wanted to find a place that would offer a bright future for our children, allow them to meet a new culture and learn another language. After a lot of research, we realised Australia would be our ideal destination.  
+              <br />
+             In 2017 Australia became our new home. In the same year of our arrival, we founded Southland Merchants. Our company supplies Australian roasters with delicious Brazilian green coffee, full of stories and passion, and connects us back to our roots.
             </Text>
             <Text as="p">
-              We want to make a difference and contribute to improving the local
-              growers' lives in Brazil. At the same time, we aspire to embrace
-              the diversity and potential Brazil has to offer.
+             We want to make a difference and contribute to improving the local growers' lives in Brazil. At the same time, we aspire to embrace the diversity and potential Brazil has to offer.
               <br />
-              In 2021 we launched a dry milling facility in the Mantiqueira de
-              Minas region in partnership with a local coffee producer. This
-              project means a lot to us. It allows us to develop a closer
-              relationship with the local growers, fosters open conversations
-              and gives us an insight into what we can do to ensure all parties
-              (growers, us and roasters) benefit from each other. One of our
-              many achievements is developing a project,{" "}
-              <a href="https://www.instagram.com/educarecoffee/">
-                <b>Educare Coffee</b>
-              </a>
-              , that supports the coffee growers in everything they need to run
-              a successful farm business. <br />
-              We also value our relationship with our coffee roasters. We
-              believe, if we understand exactly what they desire and want, what
-              they like and enjoy, we can cooperate with our growers in finding
-              the best green coffees that suit the roasters’ market and build a
-              successful supply chain for all parties involved.
+               
+              In 2021 we launched an Educational Program <a href="https://www.instagram.com/educarecoffee/">@educarecoffee</a> that supports the coffee growers in everything they need to run a successful farm business. This project means a lot to us. It allows us to develop a closer relationship with the local growers, fosters open conversations and gives us an insight into what we can do to ensure all parties (growers, roasters and us) benefit from each other. 
+              <br />We also value our relationship with our coffee roasters. We believe, if we understand exactly what they desire and want, what they like and enjoy, we can cooperate with our growers in finding the best green coffees that suit the roasters’ market and build a successful supply chain for all parties involved.
+              <br />If you would like to know more about coffees from Brazil and our culture please feel free to contact us.
+       
               <br />
             </Text>
 
