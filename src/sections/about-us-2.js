@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Heading, Text, Image } from "theme-ui";
-import image from "assets/founders.jpeg";
+import image2 from "assets/about.jpg";
 import { Link } from "components/link";
 
 
@@ -15,9 +15,17 @@ const AboutUs = () => {
           {/* <Flex className="about-col" sx={styles.col}> */}
           {/* <Box className="about-text-col" sx={styles.content}> */}
           <Box sx={styles.titleBox}>
-            <Heading as="h3">About Us</Heading>
-            <Text as="p">
-              Olá, we are Nadia and Andre, fellow Brazilians, passionate coffee
+            <Heading as="h3"><br/>About Us</Heading>
+           
+            <Image
+              className="about-image"
+              src={image2}
+              sx={styles.image}
+              alt=""
+              width="60%"
+            />
+             <Text as="p">
+             <br />Olá, we are Nadia and Andre, fellow Brazilians, passionate coffee
               lovers, partners in business and life, and the founders and owners
               of Southland Merchants.
               <br />
@@ -37,19 +45,32 @@ const AboutUs = () => {
               Australian roasters with delicious Brazilian green coffee, full of
               stories and passion, and connects us back to our roots.
             </Text>
-            <Link
-                path="/about"              
-                label="Know More"
-                sx={styles.link}
-                variant="buttons.primary"
-              />
-            <Image
-              className="about-image"
-              src={image}
-              sx={styles.image}
-              alt=""
-              width="60%"
-            />
+            <Text as="p">
+              We want to make a difference and contribute to improving the local
+              growers' lives in Brazil. At the same time, we aspire to embrace
+              the diversity and potential Brazil has to offer.
+              <br />
+              In 2021 we launched a dry milling facility in the Mantiqueira de
+              Minas region in partnership with a local coffee producer. This
+              project means a lot to us. It allows us to develop a closer
+              relationship with the local growers, fosters open conversations
+              and gives us an insight into what we can do to ensure all parties
+              (growers, us and roasters) benefit from each other. One of our
+              many achievements is developing a project,{" "}
+              <a href="https://www.instagram.com/educarecoffee/">
+                <b>Educare Coffee</b>
+              </a>
+              , that supports the coffee growers in everything they need to run
+              a successful farm business. <br />
+              We also value our relationship with our coffee roasters. We
+              believe, if we understand exactly what they desire and want, what
+              they like and enjoy, we can cooperate with our growers in finding
+              the best green coffees that suit the roasters’ market and build a
+              successful supply chain for all parties involved.
+              <br />
+            </Text>
+
+
             {/* </Box> */}
           </Box>
           {/* </Flex> */}
@@ -84,7 +105,7 @@ const styles = {
     flex: ["0 0 100%", null, null, "0 0 50%"],
   },
   image: {
-    display: "flex",
+    // display: "flex",
     // maxWidth: "100%",
     // maxHeight: "500px",
     maxWidth: ["1024*0.5", "1024*0.5", "1024*0.3", "1024*0.5", "1024*0.8"],
@@ -95,8 +116,6 @@ const styles = {
     // top: [null, null, null, "-20px", "-45px", "auto"],
     // mt: ["25px", "auto", "auto", "auto", "auto"],
     my: "auto",
-    mx:"auto",
-    pb: "3em",
   },
   list: {
     margin: 0,
@@ -147,33 +166,5 @@ const styles = {
     py: ["40px", "40px", "40px", null, null, "50px"],
     pl: [null, null, null, "20px", "40px", "60px", "140px"],
   },
-  link: {
-    // color: "primary",
-    // fontSize: [1, null, 2],
-    // display: "inline-block",
-    // verticalAlign: "middle",
-    // fontWeight: "bold",
-    // mt: ["10px", null, null, null, "10px"],
-    // svg: {
-    //   position: "relative",
-    //   top: "3px",
-    // }
-    backgroundColor: "rgba(0,0,0,0)",
-    fontSize: "16px",
-    fontWeight: "bold",
-    letterSpacing: "-0.16px",
-    borderRadius: "5px",
-    border: "2px solid",
-    borderColor: "primary",
-    color: "primary",
-    padding: "8px 24px",
-    display: "inline-block",
-    ml: ["0", null, null, "auto", "auto"],
-    mr: ["0", null, null, "auto", "auto"],
-    mt: "3em",
-    mb: ["2em", "2em", "2em", "4em", "3em", "3em"],
-    "&:hover": {
-      color: "#fff",
-    },
-  },
+  
 };
