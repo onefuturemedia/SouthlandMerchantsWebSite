@@ -14,7 +14,7 @@ export default function Contact() {
 	function sendEmail(e) {
 		e.preventDefault();
 
-		emailjs.sendForm('service_lkhznlr', 'template_j4y823d', e.target, 'user_B410xs5Zte99ElgBpjyJW').then(
+		emailjs.sendForm('service_6vrb48r', 'template_j4y823d', e.target, 'user_B410xs5Zte99ElgBpjyJW').then(
 			result => {
 				console.log(result.text);
 				alert('Mensagem enviada com sucesso!');
