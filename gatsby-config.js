@@ -66,7 +66,7 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `https://medium.com/feed/@namoreira-nm`,
+        url: `https://medium.com/feed/@southlandmerchants`,
         name: `MediumData`,
       },
     },
