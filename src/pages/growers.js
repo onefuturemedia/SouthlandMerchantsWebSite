@@ -41,6 +41,16 @@ import andreAquilaPDF from "../assets/documents/Aterradinho.pdf";
 import pedroCorreaPDF from "../assets/documents/Boa Sorte.pdf";
 import biquinhaPDF from "../assets/documents/Biquinha.pdf";
 import NiquinhoPDF from "../assets/documents/Niquinho.pdf";
+import nakamuraPDF from "../assets/documents/nakamura.pdf";
+import resplendorPDF from "../assets/documents/resplendor.pdf";
+import saoMatheusPDF from "../assets/documents/saoMatheus.pdf";
+import santaCruzPDF from "../assets/documents/santaCruz.pdf";
+import cachoeirinhaPDF from "../assets/documents/cachoeirinha.pdf";
+import vinciPDF from "../assets/documents/vinci.pdf";
+import calilPDF from "../assets/documents/calil.pdf";
+import farroupilhaPDF from "../assets/documents/farroupilha.pdf";
+import vinhalPDF from "../assets/documents/vinhal.pdf";
+
 import aterradinhoIMG from "../assets/grower/aterradinho.jpeg";
 import boaSorteIMG from "../assets/grower/boasorte.jpeg";
 import chapadaoIMG from "../assets/grower/chapadao.jpeg";
@@ -71,6 +81,19 @@ import tomascostaImg from "../assets/grower/tomasdacosta.png";
 import marcostomaziniIMG from "../assets/grower/marcostomazini.jpg";
 import ricardoleonardotavaresIMG from "../assets/grower/ricardo_leonardo_tavares.jpeg";
 import luizcarlosedilaineIMG from "../assets/grower/luizcarloseedilaine.jpeg";
+import nakamuraIMG from "../assets/grower/nakamura.jpg";
+import resplendorIMG from "../assets/grower/resplendor.jpeg";
+import saoMatheusIMG from "../assets/grower/saoMatheus.jpeg";
+import santaCruzIMG from "../assets/grower/santaCruz.png";
+import cachoeirinhaIMG from "../assets/grower/cachoeirinha.jpg";
+import vinciIMG from "../assets/grower/vinci.jpeg";
+import calilIMG from "../assets/grower/calil.jpeg";
+import farroupilhaIMG from "../assets/grower/farroupilha.jpg";
+import vinhalIMG from "../assets/grower/vinhal.jpeg";
+
+
+
+
 
 const data = [
   {
@@ -106,6 +129,41 @@ const data = [
         description: "Sao Francisco",
         img: tomascostaImg,
         documentPath: tomasCostaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Claudio and Elvia Nakamura",
+        description: "Nakamura",
+        img: nakamuraIMG,
+        documentPath: nakamuraPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Gabriel Nunes",
+        description: "Resplendor",
+        img: resplendorIMG,
+        documentPath: resplendorPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Luis Manuel Martins",
+        description: "Sao Mateus",
+        img: saoMatheusIMG,
+        documentPath: saoMatheusPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Inacio Carlos, Fernando and Erika Urban",
+        description: "Farroupilha Farm",
+        img: farroupilhaIMG,
+        documentPath: farroupilhaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Rafael Vinhal",
+        description: "Vinhal Farm",
+        img: vinhalIMG,
+        documentPath: vinhalPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
     ],
@@ -213,6 +271,7 @@ const data = [
         documentPath: queziaTavaresPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
+
     ],
   },
   {
@@ -276,6 +335,34 @@ const data = [
         description: "Santa Edwiges Farm",
         img: santaEdwigesIMG,
         documentPath: tatianePDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Jessica Mara F. N. Pimentel",
+        description: "Santa Cruz Farm",
+        img: santaCruzIMG,
+        documentPath: santaCruzPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Luceia and Lucimar",
+        description: "Cachoeirinha Farm",
+        img: cachoeirinhaIMG,
+        documentPath: cachoeirinhaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Ines Vinci",
+        description: "Vinci Farm",
+        img: vinciIMG,
+        documentPath: vinciPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Juliana Calil",
+        description: "Calil Farm",
+        img: calilIMG,
+        documentPath: calilPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
     ],
