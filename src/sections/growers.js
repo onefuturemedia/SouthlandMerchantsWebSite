@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container, Grid, Heading, Text, Image } from "theme-ui";
 import { Link } from "components/link";
 
-import img1 from "assets/growers-home.jpg";
+import img1 from "assets/home-grower.jpeg";
 
 const Growers = () => {
   return (
