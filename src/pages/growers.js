@@ -134,7 +134,7 @@ const data = [
 
       
       {
-        name: "Inacio Carlos, Fernando and Erika Urban",
+        name: "Inacio Carlos",
         description: "Farroupilha Farm",
         img: farroupilhaIMG,
         documentPath: farroupilhaPDF,
@@ -326,7 +326,7 @@ const data = [
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
-        name: "Luceia and Lucimar",
+        name: "Lucelia and Lucimar",
         description: "Cachoeirinha Farm",
         img: cachoeirinhaIMG,
         documentPath: cachoeirinhaPDF,
