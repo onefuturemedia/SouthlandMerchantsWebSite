@@ -132,13 +132,7 @@ const data = [
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
 
-      {
-        name: "Luis Manuel Martins",
-        description: "Sao Mateus",
-        img: saoMatheusIMG,
-        documentPath: saoMatheusPDF,
-        instagramUrl: "https://www.instagram.com/southlandmerchants/",
-      },
+      
       {
         name: "Inacio Carlos, Fernando and Erika Urban",
         description: "Farroupilha Farm",
@@ -383,6 +377,13 @@ const data = [
         description: "Resplendor",
         img: resplendorIMG,
         documentPath: resplendorPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Luis M. Martins",
+        description: "Sao Mateus",
+        img: saoMatheusIMG,
+        documentPath: saoMatheusPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
     ],
