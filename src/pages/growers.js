@@ -83,7 +83,7 @@ import ricardoleonardotavaresIMG from "../assets/grower/ricardo_leonardo_tavares
 import luizcarlosedilaineIMG from "../assets/grower/luizcarloseedilaine.jpeg";
 import nakamuraIMG from "../assets/grower/nakamura.jpg";
 import resplendorIMG from "../assets/grower/resplendor.jpeg";
-import saoMatheusIMG from "../assets/grower/saoMatheus.jpeg";
+import saoMatheusIMG from "../assets/grower/saoMatheus.jpg";
 import santaCruzIMG from "../assets/grower/santaCruz.png";
 import cachoeirinhaIMG from "../assets/grower/cachoeirinha.jpg";
 import vinciIMG from "../assets/grower/vinci.jpeg";
