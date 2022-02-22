@@ -277,20 +277,6 @@ const data = [
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
-        name: "Guilherme Castro",
-        description: "Biquinha Farm",
-        img: biquinhaIMG,
-        documentPath: biquinhaPDF,
-        instagramUrl: "https://www.instagram.com/southlandmerchants/",
-      },
-      {
-        name: "Guilherme Castro",
-        description: "Serra da Campanha",
-        img: serradaCampanhaIMG,
-        documentPath: guilhermeCastroPDF,
-        instagramUrl: "https://www.instagram.com/southlandmerchants/",
-      },
-      {
         name: "Leda Aparecida",
         description: "Roseira Farm",
         img: roseiraIMG,
