@@ -131,13 +131,7 @@ const data = [
         documentPath: tomasCostaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
-      {
-        name: "Claudio and Elvia Nakamura",
-        description: "Nakamura",
-        img: nakamuraIMG,
-        documentPath: nakamuraPDF,
-        instagramUrl: "https://www.instagram.com/southlandmerchants/",
-      },
+
       {
         name: "Gabriel Nunes",
         description: "Resplendor",
@@ -399,6 +393,13 @@ const data = [
         description: "Aterradinho Farm",
         img: aterradinhoIMG,
         documentPath: andreAquilaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Claudio Nakamura",
+        description: "Nakamura",
+        img: nakamuraIMG,
+        documentPath: nakamuraPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
     ],
