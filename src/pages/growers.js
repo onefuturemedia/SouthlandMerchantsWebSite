@@ -133,13 +133,6 @@ const data = [
       },
 
       {
-        name: "Gabriel Nunes",
-        description: "Resplendor",
-        img: resplendorIMG,
-        documentPath: resplendorPDF,
-        instagramUrl: "https://www.instagram.com/southlandmerchants/",
-      },
-      {
         name: "Luis Manuel Martins",
         description: "Sao Mateus",
         img: saoMatheusIMG,
@@ -380,9 +373,16 @@ const data = [
       },
       {
         name: "Claudio Nakamura",
-        description: "Nakamura",
+        description: "Nakamura Farm",
         img: nakamuraIMG,
         documentPath: nakamuraPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Gabriel Vieira",
+        description: "Resplendor",
+        img: resplendorIMG,
+        documentPath: resplendorPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
     ],
