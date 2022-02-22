@@ -332,7 +332,7 @@ const data = [
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
-        name: "Jessica Mara F. N. Pimentel",
+        name: "Jessica Pimentel",
         description: "Santa Cruz Farm",
         img: santaCruzIMG,
         documentPath: santaCruzPDF,
@@ -378,6 +378,13 @@ const data = [
         documentPath: ricardoTavaresPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
+      {
+        name: "Claudio Nakamura",
+        description: "Nakamura",
+        img: nakamuraIMG,
+        documentPath: nakamuraPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
     ],
   },
   {
@@ -393,13 +400,6 @@ const data = [
         description: "Aterradinho Farm",
         img: aterradinhoIMG,
         documentPath: andreAquilaPDF,
-        instagramUrl: "https://www.instagram.com/southlandmerchants/",
-      },
-      {
-        name: "Claudio Nakamura",
-        description: "Nakamura",
-        img: nakamuraIMG,
-        documentPath: nakamuraPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
     ],
