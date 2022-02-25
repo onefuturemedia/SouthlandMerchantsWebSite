@@ -111,7 +111,7 @@ const data = [
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
-        name: "Gustavo Nunes",
+        name: "Gabriel Nunes",
         description: "Chapadao Farm",
         img: chapadaoIMG,
         documentPath: gabrielNunesPDF,
@@ -359,7 +359,7 @@ const data = [
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
-        name: "Gabriel Vieira",
+        name: "Gustavo Vieira",
         description: "Resplendor",
         img: resplendorIMG,
         documentPath: resplendorPDF,
