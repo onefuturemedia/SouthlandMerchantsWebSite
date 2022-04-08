@@ -50,6 +50,7 @@ import vinciPDF from "../assets/documents/vinci.pdf";
 import calilPDF from "../assets/documents/calil.pdf";
 import farroupilhaPDF from "../assets/documents/farroupilha.pdf";
 import vinhalPDF from "../assets/documents/vinhal.pdf";
+import pedraPretaPDF from "../assets/documents/pedrapreta.pdf";
 
 
 import aterradinhoIMG from "../assets/grower/aterradinho.jpeg";
@@ -91,6 +92,7 @@ import vinciIMG from "../assets/grower/vinci.jpeg";
 import calilIMG from "../assets/grower/calil.jpeg";
 import farroupilhaIMG from "../assets/grower/farroupilha.jpg";
 import vinhalIMG from "../assets/grower/vinhal.jpeg";
+import pedraPretaIMG from "../assets/grower/grower/pedrapreta.JPG";
 
 
 
@@ -108,6 +110,13 @@ const data = [
         description: "Panorama Farm",
         img: panoramaIMG,
         documentPath: cesarGalliPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Claudia Maria",
+        description: "Pedra Preta Farm",
+        img: pedraPretaIMG,
+        documentPath: pedraPretaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
