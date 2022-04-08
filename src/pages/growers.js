@@ -50,6 +50,13 @@ import vinciPDF from "../assets/documents/vinci.pdf";
 import calilPDF from "../assets/documents/calil.pdf";
 import farroupilhaPDF from "../assets/documents/farroupilha.pdf";
 import vinhalPDF from "../assets/documents/vinhal.pdf";
+import seteIrmaosPDF from "../assets/documents/Seteirmaos.pdf"
+import assumpcaoPDF from "../assets/documents/assumpcao.pdf"
+import grunnwaldPDF from "../assets/documents/grunnwald.pdf"
+import boavistaPDF from "../assets/documents/boavista.pdf"
+import mumbucaPDF from "../assets/documents/mumbuca.pdf"
+import pedrapretaPDF from "../assets/documents/PedraBonita.pdf"
+
 
 import aterradinhoIMG from "../assets/grower/aterradinho.jpeg";
 import boaSorteIMG from "../assets/grower/boasorte.jpeg";
@@ -90,6 +97,13 @@ import vinciIMG from "../assets/grower/vinci.jpeg";
 import calilIMG from "../assets/grower/calil.jpeg";
 import farroupilhaIMG from "../assets/grower/farroupilha.jpg";
 import vinhalIMG from "../assets/grower/vinhal.jpeg";
+import seteIrmaosIMG from "../assets/grower/seteirmaos.jpg"
+import assumpcaoIMG from "../assets/grower/assumpcao.jfif"
+import grunnwaldIMG from "../assets/grower/Grunelwald.jpg"
+import boavistaIMG from "../assets/grower/boavista.jpeg"
+import mumbucaIMG from "../assets/grower/mumbuca.jpeg"
+import pedrapretaIMG from "../assets/grower/pedrapreta.jpg"
+
 
 
 
@@ -103,6 +117,13 @@ const data = [
     imgPosAlt: false,
     text: `The Cerrado Mineiro region, located northwest in Minas Gerais, is globally renowned for its high-quality coffee production. The large area covers 210,000 hectares of coffee plantations with over 4500 farmers and produces 5 million bags of coffee annually. This equates to 25% of Minas Gerais and 12.7% of Brazil's coffee crop. Quantity plays a big part in defining the region's output, but not at the expense of quality. Many factors contribute to the outstanding coffee's excellence. Hot and wet summers and mild and dry winters result in one ripening season eliminating the risk of under or overripened fruit at harvest. Other favourable contributors to growing the region's extraordinary green coffee are the ideal altitude between 800 and 1,300 metres above sea level, rich soil and the indispensable knowledge and wisdom of the growers to produce the area's unique and exceptional product. It is not surprising that the area's coffee industry is the first region with a Geographical Indication (GI) in Brazil. They received the renowned recognition in 2005 for their unique identity and distinct aroma notes from caramel to walnut, with a pleasant acidity and a vigorous chocolaty aftertaste.`,
     growers: [
+      {
+        name: "Bia e Luiz Antonio",
+        description: "Sete Irmaos",
+        img: seteIrmaosIMG,
+        documentPath: seteIrmaosPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
       {
         name: "Cesar Galli",
         description: "Panorama Farm",
@@ -156,6 +177,13 @@ const data = [
     imgPosAlt: true,
     text: `Small-scale coffee growers dominate the Mountains do Espirito Santo region who are actively engaged in the entire chain of the production process. Usually, growers in Espirito Santo work with family members and pass on their traditions and skill to younger generations. The coffee growers constantly strive for better innovation and development in speciality coffee production to improve their living standards. Located in the southern area of the state of Espirito Santo, mild temperatures and steep highlands (between 700 and 1300 meters above sea level) provide ideal conditions for growing superb quality Arabica coffee with a good body, pleasant acidity, and delicate sweetness. The increasingly popular Pulped Naturals processing style coins the region's coffee characteristics, putting Espirito Santo on the map of high-quality speciality coffees. Espirito Santo is in the southeast of Brazil by the Atlantic Ocean. Its extensive coastline south of Bahia, east of Minas Gerais and north of Rio de Janeiro is a popular tourist destination. Our co-founder Andre was born and raised in its capital Vitoria. Inland Espirito Santo is home to nature parks and reserves that protect the rich biodiversity of the local flora and fauna. Many settlers in the mountains of Espirito Santo arrived at the beginning of the twentieth century from Europe. The state is home to large Italian communities and immigrants from the Pomeranian region, an area lying along the Baltic Sea coastal plain between northern Germany and Poland.`,
     growers: [
+      {
+        name: "Levi Hammer",
+        description: "Grünewald",
+        img: grunnwaldIMG,
+        documentPath: grunnwaldPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
       {
         name: "Danilo Dones",
         description: "Dones Farm",
@@ -239,6 +267,13 @@ const data = [
 		Coffees from Matas de Minas are of Arabica variety that grow on mountainous terrain between 600 and 1,200 metres above sea level. Artisanal processes are a significant influence on producing coffee of outstanding quality. The farmers harvest the cherries manually to ensure that only the ripest fruit is selected for the final product. They purposefully plant the trees with broader spacing to expose them to more sunlight for better ripening. After harvest, they follow a rigorous process with a focus on best results, ensuring only to use treated water for washing and pulping and a meticulous and careful process for drying. The results are exceptional coffees of rich diversity with floral and citrusy aroma notes, delicate acidity, a medium to full body with sweet flavours and a pleasant and long-lasting aftertaste. `,
     growers: [
       {
+        name: "Nilson Santos",
+        description: "Assumpção Farm",
+        img: assumpcaoIMG,
+        documentPath: assumpcaoPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
         name: "Ednilson/Walter",
         description: "Dutra Farm",
         img: dutraIMG,
@@ -262,6 +297,30 @@ const data = [
     imgPosAlt: false,
     text: `The region of Mantiqueira de Minas in the southern part of Minas Gerais is an excellent and Traditional area to produce speciality coffee. It is one of the most recognised and awarded regions in Brazil. This region’s longstanding traditions and expertise in producing high quality coffees with unique profiles. Mantiqueira de Minas benefits from a colder than usual climate, good geological conditions and an ideal altitude. Most of the over 8,200 growers own small and medium farms and cultivate their coffee on slopes between 900 and 1,500 MASL. They maintain their rich traditions and a deep connection to the land and their ancestors. Manual harvesting guarantees that only the best and ripe fruit is used for the approximately 1,2 million bags of coffee. Their rigorous approach results in the region’s respected reputation and their outstanding, distinctive product the world’s coffee lovers benefit from. As part of the Serra da Mantiqueira micro-region, the Mantiqueira de Minas lies within the municipalities of Lambari, Cristina, Olímpio Noronha, Santa Rita do Sapucaí and Mantiqueira; the latter being home to our milling process warehouse.`,
     growers: [
+      {
+        name: "Valeria e Silvano",
+        description: "Boa Vista Farm",
+        img: boavistaIMG,
+        documentPath: boavistaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Luciana Avincula",
+        description: "Mumbuca Farm",
+        img: mumbucaIMG,
+        documentPath: mumbucaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Abelardo José",
+        description: "Pedra Preta Farm",
+        img: pedrapretaIMG,
+        documentPath: pedrapretaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+
+
+
       {
         name: "Abelardo José",
         description: "Divisa Farm",
