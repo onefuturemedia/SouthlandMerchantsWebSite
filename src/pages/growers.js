@@ -55,7 +55,7 @@ import assumpcaoPDF from "../assets/documents/assumpcao.pdf"
 import grunnwaldPDF from "../assets/documents/grunnwald.pdf"
 import boavistaPDF from "../assets/documents/boavista.pdf"
 import mumbucaPDF from "../assets/documents/mumbuca.pdf"
-import pedrapretaPDF from "../assets/documents/PedraBonita.pdf"
+import pedrapretaPDF from "../assets/documents/pedrapreta.pdf"
 
 
 import aterradinhoIMG from "../assets/grower/aterradinho.jpeg";
