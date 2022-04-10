@@ -271,8 +271,8 @@ const data = [
       {
         name: "Luciana Avincula",
         description: "Mumbuca Farm",
-        img: pedraPretaIMG,
-        documentPath: pedraPretaPDF,
+        img: mumbucaIMG,
+        documentPath: mumbucaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
