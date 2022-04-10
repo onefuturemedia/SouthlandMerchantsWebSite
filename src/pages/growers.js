@@ -55,6 +55,8 @@ import mumbucaPDF from "../assets/documents/mumbuca.pdf";
 import assumcpaoPDF from "../assets/documents/assumpcao.pdf";
 import boavistaPDF from "../assets/documents/boavista.pdf";
 import seteirmaosPDF from "../assets/documents/boavista.pdf";
+import grunnwaldPDF from "../assets/documents/grunnwald.pdf";
+
 
 
 
@@ -104,6 +106,8 @@ import mumbucaIMG from "../assets/grower/mumbuca.png";
 import assumpcaoIMG from "../assets/grower/assumpcao.png";
 import boavistaIMG from "../assets/grower/boavista.png";
 import seteirmaosIMG from "../assets/grower/boavista.png";
+import grunnwaldIMG from "../assets/grower/grunnwald.png";
+
 
 
 
@@ -184,6 +188,13 @@ const data = [
         description: "Dones Farm",
         img: donesIMG,
         documentPath: daniloDonesPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Levi Hammer",
+        description: "Grünewald Farm",
+        img: grunnwaldIMG,
+        documentPath: grunnwaldPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
