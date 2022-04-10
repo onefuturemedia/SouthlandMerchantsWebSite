@@ -92,7 +92,7 @@ import vinciIMG from "../assets/grower/vinci.jpeg";
 import calilIMG from "../assets/grower/calil.jpeg";
 import farroupilhaIMG from "../assets/grower/farroupilha.jpg";
 import vinhalIMG from "../assets/grower/vinhal.jpeg";
-import pedraPretaIMG from "../assets/grower/pedrapreta.jpg";
+import pedraPretaIMG from "../assets/grower/pedrapreta.png";
 
 
 
