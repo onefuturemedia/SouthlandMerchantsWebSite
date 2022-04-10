@@ -94,7 +94,6 @@ import vinhalIMG from "../assets/grower/vinhal.jpeg";
 
 
 
-
 const data = [
   {
     name: "Cerrado Mineiro",
@@ -108,6 +107,13 @@ const data = [
         description: "Panorama Farm",
         img: panoramaIMG,
         documentPath: cesarGalliPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Claudia Maria",
+        description: "Pedra Preta Farm",
+        img: panoramaIMG,
+        documentPath: panoramaIMG,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
