@@ -53,6 +53,9 @@ import vinhalPDF from "../assets/documents/vinhal.pdf";
 import pedraPretaPDF from "../assets/documents/pedrapreta.pdf";
 import mumbucaPDF from "../assets/documents/mumbuca.pdf";
 import assumcpaoPDF from "../assets/documents/assumpcao.pdf";
+import boavistaPDF from "../assets/documents/boavista.pdf";
+import seteirmaosPDF from "../assets/documents/boavista.pdf";
+
 
 
 
@@ -99,6 +102,10 @@ import vinhalIMG from "../assets/grower/vinhal.jpeg";
 import pedraPretaIMG from "../assets/grower/pedrapreta.png";
 import mumbucaIMG from "../assets/grower/mumbuca.png";
 import assumpcaoIMG from "../assets/grower/assumpcao.png";
+import boavistaIMG from "../assets/grower/boavista.png";
+import seteirmaosIMG from "../assets/grower/boavista.png";
+
+
 
 
 
@@ -117,6 +124,13 @@ const data = [
         description: "Panorama Farm",
         img: panoramaIMG,
         documentPath: cesarGalliPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Bia and Luiz Antonio",
+        description: "Sete Irmaos Farm",
+        img: seteirmaosIMG,
+        documentPath: seteirmaosPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
@@ -290,6 +304,13 @@ const data = [
         description: "Pedra Preta Farm",
         img: pedraPretaIMG,
         documentPath: pedraPretaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Valeria and Silvano",
+        description: "Boa Vista Farm",
+        img: boavistaIMG,
+        documentPath: boavistaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
