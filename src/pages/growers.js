@@ -51,6 +51,8 @@ import calilPDF from "../assets/documents/calil.pdf";
 import farroupilhaPDF from "../assets/documents/farroupilha.pdf";
 import vinhalPDF from "../assets/documents/vinhal.pdf";
 import pedraPretaPDF from "../assets/documents/pedrapreta.pdf";
+import mumbucaPDF from "../assets/documents/mumbuca.pdf";
+
 
 
 import aterradinhoIMG from "../assets/grower/aterradinho.jpeg";
@@ -93,6 +95,8 @@ import calilIMG from "../assets/grower/calil.jpeg";
 import farroupilhaIMG from "../assets/grower/farroupilha.jpg";
 import vinhalIMG from "../assets/grower/vinhal.jpeg";
 import pedraPretaIMG from "../assets/grower/pedrapreta.png";
+import mumbucaIMG from "../assets/grower/mumbuca.png";
+
 
 
 
@@ -264,6 +268,13 @@ const data = [
     imgPosAlt: false,
     text: `The region of Mantiqueira de Minas in the southern part of Minas Gerais is an excellent and Traditional area to produce speciality coffee. It is one of the most recognised and awarded regions in Brazil. This region’s longstanding traditions and expertise in producing high quality coffees with unique profiles. Mantiqueira de Minas benefits from a colder than usual climate, good geological conditions and an ideal altitude. Most of the over 8,200 growers own small and medium farms and cultivate their coffee on slopes between 900 and 1,500 MASL. They maintain their rich traditions and a deep connection to the land and their ancestors. Manual harvesting guarantees that only the best and ripe fruit is used for the approximately 1,2 million bags of coffee. Their rigorous approach results in the region’s respected reputation and their outstanding, distinctive product the world’s coffee lovers benefit from. As part of the Serra da Mantiqueira micro-region, the Mantiqueira de Minas lies within the municipalities of Lambari, Cristina, Olímpio Noronha, Santa Rita do Sapucaí and Mantiqueira; the latter being home to our milling process warehouse.`,
     growers: [
+      {
+        name: "Luciana Avincula",
+        description: "Mumbuca Farm",
+        img: pedraPretaIMG,
+        documentPath: pedraPretaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
       {
         name: "Claudia Maria",
         description: "Pedra Preta Farm",
