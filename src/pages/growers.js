@@ -52,6 +52,8 @@ import farroupilhaPDF from "../assets/documents/farroupilha.pdf";
 import vinhalPDF from "../assets/documents/vinhal.pdf";
 import pedraPretaPDF from "../assets/documents/pedrapreta.pdf";
 import mumbucaPDF from "../assets/documents/mumbuca.pdf";
+import assumcpaoPDF from "../assets/documents/assumpcao.pdf";
+
 
 
 
@@ -96,6 +98,7 @@ import farroupilhaIMG from "../assets/grower/farroupilha.jpg";
 import vinhalIMG from "../assets/grower/vinhal.jpeg";
 import pedraPretaIMG from "../assets/grower/pedrapreta.png";
 import mumbucaIMG from "../assets/grower/mumbuca.png";
+import assumpcaoIMG from "../assets/grower/assumpcao.png";
 
 
 
@@ -244,6 +247,13 @@ const data = [
     text: `Another region of significance for coffee production in Minas Gerais is the Matas de Minas region, located in the Brazilian Atlantic Forest in the eastern part of the state. It consists in around 60 municipalities and covers 275,000 hectares of production area, where 80% of the 36,000 growers harvest on small family farms. Sustainability and the connection between the people and the land play a vital role in the region’s coffee industry.  
 		Coffees from Matas de Minas are of Arabica variety that grow on mountainous terrain between 600 and 1,200 metres above sea level. Artisanal processes are a significant influence on producing coffee of outstanding quality. The farmers harvest the cherries manually to ensure that only the ripest fruit is selected for the final product. They purposefully plant the trees with broader spacing to expose them to more sunlight for better ripening. After harvest, they follow a rigorous process with a focus on best results, ensuring only to use treated water for washing and pulping and a meticulous and careful process for drying. The results are exceptional coffees of rich diversity with floral and citrusy aroma notes, delicate acidity, a medium to full body with sweet flavours and a pleasant and long-lasting aftertaste. `,
     growers: [
+      {
+        name: "Nilson Assumpcao",
+        description: "Assumpcao Farm",
+        img: assumpcaoIMG,
+        documentPath: assumcpaoPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
       {
         name: "Ednilson/Walter",
         description: "Dutra Farm",
