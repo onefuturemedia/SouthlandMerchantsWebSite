@@ -92,6 +92,7 @@ import vinciIMG from "../assets/grower/vinci.jpeg";
 import calilIMG from "../assets/grower/calil.jpeg";
 import farroupilhaIMG from "../assets/grower/farroupilha.jpg";
 import vinhalIMG from "../assets/grower/vinhal.jpeg";
+import pedraPretaIMG from "../assets/grower/pedrapreta.jpg";
 
 
 
@@ -266,7 +267,7 @@ const data = [
       {
         name: "Claudia Maria",
         description: "Pedra Preta Farm",
-        img: panoramaIMG,
+        img: pedraPretaIMG,
         documentPath: pedraPretaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
