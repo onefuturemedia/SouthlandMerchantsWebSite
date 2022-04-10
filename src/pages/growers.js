@@ -105,7 +105,7 @@ import pedraPretaIMG from "../assets/grower/pedrapreta.png";
 import mumbucaIMG from "../assets/grower/mumbuca.png";
 import assumpcaoIMG from "../assets/grower/assumpcao.png";
 import boavistaIMG from "../assets/grower/boavista.png";
-import seteirmaosIMG from "../assets/grower/boavista.png";
+import seteirmaosIMG from "../assets/grower/seteirmaos.png";
 import grunnwaldIMG from "../assets/grower/grunnwald.png";
 
 
@@ -131,7 +131,7 @@ const data = [
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
-        name: "Bia and Luiz Antonio",
+        name: "Bia and Luiz",
         description: "Sete Irmaos Farm",
         img: seteirmaosIMG,
         documentPath: seteirmaosPDF,
