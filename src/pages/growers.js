@@ -79,7 +79,7 @@ import pedrabatistaIMG from "../assets/grower/pedrabatista.jpeg";
 import pedrabonitaIMG from "../assets/grower/pedrabonita.jpg";
 import roseiraIMG from "../assets/grower/roseira.jpeg";
 import santaEdwigesIMG from "../assets/grower/santaedwiges.jpeg";
-import santuarioIMG from "../assets/grower/santuario.jpeg";
+import santuarioIMG from "../assets/grower/santuario.png";
 import serradaCampanhaIMG from "../assets/grower/serradacampanha.jpeg";
 import taquaraIMG from "../assets/grower/taquara.jpg";
 import biquinhaIMG from "../assets/grower/biquinha.jpeg";
