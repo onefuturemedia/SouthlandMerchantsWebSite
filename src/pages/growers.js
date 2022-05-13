@@ -56,6 +56,13 @@ import assumcpaoPDF from "../assets/documents/assumpcao.pdf";
 import boavistaPDF from "../assets/documents/boavista.pdf";
 import seteirmaosPDF from "../assets/documents/boavista.pdf";
 import grunnwaldPDF from "../assets/documents/grunnwald.pdf";
+import bateiaPDF from "../assets/documents/bateia.pdf";
+import rezendePDF from "../assets/documents/rezende.pdf";
+import caratingaPDF from "../assets/documents/caratinga.pdf";
+import saoVicentePDF from "../assets/documents/saovicente.pdf";
+import sementesPDF from "../assets/documents/semente.pdf";
+import borgesPDF from "../assets/documents/borges.pdf";
+
 
 
 
@@ -107,6 +114,18 @@ import assumpcaoIMG from "../assets/grower/assumpcao.png";
 import boavistaIMG from "../assets/grower/boavista.png";
 import seteirmaosIMG from "../assets/grower/seteirmaos.png";
 import grunnwaldIMG from "../assets/grower/grunnwald.png";
+import bateiaIMG from "../assets/grower/bateia.jpg";
+import rezendeIMG from "../assets/grower/rezende.jpeg";
+import caratingaIMG from "../assets/grower/caratinga.jpg";
+import saoVicenteIMG from "../assets/grower/saovicente.jpg";
+import sementesIMG from "../assets/grower/semente.jpeg";
+import borgesIMG from "../assets/grower/borges.jpeg";
+
+
+
+
+
+
 
 
 
@@ -128,6 +147,13 @@ const data = [
         description: "Panorama Farm",
         img: panoramaIMG,
         documentPath: cesarGalliPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Virginia Coutinho",
+        description: "Sementes Farm",
+        img: sementesIMG,
+        documentPath: sementesPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
@@ -188,6 +214,20 @@ const data = [
         description: "Dones Farm",
         img: donesIMG,
         documentPath: daniloDonesPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Renilto Gering",
+        description: "Caratinga Farm",
+        img: caratingaIMG,
+        documentPath: caratingaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Valdecir Tomanzini",
+        description: "Bateia Farm",
+        img: bateiaIMG,
+        documentPath: bateiaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
@@ -287,6 +327,13 @@ const data = [
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
+        name: "Sinival",
+        description: "São Vicente Farm",
+        img: saoVicenteIMG,
+        documentPath: saoVicentePDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
         name: "Quezia Tavares",
         description: "Taquara Farm",
         img: taquaraIMG,
@@ -308,6 +355,20 @@ const data = [
         description: "Mumbuca Farm",
         img: mumbucaIMG,
         documentPath: mumbucaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Patricia Borges",
+        description: "Fortaleza dos Borges Farm",
+        img: borgesIMG,
+        documentPath: borgesPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Jeferson",
+        description: "Rezende Farm",
+        img: rezendeIMG,
+        documentPath: rezendePDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
