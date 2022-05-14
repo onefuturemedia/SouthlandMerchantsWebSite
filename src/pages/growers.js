@@ -114,12 +114,12 @@ import assumpcaoIMG from "../assets/grower/assumpcao.png";
 import boavistaIMG from "../assets/grower/boavista.png";
 import seteirmaosIMG from "../assets/grower/seteirmaos.png";
 import grunnwaldIMG from "../assets/grower/grunnwald.png";
-import bateiaIMG from "../assets/grower/bateia.jpg";
-import rezendeIMG from "../assets/grower/rezende.jpeg";
-import caratingaIMG from "../assets/grower/caratinga.jpg";
-import saoVicenteIMG from "../assets/grower/saovicente.jpg";
-import sementesIMG from "../assets/grower/semente.jpeg";
-import borgesIMG from "../assets/grower/borges.jpeg";
+import bateiaIMG from "../assets/grower/bateia.png";
+import rezendeIMG from "../assets/grower/rezende.png";
+import caratingaIMG from "../assets/grower/caratinga.png";
+import saoVicenteIMG from "../assets/grower/saovicente.png";
+import sementesIMG from "../assets/grower/semente.png";
+import borgesIMG from "../assets/grower/borges.png";
 
 
 
