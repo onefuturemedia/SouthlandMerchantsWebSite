@@ -62,6 +62,7 @@ import caratingaPDF from "../assets/documents/caratinga.pdf";
 import saoVicentePDF from "../assets/documents/saovicente.pdf";
 import sementesPDF from "../assets/documents/semente.pdf";
 import borgesPDF from "../assets/documents/borges.pdf";
+import dantasPDF from "../assets/documents/ranchodantas.pdf";
 
 
 
@@ -120,6 +121,8 @@ import caratingaIMG from "../assets/grower/caratinga.png";
 import saoVicenteIMG from "../assets/grower/saovicente.png";
 import sementesIMG from "../assets/grower/semente.png";
 import borgesIMG from "../assets/grower/borges.png";
+import dantasIMG from "../assets/grower/dantas.png";
+
 
 
 
@@ -214,6 +217,13 @@ const data = [
         description: "Dones Farm",
         img: donesIMG,
         documentPath: daniloDonesPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Edval de Paula",
+        description: "Rancho Dantas Farm",
+        img: dantasIMG,
+        documentPath: dantasPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
@@ -359,7 +369,7 @@ const data = [
       },
       {
         name: "Patricia Borges",
-        description: "Fortaleza dos Borges Farm",
+        description: "Fortaleza dos Borges",
         img: borgesIMG,
         documentPath: borgesPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
