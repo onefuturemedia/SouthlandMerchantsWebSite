@@ -54,7 +54,7 @@ import pedraPretaPDF from "../assets/documents/pedrapreta.pdf";
 import mumbucaPDF from "../assets/documents/mumbuca.pdf";
 import assumcpaoPDF from "../assets/documents/assumpcao.pdf";
 import boavistaPDF from "../assets/documents/boavista.pdf";
-import seteirmaosPDF from "../assets/documents/boavista.pdf";
+import seteirmaosPDF from "../assets/documents/seteirmaos.pdf";
 import grunnwaldPDF from "../assets/documents/grunnwald.pdf";
 import bateiaPDF from "../assets/documents/bateia.pdf";
 import rezendePDF from "../assets/documents/rezende.pdf";
