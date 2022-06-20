@@ -390,7 +390,7 @@ const data = [
       },
       {
         name: "Valeria and Silvano",
-        description: "Boa Vista Farm",
+        description: "Bela Vista Farm",
         img: boavistaIMG,
         documentPath: boavistaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
