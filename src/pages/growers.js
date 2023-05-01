@@ -64,6 +64,7 @@ import sementesPDF from "../assets/documents/semente.pdf";
 import borgesPDF from "../assets/documents/borges.pdf";
 import dantasPDF from "../assets/documents/ranchodantas.pdf";
 
+import examplePDF from "../assets/documents/example.pdf";
 
 
 
@@ -122,6 +123,7 @@ import saoVicenteIMG from "../assets/grower/saovicente.png";
 import sementesIMG from "../assets/grower/semente.png";
 import borgesIMG from "../assets/grower/borges.png";
 import dantasIMG from "../assets/grower/dantas.png";
+import fazendaexemploIMG from "../assets/grower/fazendaexemploIMG.jpg";
 
 
 
@@ -150,6 +152,13 @@ const data = [
         description: "Panorama Farm",
         img: panoramaIMG,
         documentPath: cesarGalliPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+            {
+        name: "xxxx",
+        description: "xxxxxx Farm",
+        img: fazendaexemploIMG,
+        documentPath: fazendaexemploPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
