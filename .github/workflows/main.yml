@@ -36,11 +36,11 @@ jobs:
       #           echo Add other actions to build,
       #           echo test, and deploy your project.
 
-      # - name: 📂 Sync files in website Cpanel via FTP
-      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      #   with:
-      #     server: ftp.southlandmerchants.com.au
-      #     username: new_website@southlandmerchants.com.au
-      #     password: ${{ secrets.FTP_PASSWORD }}
-      #     local-dir: ./public/
-      #     server-dir: public_html/
+      - name: 📂 Sync files in website Cpanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.southlandmerchants.com.au
+          username: new_website@southlandmerchants.com.au
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./public/
+          server-dir: public_html/
