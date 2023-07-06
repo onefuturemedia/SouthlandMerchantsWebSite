@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Button, Box, Link } from "theme-ui";
-import { Scrollbars } from "react-custom-scrollbars";
 import Drawer from "components/drawer";
 import { DrawerContext } from "contexts/drawer/drawer.context";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
@@ -34,7 +33,6 @@ const MobileDrawer = ({ isHome }) => {
       drawerStyle={styles.drawer}
       closeBtnStyle={styles.close}
     >
-      <Scrollbars autoHide>
         <Box sx={styles.content}>
           <Logo logo={logoIcon} />
           {isHome && (
@@ -71,7 +69,6 @@ const MobileDrawer = ({ isHome }) => {
             </Link>
           </Box>
         </Box>
-      </Scrollbars>
     </Drawer>
   );
 };
