@@ -1,3 +1,6 @@
+#Note
+Please run this application on NODE 12 and also plase does not commit another package-lock.json!!!!!
+
 # TODOs
 
 - [ok] Improve SEO element
