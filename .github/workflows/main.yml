@@ -2,11 +2,11 @@
 
 name: Build and Deploy on website Cpanel (via ftp)
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   schedule:
-      - cron:  '0 5,10,15,20,0 * * *'
+    - cron: "0 5,10,15,20,0 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,17 +22,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
 
       # Runs a single command using the runners shell
       - name: Build website
-        run: npm install --legacy-peer-deps && npm run build
+        run: npm install && npm run build
 
       # Runs a set of commands using the runners shell
-#       - name: Run a multi-line script
-#         run: |
-#           echo Add other actions to build,
-#           echo test, and deploy your project.
+      #       - name: Run a multi-line script
+      #         run: |
+      #           echo Add other actions to build,
+      #           echo test, and deploy your project.
 
       - name: 📂 Sync files in website Cpanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
@@ -41,4 +40,4 @@ jobs:
           username: new_website@southlandmerchants.com.au
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
-          server-dir: public_html/   
+          server-dir: public_html/
