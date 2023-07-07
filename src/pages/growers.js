@@ -63,6 +63,9 @@ import saoVicentePDF from "../assets/documents/saovicente.pdf";
 import sementesPDF from "../assets/documents/semente.pdf";
 import borgesPDF from "../assets/documents/borges.pdf";
 import dantasPDF from "../assets/documents/ranchodantas.pdf";
+import tresMeninasPDF from "../assets/documents/tresMeninas.pdf";
+import saoPedroPDF from "../assets/documents/saoPedro.pdf";
+
 
 
 
@@ -122,6 +125,8 @@ import saoVicenteIMG from "../assets/grower/saovicente.png";
 import sementesIMG from "../assets/grower/semente.png";
 import borgesIMG from "../assets/grower/borges.png";
 import dantasIMG from "../assets/grower/dantas.png";
+import tresMeninasIMG from "../assets/grower/tresMeninas.jpeg";
+import saoPedroIMG from "../assets/grower/saoPedro.jpg";
 
 
 
@@ -150,13 +155,6 @@ const data = [
         description: "Panorama Farm",
         img: panoramaIMG,
         documentPath: cesarGalliPDF,
-        instagramUrl: "https://www.instagram.com/southlandmerchants/",
-      },
-      {
-        name: "Virginia Coutinho",
-        description: "Sementes Farm",
-        img: sementesIMG,
-        documentPath: sementesPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
@@ -203,6 +201,21 @@ const data = [
         documentPath: vinhalPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
+      {
+        name: "Virginia Coutinho",
+        description: "Sementes Farm",
+        img: sementesIMG,
+        documentPath: sementesPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Marcelo e Paula",
+        description: "Tres Meninas Farm",
+        img: tresMeninasIMG,
+        documentPath: tresMeninasPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+
     ],
   },
   {
@@ -289,6 +302,14 @@ const data = [
         documentPath: vaniltoPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
+      {
+        name: "Victor Endlich",
+        description: "Sao Pedro",
+        img: saoPedroIMG,
+        documentPath: saoPedroPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      }
+      
     ],
   },
   {
