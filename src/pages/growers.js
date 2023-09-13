@@ -65,7 +65,7 @@ import borgesPDF from "../assets/documents/borges.pdf";
 import dantasPDF from "../assets/documents/ranchodantas.pdf";
 import tresMeninasPDF from "../assets/documents/tresMeninas.pdf";
 import saoPedroPDF from "../assets/documents/saoPedro.pdf";
-
+import boaVistaESPDf from "../assets/documents/boaVistaES.pdf"
 
 
 
@@ -127,7 +127,7 @@ import borgesIMG from "../assets/grower/borges.png";
 import dantasIMG from "../assets/grower/dantas.png";
 import tresMeninasIMG from "../assets/grower/tresMeninas.jpeg";
 import saoPedroIMG from "../assets/grower/saoPedro.jpg";
-
+import boaVistaESIMG from "../assets/grower/boaVista.jpeg"
 
 
 
@@ -279,6 +279,13 @@ const data = [
         description: "Tomazini Farm",
         img: marcostomaziniIMG,
         documentPath: marcosTomaziniPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Jonatas Klippel",
+        description: "Boa Vista Farm",
+        img: boaVistaESIMG,
+        documentPath: boaVistaESPDf,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
