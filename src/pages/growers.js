@@ -127,7 +127,7 @@ import borgesIMG from "../assets/grower/borges.png";
 import dantasIMG from "../assets/grower/dantas.png";
 import tresMeninasIMG from "../assets/grower/tresMeninas.jpeg";
 import saoPedroIMG from "../assets/grower/saoPedro.jpg";
-
+import boaVistaESIMG from "../assets/grower/boaVista.jpeg"
 
 
 
@@ -284,7 +284,7 @@ const data = [
       {
         name: "Jonatas Klippel",
         description: "Boa Vista Farm",
-        img: marcostomaziniIMG,
+        img: boaVistaESIMG,
         documentPath: boaVistaESPDf,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
