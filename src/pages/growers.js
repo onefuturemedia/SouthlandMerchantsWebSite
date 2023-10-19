@@ -66,6 +66,7 @@ import dantasPDF from "../assets/documents/ranchodantas.pdf";
 import tresMeninasPDF from "../assets/documents/tresMeninas.pdf";
 import saoPedroPDF from "../assets/documents/saoPedro.pdf";
 import boaVistaESPDf from "../assets/documents/boaVistaES.pdf"
+import altoLagoaPDF from "../assets/documents/altoLagoa.pdf"
 
 
 
@@ -128,6 +129,7 @@ import dantasIMG from "../assets/grower/dantas.png";
 import tresMeninasIMG from "../assets/grower/tresMeninas.jpeg";
 import saoPedroIMG from "../assets/grower/saoPedro.jpg";
 import boaVistaESIMG from "../assets/grower/boaVista.jpeg"
+import altoLagoaIMG from "../assets/grower/altoLagoa.jpg"
 
 
 
@@ -314,6 +316,13 @@ const data = [
         description: "Sao Pedro",
         img: saoPedroIMG,
         documentPath: saoPedroPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Eleonor Brandt",
+        description: "Alto Lagoa",
+        img: altoLagoaIMG,
+        documentPath: altoLagoaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       }
       
