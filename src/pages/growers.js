@@ -70,6 +70,8 @@ import altoLagoaPDF from "../assets/documents/altoLagoa.pdf"
 import engenhoPDF from "../assets/documents/EngenhoFarmPDF.pdf"
 import terraNovaPDF from "../assets/documents/TerraNovaPDF.pdf"
 import cafeDasMariasPDF from "../assets/documents/CafeDasMariasPDF.pdf"
+import ranchoAlegrePDF from "../assets/documents/ranchoAlegre.pdf"
+import moradaDoSolPDF from "../assets/documents/moradaDoSol.pdf"
 
 
 
@@ -136,6 +138,8 @@ import altoLagoaIMG from "../assets/grower/altoLagoa.jpg"
 import engenhoIMG from "../assets/grower/EngenhoFarm.jpg"
 import terraNovaIMG from "../assets/grower/TerraNovaIMG.jpg"
 import cafeDasMariasIMG from "../assets/grower/CafeDasMariasIMG.jpg"
+import ranchoAlegreIMG from "../assets/grower/ranchoAlegre.png"
+import moradaDoSolIMG from "../assets/grower/moradaDoSol.png"
 
 
 
@@ -158,6 +162,20 @@ const data = [
     imgPosAlt: false,
     text: `The Cerrado Mineiro region, located northwest in Minas Gerais, is globally renowned for its high-quality coffee production. The large area covers 210,000 hectares of coffee plantations with over 4500 farmers and produces 5 million bags of coffee annually. This equates to 25% of Minas Gerais and 12.7% of Brazil's coffee crop. Quantity plays a big part in defining the region's output, but not at the expense of quality. Many factors contribute to the outstanding coffee's excellence. Hot and wet summers and mild and dry winters result in one ripening season eliminating the risk of under or overripened fruit at harvest. Other favourable contributors to growing the region's extraordinary green coffee are the ideal altitude between 800 and 1,300 metres above sea level, rich soil and the indispensable knowledge and wisdom of the growers to produce the area's unique and exceptional product. It is not surprising that the area's coffee industry is the first region with a Geographical Indication (GI) in Brazil. They received the renowned recognition in 2005 for their unique identity and distinct aroma notes from caramel to walnut, with a pleasant acidity and a vigorous chocolaty aftertaste.`,
     growers: [
+      {
+        name: "Ellen Lorencini",
+        description: "Morada do Sol Farm",
+        img: moradaDoSolIMG,
+        documentPath: moradaDoSolPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Cesar Zuanetti",
+        description: "Rancho Alegre Farm",
+        img: ranchoAlegreIMG,
+        documentPath: ranchoAlegrePDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
       {
         name: "Erika Urban",
         description: "Cafe das Marias Farm",
