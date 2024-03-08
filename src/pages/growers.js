@@ -73,6 +73,7 @@ import cafeDasMariasPDF from "../assets/documents/CafeDasMariasPDF.pdf"
 import ranchoAlegrePDF from "../assets/documents/ranchoAlegre.pdf"
 import moradaDoSolPDF from "../assets/documents/moradaDoSol.pdf"
 import cachoeiraFarmPDF from "../assets/documents/cachoeiraFarm.pdf"
+import arcinoFarmPDF from "../assets/documents/Arcino.pdf"
 
 
 
@@ -142,6 +143,7 @@ import cafeDasMariasIMG from "../assets/grower/CafeDasMariasIMG.jpg"
 import ranchoAlegreIMG from "../assets/grower/ranchoAlegre.png"
 import moradaDoSolIMG from "../assets/grower/moradaDoSol.png"
 import cachoeiraFarm from "../assets/grower/cachoeiraFarm.png"
+import arcinoFarmIMG from "../assets/grower/Arcino.jpg"
 
 
 
@@ -267,6 +269,13 @@ const data = [
     imgPosAlt: true,
     text: `Small-scale coffee growers dominate the Mountains do Espirito Santo region who are actively engaged in the entire chain of the production process. Usually, growers in Espirito Santo work with family members and pass on their traditions and skill to younger generations. The coffee growers constantly strive for better innovation and development in speciality coffee production to improve their living standards. Located in the southern area of the state of Espirito Santo, mild temperatures and steep highlands (between 700 and 1300 meters above sea level) provide ideal conditions for growing superb quality Arabica coffee with a good body, pleasant acidity, and delicate sweetness. The increasingly popular Pulped Naturals processing style coins the region's coffee characteristics, putting Espirito Santo on the map of high-quality speciality coffees. Espirito Santo is in the southeast of Brazil by the Atlantic Ocean. Its extensive coastline south of Bahia, east of Minas Gerais and north of Rio de Janeiro is a popular tourist destination. Our co-founder Andre was born and raised in its capital Vitoria. Inland Espirito Santo is home to nature parks and reserves that protect the rich biodiversity of the local flora and fauna. Many settlers in the mountains of Espirito Santo arrived at the beginning of the twentieth century from Europe. The state is home to large Italian communities and immigrants from the Pomeranian region, an area lying along the Baltic Sea coastal plain between northern Germany and Poland.`,
     growers: [
+      {
+        name: "Gilcimar Filete",
+        description: "Arcino Farm",
+        img: arcinoFarmIMG,
+        documentPath: arcinoFarmPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
       {
         name: "Danilo Dones",
         description: "Dones Farm",
