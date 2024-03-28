@@ -74,11 +74,9 @@ import ranchoAlegrePDF from "../assets/documents/ranchoAlegre.pdf"
 import moradaDoSolPDF from "../assets/documents/moradaDoSol.pdf"
 import cachoeiraFarmPDF from "../assets/documents/cachoeiraFarm.pdf"
 import arcinoFarmPDF from "../assets/documents/Arcino.pdf"
-
-
-
-
-
+import sucuriFarmPDF from "../assets/documents/Sucuri.pdf"
+import tocaDaRaposaPDF from "../assets/documents/TocadaRaposa.pdf"
+import esperancaPDF from "../assets/documents/esperanca.pdf"
 
 
 import aterradinhoIMG from "../assets/grower/aterradinho.jpeg";
@@ -144,17 +142,9 @@ import ranchoAlegreIMG from "../assets/grower/ranchoAlegre.png"
 import moradaDoSolIMG from "../assets/grower/moradaDoSol.png"
 import cachoeiraFarm from "../assets/grower/cachoeiraFarm.png"
 import arcinoFarmIMG from "../assets/grower/Arcino.jpg"
-
-
-
-
-
-
-
-
-
-
-
+import sucuriFarmIMG from "../assets/grower/Sucuri1.jpg"
+import tocaDaRaposaIMG from "../assets/grower/TocadaRaposa.jpg"
+import esperancaIMG from "../assets/grower/Esperanca.jpg"
 
 
 
@@ -168,9 +158,23 @@ const data = [
     growers: [
       {
         name: "Danilo Barbosa",
-        description: "Cachoeira Farm",
-        img: cachoeiraFarm,
-        documentPath: cachoeiraFarmPDF,
+        description: "Sucuri Farm",
+        img: sucuriFarmIMG,
+        documentPath: sucuriFarmPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Jose de Oliveira",
+        description: "Toca da Raposa Farm",
+        img: tocaDaRaposaIMG,
+        documentPath: tocaDaRaposaPDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Deyvid Leandro",
+        description: "Esperança Farm",
+        img: esperancaIMG,
+        documentPath: esperancaPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
@@ -185,6 +189,13 @@ const data = [
         description: "Rancho Alegre Farm",
         img: ranchoAlegreIMG,
         documentPath: ranchoAlegrePDF,
+        instagramUrl: "https://www.instagram.com/southlandmerchants/",
+      },
+      {
+        name: "Danilo Barbosa",
+        description: "Cachoeira Farm",
+        img: cachoeiraFarm,
+        documentPath: cachoeiraFarmPDF,
         instagramUrl: "https://www.instagram.com/southlandmerchants/",
       },
       {
